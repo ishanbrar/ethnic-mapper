@@ -67,7 +67,23 @@ export const regions: Region[] = [
           'Palestinians in the West Bank and Gaza maintain dense village, refugee camp, and urban networks shaped by displacement and occupation.',
         fact2:
           'Olive harvests, tātreez embroidery, and extended family structures remain core to Palestinian daily life in the territories.',
-        share: 0.9
+        share: 0.9,
+        population: '≈ 5M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 3.5'
+      },
+      {
+        id: 'israeli_settlers_wb',
+        ethnicityName: 'Israeli Settlers',
+        region: 'Israeli settlements in the West Bank',
+        fact1:
+          'Israeli settlers in the West Bank maintain communities in settlements established since 1967, with diverse religious and secular motivations.',
+        fact2:
+          'Settlement life combines suburban amenities with security concerns, religious study, and political activism around territorial claims.',
+        share: 0.08,
+        population: '≈ 0.4M',
+        dominantReligion: 'Judaism',
+        totalFertilityRate: '≈ 4.0'
       }
     ]
   },
@@ -252,6 +268,19 @@ export const regions: Region[] = [
         population: '≈ 9.3M',
         dominantReligion: 'Christianity',
         totalFertilityRate: '≈ 1.8'
+      },
+      {
+        id: 'southeast_hispanic',
+        ethnicityName: 'Southeast Hispanic/Latino',
+        region: 'Hispanic communities in the Southeast (Mexican, Central American)',
+        fact1:
+          'Southeast Hispanics maintain Spanish language and diverse Latin American cultures, with growing communities in urban and rural areas.',
+        fact2:
+          'Migration from Mexico and Central America, maintaining Hispanic identity and cultural traditions in the South.',
+        share: 0.05,
+        population: '≈ 1.5M',
+        dominantReligion: 'Catholicism',
+        totalFertilityRate: '≈ 2.1'
       }
     ]
   },
@@ -515,6 +544,32 @@ export const regions: Region[] = [
         population: '≈ 2.5M',
         dominantReligion: 'Islam',
         totalFertilityRate: '≈ 2.9'
+      },
+      {
+        id: 'rawalpindi_punjabi_communities',
+        ethnicityName: 'Rawalpindi Punjabi Communities',
+        region: 'Rawalpindi city and surrounding areas',
+        fact1:
+          'Rawalpindi Punjabi communities maintain strong connections to military service, trade, and traditional Punjabi culture.',
+        fact2:
+          'Cantonment areas, bazaars, and family businesses characterize much of Rawalpindi\'s Punjabi social life.',
+        share: 0.2,
+        population: '≈ 0.7M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 3.0'
+      },
+      {
+        id: 'islamabad_pashtun_migrants',
+        ethnicityName: 'Pashtun Migrants in Islamabad',
+        region: 'Pashtun communities in Islamabad and Rawalpindi',
+        fact1:
+          'Pashtun migrants from Khyber Pakhtunkhwa and tribal areas work in construction, services, and small businesses in the capital region.',
+        fact2:
+          'Pashto language, tribal networks, and connections to home regions shape Pashtun life in the twin cities.',
+        share: 0.08,
+        population: '≈ 0.3M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 3.2'
       }
     ]
   },
@@ -540,6 +595,32 @@ export const regions: Region[] = [
         population: '≈ 4.5M',
         dominantReligion: 'Islam',
         totalFertilityRate: '≈ 3.6'
+      },
+      {
+        id: 'peshawar_afghan_refugees',
+        ethnicityName: 'Afghan Refugees in Peshawar',
+        region: 'Refugee settlements and neighborhoods in Peshawar',
+        fact1:
+          'Afghan refugees in Peshawar include Pashtun, Tajik, and other ethnic groups who fled conflict in Afghanistan over decades.',
+        fact2:
+          'Refugee camps, informal settlements, and cross-border trade networks shape Afghan community life in the region.',
+        share: 0.15,
+        population: '≈ 0.9M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 4.0'
+      },
+      {
+        id: 'peshawar_hindkowan',
+        ethnicityName: 'Hindkowan Communities',
+        region: 'Hindkowan-speaking communities in Peshawar Valley',
+        fact1:
+          'Hindkowan speakers in the Peshawar Valley maintain distinct linguistic and cultural traditions from Pashtun neighbors.',
+        fact2:
+          'Trade, agriculture, and connections to broader Punjabi cultural regions characterize Hindkowan communities.',
+        share: 0.08,
+        population: '≈ 0.5M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 3.0'
       }
     ]
   },
@@ -565,6 +646,32 @@ export const regions: Region[] = [
         population: '≈ 12M',
         dominantReligion: 'Islam',
         totalFertilityRate: '≈ 3.3'
+      },
+      {
+        id: 'sindh_interior_baloch',
+        ethnicityName: 'Baloch Communities in Interior Sindh',
+        region: 'Baloch-majority areas in northern and western Sindh',
+        fact1:
+          'Baloch communities in interior Sindh maintain connections to Balochistan while participating in Sindh\'s agricultural and urban economies.',
+        fact2:
+          'Tribal structures, pastoral traditions, and cross-provincial family networks shape Baloch identity in the region.',
+        share: 0.2,
+        population: '≈ 3.7M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 3.5'
+      },
+      {
+        id: 'sindh_interior_hindus',
+        ethnicityName: 'Sindhi Hindus',
+        region: 'Hindu communities in interior Sindh towns and villages',
+        fact1:
+          'Sindhi Hindus maintain ancient connections to the region while many families migrated to India after Partition.',
+        fact2:
+          'Temples, festivals, and business networks continue to anchor Sindhi Hindu communities in the interior.',
+        share: 0.12,
+        population: '≈ 2.2M',
+        dominantReligion: 'Hinduism',
+        totalFertilityRate: '≈ 2.8'
       }
     ]
   },
@@ -793,6 +900,19 @@ export const regions: Region[] = [
         population: '≈ 15M',
         dominantReligion: 'Hinduism',
         totalFertilityRate: '≈ 2.2'
+      },
+      {
+        id: 'rajasthan_marwar_muslims',
+        ethnicityName: 'Rajasthani Muslims (Marwar)',
+        region: 'Muslim communities in Marwar region towns and villages',
+        fact1:
+          'Rajasthani Muslims in Marwar maintain distinct cultural traditions including Meo, Pathan, and other communities with long regional histories.',
+        fact2:
+          'Sufi shrines, traditional crafts, and participation in regional trade networks characterize Muslim life in Marwar.',
+        share: 0.15,
+        population: '≈ 2.8M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 2.5'
       }
     ]
   },
@@ -1034,6 +1154,32 @@ export const regions: Region[] = [
         population: '≈ 5.5M',
         dominantReligion: 'Hinduism',
         totalFertilityRate: '≈ 1.5'
+      },
+      {
+        id: 'chennai_muslims',
+        ethnicityName: 'Chennai Muslims',
+        region: 'Muslim neighborhoods in Chennai (Triplicane, Royapuram)',
+        fact1:
+          'Chennai Muslims maintain strong connections to maritime trade, Islamic scholarship, and Tamil Muslim cultural traditions.',
+        fact2:
+          'Mosques, Islamic schools, and participation in Chennai\'s commercial and educational sectors characterize Muslim life in the city.',
+        share: 0.15,
+        population: '≈ 1.2M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 1.8'
+      },
+      {
+        id: 'chennai_telugu_migrants',
+        ethnicityName: 'Telugu Migrants in Chennai',
+        region: 'Telugu-speaking communities in Chennai',
+        fact1:
+          'Telugu migrants from Andhra Pradesh work in IT, construction, and services while maintaining connections to home regions.',
+        fact2:
+          'Telugu cultural associations, film screenings, and business networks anchor Telugu communities in Chennai.',
+        share: 0.12,
+        population: '≈ 0.9M',
+        dominantReligion: 'Hinduism',
+        totalFertilityRate: '≈ 1.6'
       }
     ]
   },
@@ -1059,6 +1205,19 @@ export const regions: Region[] = [
         population: '≈ 18M',
         dominantReligion: 'Hinduism',
         totalFertilityRate: '≈ 1.6'
+      },
+      {
+        id: 'tamil_nadu_muslims',
+        ethnicityName: 'Tamil Muslims',
+        region: 'Muslim communities in Tamil Nadu interior (Tirunelveli, Ramanathapuram)',
+        fact1:
+          'Tamil Muslims maintain distinct cultural traditions including Tamil-Urdu literary heritage and participation in regional trade networks.',
+        fact2:
+          'Sufi shrines, Islamic schools, and business communities characterize Tamil Muslim life in the interior.',
+        share: 0.12,
+        population: '≈ 2.5M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 1.9'
       }
     ]
   },
@@ -1084,6 +1243,19 @@ export const regions: Region[] = [
         population: '≈ 25M',
         dominantReligion: 'Hinduism',
         totalFertilityRate: '≈ 1.7'
+      },
+      {
+        id: 'andhra_coastal_muslims',
+        ethnicityName: 'Andhra Coastal Muslims',
+        region: 'Muslim communities in coastal Andhra towns and cities',
+        fact1:
+          'Andhra Muslims maintain connections to maritime trade, Islamic scholarship, and Telugu Muslim cultural traditions.',
+        fact2:
+          'Mosques, business networks, and participation in regional politics characterize Muslim life in coastal Andhra.',
+        share: 0.12,
+        population: '≈ 3.5M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 2.0'
       }
     ]
   },
@@ -1198,6 +1370,32 @@ export const regions: Region[] = [
         population: '≈ 12M',
         dominantReligion: 'Islam',
         totalFertilityRate: '≈ 2.0'
+      },
+      {
+        id: 'dhaka_bengali_hindus',
+        ethnicityName: 'Dhaka Bengali Hindus',
+        region: 'Hindu neighborhoods in Dhaka (Old Dhaka, Ramna)',
+        fact1:
+          'Bengali Hindus in Dhaka maintain connections to ancient regional traditions while participating in urban life.',
+        fact2:
+          'Temples, festivals, and business networks continue to anchor Hindu communities in the capital.',
+        share: 0.1,
+        population: '≈ 1.4M',
+        dominantReligion: 'Hinduism',
+        totalFertilityRate: '≈ 1.8'
+      },
+      {
+        id: 'dhaka_bihari_communities',
+        ethnicityName: 'Bihari Communities in Dhaka',
+        region: 'Bihari refugee settlements in Dhaka',
+        fact1:
+          'Bihari communities in Dhaka include Urdu-speaking families who remained after 1971, living in refugee camps and neighborhoods.',
+        fact2:
+          'Citizenship struggles, language preservation, and integration into Bangladeshi society shape Bihari community life.',
+        share: 0.03,
+        population: '≈ 0.4M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 2.2'
       }
     ]
   },
@@ -1223,6 +1421,19 @@ export const regions: Region[] = [
         population: '≈ 120M',
         dominantReligion: 'Islam',
         totalFertilityRate: '≈ 2.1'
+      },
+      {
+        id: 'bangladesh_rural_hindus',
+        ethnicityName: 'Rural Bengali Hindus',
+        region: 'Hindu villages and neighborhoods in rural Bangladesh',
+        fact1:
+          'Bengali Hindus in rural Bangladesh maintain ancient connections to the region while many families migrated to India after Partition.',
+        fact2:
+          'Temples, festivals, and agricultural livelihoods continue to anchor Hindu communities in the countryside.',
+        share: 0.08,
+        population: '≈ 10.5M',
+        dominantReligion: 'Hinduism',
+        totalFertilityRate: '≈ 2.0'
       }
     ]
   },
@@ -1630,6 +1841,19 @@ export const regions: Region[] = [
         population: '≈ 20M',
         dominantReligion: 'Buddhism / Folk Religion',
         totalFertilityRate: '≈ 1.0'
+      },
+      {
+        id: 'sichuan_tibetan_communities',
+        ethnicityName: 'Tibetan Communities in Sichuan',
+        region: 'Tibetan communities in western Sichuan',
+        fact1:
+          'Tibetan communities in Sichuan maintain Tibetan language, Buddhism, and highland cultural traditions.',
+        fact2:
+          'Monasteries, yak herding, and maintaining Tibetan identity in Sichuan.',
+        share: 0.08,
+        population: '≈ 1.8M',
+        dominantReligion: 'Buddhism',
+        totalFertilityRate: '≈ 1.5'
       }
     ]
   },
@@ -1655,6 +1879,19 @@ export const regions: Region[] = [
         population: '≈ 15M',
         dominantReligion: 'Buddhism / Folk Religion',
         totalFertilityRate: '≈ 0.8'
+      },
+      {
+        id: 'yangtze_delta_migrants',
+        ethnicityName: 'Migrant Workers (Yangtze Delta)',
+        region: 'Migrant communities in Yangtze Delta cities',
+        fact1:
+          'Workers from Anhui, Henan, and other provinces work in manufacturing and services in the delta.',
+        fact2:
+          'Factory work, temporary housing, and remittances home characterize migrant life.',
+        share: 0.08,
+        population: '≈ 1.3M',
+        dominantReligion: 'Buddhism / Folk Religion',
+        totalFertilityRate: '≈ 1.1'
       }
     ]
   },
@@ -1770,6 +2007,32 @@ export const regions: Region[] = [
         population: '≈ 3M',
         dominantReligion: 'Catholicism (Folk)',
         totalFertilityRate: '≈ 2.3'
+      },
+      {
+        id: 'lima_afro_peruvian',
+        ethnicityName: 'Afro-Peruvian Communities (Lima)',
+        region: 'Afro-Peruvian communities in Lima',
+        fact1:
+          'Afro-Peruvian communities maintain African heritage, music traditions, and distinct cultural practices in Lima.',
+        fact2:
+          'Afro-Peruvian music, cultural centers, and maintaining Afro-Peruvian identity in the capital.',
+        share: 0.08,
+        population: '≈ 0.8M',
+        dominantReligion: 'Catholicism',
+        totalFertilityRate: '≈ 2.0'
+      },
+      {
+        id: 'lima_chinese_peruvian',
+        ethnicityName: 'Chinese-Peruvian Communities (Lima)',
+        region: 'Chinese-Peruvian communities in Lima',
+        fact1:
+          'Chinese-Peruvian communities maintain Chinese cultural practices, language, and business networks, with historic roots in 19th-century migration.',
+        fact2:
+          'Chifa cuisine, Chinese-Peruvian businesses, and maintaining Chinese identity in Lima.',
+        share: 0.05,
+        population: '≈ 0.5M',
+        dominantReligion: 'Buddhism / Catholicism',
+        totalFertilityRate: '≈ 1.7'
       }
     ]
   },
@@ -1808,6 +2071,19 @@ export const regions: Region[] = [
         population: '≈ 0.9M',
         dominantReligion: 'Catholicism (Folk)',
         totalFertilityRate: '≈ 3.0'
+      },
+      {
+        id: 'la_paz_mestizo',
+        ethnicityName: 'La Paz Mestizos',
+        region: 'Mestizo communities in La Paz',
+        fact1:
+          'Mestizo communities in La Paz blend Aymara, Quechua, and Spanish heritage in urban contexts.',
+        fact2:
+          'Urban neighborhoods, business districts, and maintaining mestizo cultural identity.',
+        share: 0.15,
+        population: '≈ 0.45M',
+        dominantReligion: 'Catholicism',
+        totalFertilityRate: '≈ 2.5'
       }
     ]
   },
@@ -1986,6 +2262,19 @@ export const regions: Region[] = [
         population: '≈ 1.5M',
         dominantReligion: 'Islam',
         totalFertilityRate: '≈ 6.5'
+      },
+      {
+        id: 'niger_sahara_arabs',
+        ethnicityName: 'Saharan Arabs (Northern Niger)',
+        region: 'Arab communities in northern Niger Sahara',
+        fact1:
+          'Saharan Arabs maintain Arabic language, nomadic traditions, and Islamic practices in the desert.',
+        fact2:
+          'Camel herding, trade networks, and maintaining Arab cultural identity in the Sahara.',
+        share: 0.15,
+        population: '≈ 0.3M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 6.0'
       }
     ]
   },
@@ -2050,6 +2339,19 @@ export const regions: Region[] = [
         population: '≈ 0.2M',
         dominantReligion: 'Christianity',
         totalFertilityRate: '≈ 3.5'
+      },
+      {
+        id: 'samoa_chinese_europeans',
+        ethnicityName: 'Chinese and European Communities (Samoa)',
+        region: 'Chinese and European communities in Apia',
+        fact1:
+          'Small Chinese and European communities in Samoa maintain business networks and cultural connections to home countries.',
+        fact2:
+          'Retail trade, plantation heritage, and maintaining distinct cultural identities in Samoa.',
+        share: 0.03,
+        population: '≈ 0.006M',
+        dominantReligion: 'Christianity / Buddhism',
+        totalFertilityRate: '≈ 2.0'
       }
     ]
   },
@@ -2114,6 +2416,19 @@ export const regions: Region[] = [
         population: '≈ 0.3M',
         dominantReligion: 'Christianity / Traditional',
         totalFertilityRate: '≈ 2.6'
+      },
+      {
+        id: 'botswana_kalanga',
+        ethnicityName: 'Kalanga Communities (Botswana)',
+        region: 'Kalanga communities in eastern Botswana',
+        fact1:
+          'Kalanga maintain Kalanga language, traditional practices, and connections to Zimbabwe.',
+        fact2:
+          'Cattle herding, traditional ceremonies, and maintaining Kalanga cultural identity.',
+        share: 0.08,
+        population: '≈ 0.03M',
+        dominantReligion: 'Christianity / Traditional',
+        totalFertilityRate: '≈ 2.8'
       }
     ]
   },
@@ -2384,6 +2699,19 @@ export const regions: Region[] = [
         population: '≈ 1.8M',
         dominantReligion: 'Catholicism',
         totalFertilityRate: '≈ 1.3'
+      },
+      {
+        id: 'warsaw_ukrainians',
+        ethnicityName: 'Ukrainian Communities (Warsaw)',
+        region: 'Ukrainian communities in Warsaw',
+        fact1:
+          'Ukrainian migrants in Warsaw work in construction, services, and other sectors while maintaining connections to Ukraine.',
+        fact2:
+          'Ukrainian churches, cultural associations, and maintaining Ukrainian identity in Poland.',
+        share: 0.03,
+        population: '≈ 0.06M',
+        dominantReligion: 'Orthodox Christianity',
+        totalFertilityRate: '≈ 1.4'
       }
     ]
   },
@@ -2448,6 +2776,19 @@ export const regions: Region[] = [
         population: '≈ 0.8M',
         dominantReligion: 'Islam',
         totalFertilityRate: '≈ 3.2'
+      },
+      {
+        id: 'dushanbe_uzbeks',
+        ethnicityName: 'Dushanbe Uzbeks',
+        region: 'Uzbek communities in Dushanbe and central Tajikistan',
+        fact1:
+          'Uzbek communities in Tajikistan maintain Uzbek language, Islamic traditions, and connections to Uzbekistan.',
+        fact2:
+          'Uzbek neighborhoods, bazaars, and maintaining Uzbek cultural identity in Tajikistan.',
+        share: 0.12,
+        population: '≈ 0.11M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 3.0'
       }
     ]
   },
@@ -2512,6 +2853,32 @@ export const regions: Region[] = [
         population: '≈ 14M',
         dominantReligion: 'Shinto / Buddhism',
         totalFertilityRate: '≈ 1.2'
+      },
+      {
+        id: 'tokyo_korean_japanese',
+        ethnicityName: 'Korean Japanese (Tokyo)',
+        region: 'Korean communities in Tokyo',
+        fact1:
+          'Korean Japanese maintain Korean cultural practices, language, and connections to Korea while being Japanese citizens.',
+        fact2:
+          'Korean schools, restaurants, and maintaining Korean identity in Japan.',
+        share: 0.05,
+        population: '≈ 0.7M',
+        dominantReligion: 'Buddhism / Christianity',
+        totalFertilityRate: '≈ 1.1'
+      },
+      {
+        id: 'tokyo_chinese_communities',
+        ethnicityName: 'Chinese Communities (Tokyo)',
+        region: 'Chinese communities in Tokyo',
+        fact1:
+          'Chinese communities in Tokyo include students, workers, and long-term residents maintaining Chinese cultural practices.',
+        fact2:
+          'Chinatown, Chinese schools, and maintaining connections to China.',
+        share: 0.03,
+        population: '≈ 0.4M',
+        dominantReligion: 'Buddhism / Christianity',
+        totalFertilityRate: '≈ 1.0'
       }
     ]
   },
@@ -2537,6 +2904,19 @@ export const regions: Region[] = [
         population: '≈ 9M',
         dominantReligion: 'Shinto / Buddhism',
         totalFertilityRate: '≈ 1.3'
+      },
+      {
+        id: 'osaka_korean_japanese',
+        ethnicityName: 'Korean Japanese (Osaka)',
+        region: 'Korean communities in Osaka',
+        fact1:
+          'Osaka has one of Japan\'s largest Korean communities, maintaining Korean cultural practices and language.',
+        fact2:
+          'Koreatown, Korean schools, and maintaining Korean identity in Kansai.',
+        share: 0.07,
+        population: '≈ 0.6M',
+        dominantReligion: 'Buddhism / Christianity',
+        totalFertilityRate: '≈ 1.2'
       }
     ]
   },
@@ -2563,6 +2943,19 @@ export const regions: Region[] = [
         population: '≈ 10M',
         dominantReligion: 'Buddhism / Christianity',
         totalFertilityRate: '≈ 0.7'
+      },
+      {
+        id: 'seoul_chinese_communities',
+        ethnicityName: 'Chinese Communities (Seoul)',
+        region: 'Chinese communities in Seoul',
+        fact1:
+          'Chinese communities in Seoul include students, workers, and long-term residents from China.',
+        fact2:
+          'Chinatown, Chinese schools, and maintaining connections to China.',
+        share: 0.03,
+        population: '≈ 0.3M',
+        dominantReligion: 'Buddhism / Christianity',
+        totalFertilityRate: '≈ 0.8'
       }
     ]
   },
@@ -2588,6 +2981,19 @@ export const regions: Region[] = [
         population: '≈ 3.5M',
         dominantReligion: 'Buddhism / Christianity',
         totalFertilityRate: '≈ 0.8'
+      },
+      {
+        id: 'busan_chinese_communities',
+        ethnicityName: 'Chinese Communities (Busan)',
+        region: 'Chinese communities in Busan',
+        fact1:
+          'Chinese communities in Busan include students, workers, and long-term residents from China.',
+        fact2:
+          'Chinese businesses, cultural associations, and maintaining connections to China.',
+        share: 0.03,
+        population: '≈ 0.1M',
+        dominantReligion: 'Buddhism / Christianity',
+        totalFertilityRate: '≈ 0.9'
       }
     ]
   },
@@ -2665,6 +3071,19 @@ export const regions: Region[] = [
         population: '≈ 3.5M',
         dominantReligion: 'Islam',
         totalFertilityRate: '≈ 2.0'
+      },
+      {
+        id: 'yogyakarta_chinese',
+        ethnicityName: 'Chinese Indonesians (Yogyakarta)',
+        region: 'Chinese communities in Yogyakarta',
+        fact1:
+          'Chinese Indonesians in Yogyakarta maintain Chinese cultural practices, language, and business networks.',
+        fact2:
+          'Chinese temples, schools, and maintaining Chinese identity in Java.',
+        share: 0.08,
+        population: '≈ 0.3M',
+        dominantReligion: 'Buddhism / Christianity',
+        totalFertilityRate: '≈ 1.8'
       }
     ]
   },
@@ -2819,6 +3238,19 @@ export const regions: Region[] = [
         population: '≈ 3M',
         dominantReligion: 'Catholicism',
         totalFertilityRate: '≈ 2.4'
+      },
+      {
+        id: 'cebu_chinese_filipinos',
+        ethnicityName: 'Chinese Filipinos (Cebu)',
+        region: 'Chinese-Filipino communities in Cebu',
+        fact1:
+          'Chinese Filipinos in Cebu maintain Chinese cultural practices, language, and business networks.',
+        fact2:
+          'Chinese temples, business associations, and maintaining Chinese identity in the Visayas.',
+        share: 0.08,
+        population: '≈ 0.25M',
+        dominantReligion: 'Buddhism / Catholicism',
+        totalFertilityRate: '≈ 2.0'
       }
     ]
   },
@@ -2961,6 +3393,19 @@ export const regions: Region[] = [
         population: '≈ 5M',
         dominantReligion: 'Buddhism / Folk Religion',
         totalFertilityRate: '≈ 1.6'
+      },
+      {
+        id: 'hanoi_muong',
+        ethnicityName: 'Hanoi Muong',
+        region: 'Muong communities in Hanoi and surrounding highlands',
+        fact1:
+          'Muong maintain Muong language, traditional agriculture, and connections to Vietnamese culture.',
+        fact2:
+          'Traditional stilt houses, migration to Hanoi for work, and maintaining Muong identity.',
+        share: 0.03,
+        population: '≈ 0.15M',
+        dominantReligion: 'Buddhism / Folk Religion',
+        totalFertilityRate: '≈ 1.8'
       }
     ]
   },
@@ -3026,6 +3471,32 @@ export const regions: Region[] = [
         population: '≈ 2M',
         dominantReligion: 'Buddhism (Theravada)',
         totalFertilityRate: '≈ 2.5'
+      },
+      {
+        id: 'phnom_penh_chinese',
+        ethnicityName: 'Phnom Penh Chinese',
+        region: 'Chinese communities in Phnom Penh',
+        fact1:
+          'Chinese communities in Phnom Penh maintain Chinese cultural practices, language, and business networks.',
+        fact2:
+          'Chinese temples, business associations, and maintaining Chinese identity in Cambodia.',
+        share: 0.05,
+        population: '≈ 0.1M',
+        dominantReligion: 'Buddhism / Taoism',
+        totalFertilityRate: '≈ 2.0'
+      },
+      {
+        id: 'phnom_penh_vietnamese',
+        ethnicityName: 'Phnom Penh Vietnamese',
+        region: 'Vietnamese communities in Phnom Penh',
+        fact1:
+          'Vietnamese communities in Phnom Penh maintain Vietnamese language and cultural practices.',
+        fact2:
+          'Vietnamese businesses, temples, and maintaining Vietnamese identity in Cambodia.',
+        share: 0.03,
+        population: '≈ 0.06M',
+        dominantReligion: 'Buddhism / Catholicism',
+        totalFertilityRate: '≈ 2.2'
       }
     ]
   },
@@ -3630,6 +4101,45 @@ export const regions: Region[] = [
         population: '≈ 0.35M',
         dominantReligion: 'Buddhism / Christianity',
         totalFertilityRate: '≈ 1.2'
+      },
+      {
+        id: 'toronto_filipino',
+        ethnicityName: 'Toronto Filipino Canadians',
+        region: 'Filipino communities in Toronto',
+        fact1:
+          'Toronto Filipinos maintain Tagalog and other Philippine languages, Catholic practices, and Filipino cultural traditions.',
+        fact2:
+          'Filipino community centers, Catholic churches, and maintaining connections to the Philippines.',
+        share: 0.08,
+        population: '≈ 0.25M',
+        dominantReligion: 'Catholicism',
+        totalFertilityRate: '≈ 1.4'
+      },
+      {
+        id: 'toronto_black_communities',
+        ethnicityName: 'Toronto Black Communities',
+        region: 'Black communities in Toronto (Caribbean, African)',
+        fact1:
+          'Toronto Black communities include Caribbean and African immigrants maintaining diverse cultural practices.',
+        fact2:
+          'Caribbean festivals, African cultural centers, and maintaining connections to home countries.',
+        share: 0.08,
+        population: '≈ 0.25M',
+        dominantReligion: 'Christianity',
+        totalFertilityRate: '≈ 1.5'
+      },
+      {
+        id: 'toronto_latin_american',
+        ethnicityName: 'Toronto Latin American Communities',
+        region: 'Latin American communities in Toronto',
+        fact1:
+          'Toronto Latin Americans maintain Spanish and Portuguese languages and diverse Latin American cultural practices.',
+        fact2:
+          'Latin American festivals, community centers, and maintaining connections to Latin America.',
+        share: 0.05,
+        population: '≈ 0.15M',
+        dominantReligion: 'Catholicism',
+        totalFertilityRate: '≈ 1.6'
       }
     ]
   },
@@ -5385,6 +5895,19 @@ export const regions: Region[] = [
         population: '≈ 8M',
         dominantReligion: 'Buddhism / Folk Religion',
         totalFertilityRate: '≈ 1.0'
+      },
+      {
+        id: 'xian_hui_muslims',
+        ethnicityName: 'Xi\'an Hui Muslims',
+        region: 'Hui Muslim communities in Xi\'an',
+        fact1:
+          'Xi\'an has a significant Hui Muslim community maintaining Chinese language with Islamic practices and historic connections to Silk Road trade.',
+        fact2:
+          'Great Mosque of Xi\'an, halal food markets, and maintaining Hui cultural identity in central China.',
+        share: 0.03,
+        population: '≈ 0.25M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 1.2'
       }
     ]
   },
@@ -5410,6 +5933,32 @@ export const regions: Region[] = [
         population: '≈ 6.5M',
         dominantReligion: 'Buddhism / Folk Religion',
         totalFertilityRate: '≈ 0.8'
+      },
+      {
+        id: 'hong_kong_filipino_communities',
+        ethnicityName: 'Filipino Communities (Hong Kong)',
+        region: 'Filipino migrant workers and residents in Hong Kong',
+        fact1:
+          'Filipino communities in Hong Kong include domestic workers, professionals, and long-term residents maintaining Filipino cultural practices.',
+        fact2:
+          'Catholic churches, Filipino food markets, and maintaining connections to the Philippines.',
+        share: 0.05,
+        population: '≈ 0.35M',
+        dominantReligion: 'Catholicism',
+        totalFertilityRate: '≈ 1.5'
+      },
+      {
+        id: 'hong_kong_indonesian_communities',
+        ethnicityName: 'Indonesian Communities (Hong Kong)',
+        region: 'Indonesian migrant workers in Hong Kong',
+        fact1:
+          'Indonesian communities in Hong Kong include domestic workers and professionals maintaining Indonesian cultural practices.',
+        fact2:
+          'Islamic centers, Indonesian food, and maintaining connections to Indonesia.',
+        share: 0.03,
+        population: '≈ 0.2M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 1.6'
       }
     ]
   },
@@ -5436,6 +5985,19 @@ export const regions: Region[] = [
         population: '≈ 3.5M',
         dominantReligion: 'Hinduism',
         totalFertilityRate: '≈ 2.1'
+      },
+      {
+        id: 'jaipur_muslims',
+        ethnicityName: 'Jaipur Muslims',
+        region: 'Muslim communities in Jaipur',
+        fact1:
+          'Muslim communities in Jaipur maintain Urdu and Hindi languages, Islamic practices, and connections to historic Mughal heritage.',
+        fact2:
+          'Islamic architecture, halal food markets, and maintaining Muslim identity in Jaipur.',
+        share: 0.12,
+        population: '≈ 0.5M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 2.4'
       }
     ]
   },
@@ -5538,6 +6100,19 @@ export const regions: Region[] = [
         population: '≈ 4M',
         dominantReligion: 'Hinduism (Balinese)',
         totalFertilityRate: '≈ 2.0'
+      },
+      {
+        id: 'bali_javanese_migrants',
+        ethnicityName: 'Javanese Migrants (Bali)',
+        region: 'Javanese communities in Bali',
+        fact1:
+          'Javanese migrants to Bali maintain Javanese language and cultural practices while adapting to Balinese context.',
+        fact2:
+          'Migration for work, maintaining Javanese identity, and integration into Balinese society.',
+        share: 0.08,
+        population: '≈ 0.35M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 2.1'
       }
     ]
   },
@@ -5577,6 +6152,32 @@ export const regions: Region[] = [
         population: '≈ 0.75M',
         dominantReligion: 'Christianity',
         totalFertilityRate: '≈ 4.0'
+      },
+      {
+        id: 'douala_dual',
+        ethnicityName: 'Douala Duala',
+        region: 'Duala communities in Douala',
+        fact1:
+          'Duala are the original inhabitants of the Douala area, maintaining Duala language and coastal trading traditions.',
+        fact2:
+          'Port trade, fishing, and maintaining Duala cultural identity in the city.',
+        share: 0.15,
+        population: '≈ 0.45M',
+        dominantReligion: 'Christianity',
+        totalFertilityRate: '≈ 4.0'
+      },
+      {
+        id: 'douala_bassa',
+        ethnicityName: 'Douala Bassa',
+        region: 'Bassa communities in Douala',
+        fact1:
+          'Bassa communities maintain Bassa language and cultural practices in Douala.',
+        fact2:
+          'Migration from interior regions, maintaining Bassa identity, and urban adaptation.',
+        share: 0.12,
+        population: '≈ 0.35M',
+        dominantReligion: 'Christianity',
+        totalFertilityRate: '≈ 4.1'
       }
     ]
   },
@@ -5615,6 +6216,32 @@ export const regions: Region[] = [
         population: '≈ 1.25M',
         dominantReligion: 'Christianity / Traditional',
         totalFertilityRate: '≈ 3.6'
+      },
+      {
+        id: 'abidjan_dioula',
+        ethnicityName: 'Abidjan Dioula',
+        region: 'Dioula communities in Abidjan',
+        fact1:
+          'Dioula communities maintain Dioula language, Islamic practices, and trading traditions in Abidjan.',
+        fact2:
+          'Islamic centers, trading networks, and maintaining Dioula identity in the city.',
+        share: 0.15,
+        population: '≈ 0.75M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 3.8'
+      },
+      {
+        id: 'abidjan_senoufo',
+        ethnicityName: 'Abidjan Senoufo',
+        region: 'Senoufo communities in Abidjan',
+        fact1:
+          'Senoufo communities maintain Senoufo language and cultural practices in Abidjan.',
+        fact2:
+          'Migration from northern Ivory Coast, maintaining Senoufo identity, and urban adaptation.',
+        share: 0.12,
+        population: '≈ 0.6M',
+        dominantReligion: 'Traditional / Islam',
+        totalFertilityRate: '≈ 3.7'
       }
     ]
   },
@@ -6576,6 +7203,19 @@ export const regions: Region[] = [
         population: '≈ 400M',
         dominantReligion: 'Buddhism / Folk Religion',
         totalFertilityRate: '≈ 1.0'
+      },
+      {
+        id: 'north_plain_hui',
+        ethnicityName: 'Hui Muslims (North China Plain)',
+        region: 'Hui Muslim communities across the North China Plain',
+        fact1:
+          'Hui communities maintain Chinese language with Islamic practices, with historic roots in Silk Road trade and migration.',
+        fact2:
+          'Halal food markets, Islamic mosques, and maintaining Hui cultural identity in northern China.',
+        share: 0.03,
+        population: '≈ 12M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 1.2'
       }
     ]
   },
@@ -6599,6 +7239,19 @@ export const regions: Region[] = [
         population: '≈ 500M',
         dominantReligion: 'Buddhism / Folk Religion',
         totalFertilityRate: '≈ 1.1'
+      },
+      {
+        id: 'south_coastal_minorities',
+        ethnicityName: 'Minority Groups (South China Coastal)',
+        region: 'Zhuang, Miao, and other minority communities in southern coastal China',
+        fact1:
+          'Various minority groups maintain distinct languages and cultural practices in southern coastal regions.',
+        fact2:
+          'Traditional festivals, minority languages, and maintaining cultural identity alongside Han communities.',
+        share: 0.03,
+        population: '≈ 15M',
+        dominantReligion: 'Buddhism / Folk Religion / Christianity',
+        totalFertilityRate: '≈ 1.3'
       }
     ]
   },
@@ -6622,6 +7275,45 @@ export const regions: Region[] = [
         population: '≈ 12M',
         dominantReligion: 'Islam',
         totalFertilityRate: '≈ 1.8'
+      },
+      {
+        id: 'xinjiang_han_chinese',
+        ethnicityName: 'Han Chinese (Xinjiang)',
+        region: 'Han Chinese communities in Xinjiang',
+        fact1:
+          'Han Chinese in Xinjiang include government workers, businesspeople, and migrants from other provinces.',
+        fact2:
+          'Mandarin language, maintaining connections to other Chinese regions, and urban adaptation.',
+        share: 0.4,
+        population: '≈ 10.5M',
+        dominantReligion: 'Buddhism / Folk Religion',
+        totalFertilityRate: '≈ 1.0'
+      },
+      {
+        id: 'xinjiang_kazakh',
+        ethnicityName: 'Kazakhs (Xinjiang)',
+        region: 'Kazakh communities in northern Xinjiang',
+        fact1:
+          'Kazakhs in Xinjiang maintain Kazakh language, nomadic traditions, and Islamic practices.',
+        fact2:
+          'Pastoralism, cross-border connections to Kazakhstan, and maintaining Kazakh cultural identity.',
+        share: 0.08,
+        population: '≈ 2M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 2.0'
+      },
+      {
+        id: 'xinjiang_hui',
+        ethnicityName: 'Hui (Xinjiang)',
+        region: 'Hui Muslim communities in Xinjiang',
+        fact1:
+          'Hui in Xinjiang maintain Chinese language with Islamic practices and connections to other Hui communities in China.',
+        fact2:
+          'Islamic mosques, Chinese-Islamic cuisine, and maintaining Hui identity in Xinjiang.',
+        share: 0.05,
+        population: '≈ 1.3M',
+        dominantReligion: 'Islam',
+        totalFertilityRate: '≈ 1.5'
       }
     ]
   },
@@ -6645,6 +7337,19 @@ export const regions: Region[] = [
         population: '≈ 6M',
         dominantReligion: 'Buddhism (Tibetan)',
         totalFertilityRate: '≈ 1.5'
+      },
+      {
+        id: 'tibet_han_chinese',
+        ethnicityName: 'Han Chinese (Tibet)',
+        region: 'Han Chinese communities in Tibet',
+        fact1:
+          'Han Chinese in Tibet include government workers, businesspeople, and migrants from other provinces.',
+        fact2:
+          'Mandarin language, maintaining connections to other Chinese regions, and urban adaptation in Lhasa and other cities.',
+        share: 0.08,
+        population: '≈ 0.5M',
+        dominantReligion: 'Buddhism / Folk Religion',
+        totalFertilityRate: '≈ 1.0'
       }
     ]
   },

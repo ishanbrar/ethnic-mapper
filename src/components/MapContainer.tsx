@@ -63,7 +63,8 @@ const unclusteredPointLayer: any = {
     'circle-color': '#22c55e',
     'circle-radius': 12,
     'circle-stroke-width': 2,
-    'circle-stroke-color': '#0f172a'
+    'circle-stroke-color': '#0f172a',
+    'circle-opacity': 0.4
   }
 };
 
