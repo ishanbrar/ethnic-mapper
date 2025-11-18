@@ -1,7 +1,7 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Ethnicity } from '@/types/ethnicity';
 import SidebarPanel from '@/components/SidebarPanel';
 
@@ -14,6 +14,8 @@ export default function HomePage() {
     Ethnicity[] | null
   >(null);
   const [isMobilePanelOpen, setIsMobilePanelOpen] = useState(false);
+  const [showScrollIndicator, setShowScrollIndicator] = useState(false);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Auto-open mobile panel when selection is made
   const handleSelectEthnicity = (ethnicities: Ethnicity[] | null) => {
@@ -22,6 +24,40 @@ export default function HomePage() {
       setIsMobilePanelOpen(true);
     }
   };
+
+  // Check if scroll indicator should be shown
+  useEffect(() => {
+    if (!isMobilePanelOpen || !scrollContainerRef.current) {
+      setShowScrollIndicator(false);
+      return;
+    }
+
+    const checkScroll = () => {
+      const container = scrollContainerRef.current;
+      if (!container) return;
+
+      const hasScroll = container.scrollHeight > container.clientHeight;
+      const isAtBottom =
+        container.scrollHeight - container.scrollTop <=
+        container.clientHeight + 10; // 10px threshold
+
+      setShowScrollIndicator(hasScroll && !isAtBottom);
+    };
+
+    // Check initially and on scroll
+    checkScroll();
+    const container = scrollContainerRef.current;
+    container.addEventListener('scroll', checkScroll);
+    
+    // Also check when content changes
+    const resizeObserver = new ResizeObserver(checkScroll);
+    resizeObserver.observe(container);
+
+    return () => {
+      container.removeEventListener('scroll', checkScroll);
+      resizeObserver.disconnect();
+    };
+  }, [isMobilePanelOpen, selectedEthnicities]);
 
   return (
     <main className="mx-auto flex min-h-[calc(100vh-64px)] max-w-6xl gap-4 px-2 py-2 md:px-4 md:py-4 lg:py-6">
@@ -37,7 +73,7 @@ export default function HomePage() {
       {/* Mobile Bottom Sheet */}
       {selectedEthnicities && selectedEthnicities.length > 0 && (
         <>
-          {/* Backdrop */}
+          {/* Backdrop - clickable to close */}
           <div
             className={`fixed inset-0 z-40 bg-black/50 transition-opacity md:hidden ${
               isMobilePanelOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
@@ -55,6 +91,12 @@ export default function HomePage() {
             style={{
               paddingBottom: 'env(safe-area-inset-bottom, 0)'
             }}
+            onClick={(e) => {
+              // Close when tapping on the backdrop area (outside the content)
+              if (e.target === e.currentTarget) {
+                setIsMobilePanelOpen(false);
+              }
+            }}
           >
             {/* Drag Handle */}
             <div className="flex items-center justify-center border-b border-slate-800/70 bg-slate-900/50 p-2">
@@ -65,9 +107,41 @@ export default function HomePage() {
               />
             </div>
             
-            {/* Content */}
-            <div className="overflow-y-auto" style={{ maxHeight: 'calc(85vh - 48px)' }}>
-              <SidebarPanel selectedEthnicities={selectedEthnicities} />
+            {/* Content with scroll indicator */}
+            <div className="relative">
+              <div
+                ref={scrollContainerRef}
+                className="overflow-y-auto"
+                style={{ maxHeight: 'calc(85vh - 48px)' }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <SidebarPanel selectedEthnicities={selectedEthnicities} />
+              </div>
+              
+              {/* Scroll Indicator - only on mobile when there's more content */}
+              {showScrollIndicator && (
+                <div className="absolute bottom-0 left-0 right-0 pointer-events-none md:hidden">
+                  <div className="flex items-center justify-center bg-gradient-to-t from-slate-950/90 to-transparent py-4">
+                    <div className="flex flex-col items-center gap-1 text-emerald-400/80">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5 animate-bounce"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                        />
+                      </svg>
+                      <span className="text-xs font-medium">Scroll for more</span>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 
