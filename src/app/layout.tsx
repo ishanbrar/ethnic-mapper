@@ -3,7 +3,7 @@ import './globals.css';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 export const metadata: Metadata = {
-  title: 'Global Ethnic Atlas',
+  title: 'EthnoMapper',
   description:
     'An interactive, high-performance global map visualizing ethnic groups with clustered insights.'
 };
@@ -21,7 +21,7 @@ export default function RootLayout({
             <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
               <div>
                 <h1 className="text-lg font-semibold tracking-tight text-slate-50">
-                  Global Ethnic Atlas
+                  EthnoMapper
                 </h1>
                 <p className="text-xs text-slate-400">
                   Explore clustered ethnic groups worldwide. Click clusters to
