@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background text-slate-100 antialiased;
+}
+
+a {
+  @apply text-accent hover:text-emerald-400 transition-colors;
+}
+
+

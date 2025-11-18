@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sikho Mode Solutions - Mapper</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    /* Make iframe fill the container */
+    .mapper-container {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+    .mapper-wrapper {
+      width: 100%;
+      height: calc(100vh - 60px); /* Account for navbar */
+      margin-top: 60px; /* Height of navbar */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button"><b>$M$</b> Sikho Mode Solutions</a>
+      <div class="w3-right w3-hide-small">
+        <a href="mapper.html" class="w3-bar-item w3-button">Mapper</a>
+        <a href="index.html#projects" class="w3-bar-item w3-button">Products</a>
+        <a href="team.html" class="w3-bar-item w3-button">Team</a>
+        <a href="index.html#contact" class="w3-bar-item w3-button">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mapper iframe container -->
+  <div class="mapper-wrapper">
+    <!-- Replace YOUR_DEPLOYED_URL with your actual Next.js deployment URL -->
+    <!-- Examples: https://your-app.vercel.app or https://your-app.netlify.app -->
+    <iframe 
+      src="YOUR_DEPLOYED_URL" 
+      class="mapper-container"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
+

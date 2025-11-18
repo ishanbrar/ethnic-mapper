@@ -1,0 +1,1159 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [23.7, 68.5] },
+      "properties": {
+        "id": "sami_001",
+        "ethnicityName": "Sámi People",
+        "region": "Arctic Fennoscandia (Norway, Sweden, Finland, Russia)",
+        "fact1": "The Sámi are Indigenous reindeer herders and fishers of northern Fennoscandia with distinct Uralic languages.",
+        "fact2": "Traditional Sámi culture centers on seasonal migrations, joik singing, and duodji handicrafts."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [10.0, 62.0] },
+      "properties": {
+        "id": "norwegian_002",
+        "ethnicityName": "Norwegians",
+        "region": "Norway, Scandinavia",
+        "fact1": "Norwegians are a North Germanic people shaped by maritime trade, fjord settlements, and Viking heritage.",
+        "fact2": "Modern Norwegian identity blends social democracy, outdoor culture, and strong local dialect traditions."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [18.0, 60.0] },
+      "properties": {
+        "id": "swedish_003",
+        "ethnicityName": "Swedes",
+        "region": "Sweden, Scandinavia",
+        "fact1": "Swedes are a North Germanic ethnic group known for Lutheran heritage and egalitarian social norms.",
+        "fact2": "Contemporary Swedish culture emphasizes design minimalism, environmentalism, and collective welfare values."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [24.9, 60.2] },
+      "properties": {
+        "id": "finn_004",
+        "ethnicityName": "Finns",
+        "region": "Finland and Finnish diaspora",
+        "fact1": "Finns are a Finno-Ugric people with a language distinct from neighboring Scandinavian tongues.",
+        "fact2": "Finnish culture values silence, sauna rituals, and close ties to forested lake landscapes."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [25.3, 54.7] },
+      "properties": {
+        "id": "lithuanian_005",
+        "ethnicityName": "Lithuanians",
+        "region": "Baltic region, Lithuania",
+        "fact1": "Lithuanians are a Baltic people whose language preserves many archaic Indo-European features.",
+        "fact2": "Folk song traditions, pagan Baltic symbols, and Catholic festivals coexist in modern Lithuanian culture."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [24.1, 56.9] },
+      "properties": {
+        "id": "latvian_006",
+        "ethnicityName": "Latvians",
+        "region": "Latvia, Baltic region",
+        "fact1": "Latvians are a Baltic ethnic group historically shaped by Hanseatic trade and agrarian life.",
+        "fact2": "Midsummer solstice celebrations, folk costumes, and choral singing remain central cultural symbols."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [25.3, 58.6] },
+      "properties": {
+        "id": "estonian_007",
+        "ethnicityName": "Estonians",
+        "region": "Estonia, Baltic Sea coast",
+        "fact1": "Estonians are a Finno-Ugric people with cultural links to Finns and ancient forest settlements.",
+        "fact2": "A \"singing revolution\" helped restore Estonian independence, highlighting the power of choral traditions."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [14.5, 46.1] },
+      "properties": {
+        "id": "slovene_008",
+        "ethnicityName": "Slovenes",
+        "region": "Slovenia and neighboring Alpine regions",
+        "fact1": "Slovenes are a South Slavic people whose homeland bridges Alpine, Pannonian, and Adriatic zones.",
+        "fact2": "Folk dances, polka music, and vineyard culture shape many rural Slovenian identities."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [14.5, 48.2] },
+      "properties": {
+        "id": "austrian_009",
+        "ethnicityName": "Austrians",
+        "region": "Austria, Central Europe",
+        "fact1": "Austrians are a German-speaking people deeply influenced by Habsburg imperial history.",
+        "fact2": "Classical music, coffeehouse culture, and alpine village traditions coexist in Austrian life."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [8.3, 46.9] },
+      "properties": {
+        "id": "swiss_010",
+        "ethnicityName": "Swiss (German-speaking)",
+        "region": "Alpine Switzerland",
+        "fact1": "German-speaking Swiss communities developed around mountain valleys, trade routes, and urban cantons.",
+        "fact2": "Direct democracy, multilingualism, and local autonomy are cornerstones of Swiss civic culture."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.35, 48.85] },
+      "properties": {
+        "id": "french_011",
+        "ethnicityName": "French",
+        "region": "France and global Francophone diaspora",
+        "fact1": "The French are a Western European people shaped by Roman, Celtic, and Frankish legacies.",
+        "fact2": "Cuisine, philosophy, fashion, and language policy play strong roles in French national identity."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-3.7, 40.4] },
+      "properties": {
+        "id": "castilian_012",
+        "ethnicityName": "Castilians",
+        "region": "Central Spain (Castile) and Spanish-speaking world",
+        "fact1": "Castilians historically led the unification of Spain and the expansion of the Spanish language.",
+        "fact2": "Cervantes, Golden Age literature, and Madrid urban culture shape Castilian identity narratives."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-1.65, 42.8] },
+      "properties": {
+        "id": "basque_013",
+        "ethnicityName": "Basques",
+        "region": "Western Pyrenees, Spain and France",
+        "fact1": "Basques speak Euskara, a language isolate unrelated to surrounding Indo-European tongues.",
+        "fact2": "Rural sports, txalaparta percussion, and strong local institutions support Basque cultural resilience."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [1.5, 42.7] },
+      "properties": {
+        "id": "catalan_014",
+        "ethnicityName": "Catalans",
+        "region": "Catalonia, Valencia, Balearic Islands, Andorra",
+        "fact1": "Catalans are a Romance-speaking people with distinct language, civil law, and political traditions.",
+        "fact2": "Castells human towers, senyera flags, and urban modernism define much Catalan public culture."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.5, 41.9] },
+      "properties": {
+        "id": "italian_015",
+        "ethnicityName": "Italians",
+        "region": "Italy and extensive global diaspora",
+        "fact1": "Italians descend from diverse regional cultures unified under a modern nation-state in the 19th century.",
+        "fact2": "Family networks, food rituals, and strong regional identities anchor Italian everyday life."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [19.0, 47.5] },
+      "properties": {
+        "id": "hungarian_016",
+        "ethnicityName": "Hungarians (Magyars)",
+        "region": "Hungary and Carpathian Basin",
+        "fact1": "Hungarians are a Uralic-speaking people whose medieval kingdom shaped Central European politics.",
+        "fact2": "Csárdás dance, paprika cuisine, and Budapest café culture are iconic Hungarian markers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [21.0, 52.2] },
+      "properties": {
+        "id": "polish_017",
+        "ethnicityName": "Poles",
+        "region": "Poland and Polish diaspora communities",
+        "fact1": "Poles are a West Slavic people whose statehood has shifted through partitions and uprisings.",
+        "fact2": "Catholic pilgrimages, solidarity movements, and folk dances underpin Polish cultural memory."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [37.6, 55.75] },
+      "properties": {
+        "id": "russian_018",
+        "ethnicityName": "Russians",
+        "region": "European Russia and Siberia",
+        "fact1": "Russians are an East Slavic people whose culture spans from Orthodox Christianity to Soviet legacies.",
+        "fact2": "Literature, ballet, and dacha countryside life remain important symbols in Russian identity debates."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [30.5, 50.45] },
+      "properties": {
+        "id": "ukrainian_019",
+        "ethnicityName": "Ukrainians",
+        "region": "Ukraine and global Ukrainian diaspora",
+        "fact1": "Ukrainians are an East Slavic people with strong Cossack, agrarian, and folk song traditions.",
+        "fact2": "Vyshyvanka embroidery and vibrant village rituals express Ukrainian cultural continuity and resilience."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [27.6, 53.9] },
+      "properties": {
+        "id": "belarusian_020",
+        "ethnicityName": "Belarusians",
+        "region": "Belarus and nearby borderlands",
+        "fact1": "Belarusians are an East Slavic group with historical ties to the Grand Duchy of Lithuania.",
+        "fact2": "Rural crafts, forest folklore, and bilingualism shape many Belarusian local identities."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [44.8, 41.7] },
+      "properties": {
+        "id": "georgian_021",
+        "ethnicityName": "Georgians (Kartvelians)",
+        "region": "Georgia, South Caucasus",
+        "fact1": "Georgians are a Kartvelian-speaking people known for ancient wine-making traditions.",
+        "fact2": "Polyphonic singing and supra feasts with toasting rituals structure Georgian social life."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [49.9, 40.4] },
+      "properties": {
+        "id": "azerbaijani_022",
+        "ethnicityName": "Azerbaijanis",
+        "region": "Azerbaijan and northwest Iran",
+        "fact1": "Azerbaijanis are a Turkic-speaking people shaped by Caspian trade and pastoralism.",
+        "fact2": "Mugham music, carpet weaving, and tea culture are central to Azerbaijani aesthetics."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [44.0, 33.3] },
+      "properties": {
+        "id": "arab_iraqi_023",
+        "ethnicityName": "Iraqi Arabs",
+        "region": "Iraq, Mesopotamian plain",
+        "fact1": "Iraqi Arabs trace cultural roots to ancient Mesopotamian civilizations and Islamic scholarship.",
+        "fact2": "Baghdad has long been a center of poetry, theology, and urban café storytelling traditions."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [46.7, 24.7] },
+      "properties": {
+        "id": "arab_najdi_024",
+        "ethnicityName": "Najdi Arabs",
+        "region": "Central Arabian Peninsula (Najd)",
+        "fact1": "Najdi Arabs historically practiced oasis farming and nomadic camel herding in central Arabia.",
+        "fact2": "Poetic recitation and tribal lineages remain important in Najdi social organization and prestige."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.5, 31.9] },
+      "properties": {
+        "id": "palestinian_025",
+        "ethnicityName": "Palestinians",
+        "region": "Historic Palestine and global diaspora",
+        "fact1": "Palestinians are an Arab people with deep village, coastal, and urban traditions in the Levant.",
+        "fact2": "Tātreez embroidery, olive harvests, and oral histories sustain Palestinian communal memory worldwide."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.8, 31.8] },
+      "properties": {
+        "id": "mizrahi_026",
+        "ethnicityName": "Mizrahi Jews",
+        "region": "Israel and Middle Eastern Jewish diaspora",
+        "fact1": "Mizrahi Jews descend from historic Jewish communities of the Middle East and North Africa.",
+        "fact2": "Piyyut liturgical music, regional cuisines, and Judeo-Arabic dialects mark Mizrahi heritage practices."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [51.4, 35.7] },
+      "properties": {
+        "id": "persian_027",
+        "ethnicityName": "Persians",
+        "region": "Iranian plateau and diaspora",
+        "fact1": "Persians speak Farsi and inherit traditions from Achaemenid, Sasanian, and Islamic empires.",
+        "fact2": "Nowruz spring celebrations, classical poetry, and courtyard architecture define Persian cultural worlds."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [44.0, 36.2] },
+      "properties": {
+        "id": "kurd_028",
+        "ethnicityName": "Kurds",
+        "region": "Mountain regions of Turkey, Iraq, Iran, and Syria",
+        "fact1": "Kurds are an Iranian-speaking people with strong mountain pastoral and tribal traditions.",
+        "fact2": "Newroz fires, colorful dress, and storytelling sustain Kurdish identity across national borders."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [90.4, 23.8] },
+      "properties": {
+        "id": "bengali_029",
+        "ethnicityName": "Bengalis",
+        "region": "Bangladesh and Indian state of West Bengal",
+        "fact1": "Bengalis share a literary language shaped by poets like Rabindranath Tagore and Kazi Nazrul Islam.",
+        "fact2": "Rice, river life, and Durga Puja festivities form core symbols in Bengali cultural expression."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [77.2, 28.6] },
+      "properties": {
+        "id": "hindu_north_030",
+        "ethnicityName": "North Indian Hindus",
+        "region": "Indo-Gangetic plain, North India",
+        "fact1": "North Indian Hindus belong to diverse caste and regional communities linked by Hindi dialects.",
+        "fact2": "Bollywood cinema, classical music, and pilgrimage circuits shape many shared cultural references."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [72.8, 18.96] },
+      "properties": {
+        "id": "marathi_031",
+        "ethnicityName": "Marathi People",
+        "region": "Maharashtra, western India",
+        "fact1": "Marathis speak Marathi and trace political heritage to the Maratha confederacy.",
+        "fact2": "Ganesh Chaturthi festivals, theater, and coastal cuisine feature strongly in Marathi culture."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [80.3, 13.1] },
+      "properties": {
+        "id": "tamil_032",
+        "ethnicityName": "Tamils",
+        "region": "South India and northern Sri Lanka",
+        "fact1": "Tamils are a Dravidian people with one of the world’s oldest continuous literary traditions.",
+        "fact2": "Temple festivals, classical Bharatanatyam dance, and strong diaspora networks define Tamil life today."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [77.6, 12.97] },
+      "properties": {
+        "id": "kannada_033",
+        "ethnicityName": "Kannadigas",
+        "region": "Karnataka, southwest India",
+        "fact1": "Kannadigas speak Kannada and inherit philosophical and architectural legacies from medieval empires.",
+        "fact2": "Carnatic music, literary awards, and regional cinema support a vibrant Kannada public sphere."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.8, 15.5] },
+      "properties": {
+        "id": "konkani_034",
+        "ethnicityName": "Konkani People",
+        "region": "Konkan coast, western India",
+        "fact1": "Konkani communities are coastal groups influenced by trade, Hinduism, and Catholic missions.",
+        "fact2": "Seafood-based cuisine, music blending Indian and Western instruments, and multilingualism are common traits."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [85.3, 27.7] },
+      "properties": {
+        "id": "newar_035",
+        "ethnicityName": "Newars",
+        "region": "Kathmandu Valley, Nepal",
+        "fact1": "Newars are historically urban artisans and traders with a rich syncretic Buddhist-Hindu tradition.",
+        "fact2": "Pagoda temples, elaborate festivals, and metalwork define Newar contributions to Himalayan culture."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [116.4, 39.9] },
+      "properties": {
+        "id": "han_north_036",
+        "ethnicityName": "Northern Han Chinese",
+        "region": "Northern China, North China Plain",
+        "fact1": "Northern Han communities developed around Yellow River agriculture and imperial bureaucratic centers.",
+        "fact2": "Mandarin dialects, wheat-based foods, and Confucian traditions deeply influence northern Han life."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [113.3, 23.1] },
+      "properties": {
+        "id": "han_south_037",
+        "ethnicityName": "Southern Han Chinese",
+        "region": "Southern coastal China and overseas Chinese hubs",
+        "fact1": "Southern Han societies grew along river deltas, seaborne trade, and dense urban markets.",
+        "fact2": "Cantonese opera, dim sum cuisine, and clan associations shape many southern Han communities globally."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [87.6, 43.8] },
+      "properties": {
+        "id": "uyghur_038",
+        "ethnicityName": "Uyghurs",
+        "region": "Xinjiang region, Northwest China",
+        "fact1": "Uyghurs are a Turkic Muslim people historically involved in Silk Road caravan trade.",
+        "fact2": "Muqam music, meshrep gatherings, and spice-rich cuisine express Uyghur cultural heritage."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [91.1, 29.7] },
+      "properties": {
+        "id": "tibetan_039",
+        "ethnicityName": "Tibetans",
+        "region": "Tibetan Plateau, Himalayas",
+        "fact1": "Tibetans are a high-altitude people whose culture centers on Tibetan Buddhism and pastoralism.",
+        "fact2": "Monasteries, prayer flags, and yak-based livelihoods structure many Tibetan landscapes and rituals."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.7, 35.7] },
+      "properties": {
+        "id": "japanese_040",
+        "ethnicityName": "Japanese",
+        "region": "Japanese archipelago",
+        "fact1": "The Japanese are an East Asian people whose society balances tradition and advanced technology.",
+        "fact2": "Seasonal festivals, Shinto shrines, and aesthetic concepts like wabi-sabi inform daily life in Japan."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [141.4, 43.1] },
+      "properties": {
+        "id": "ainu_041",
+        "ethnicityName": "Ainu",
+        "region": "Hokkaido, Sakhalin, and Kuril Islands",
+        "fact1": "The Ainu are an Indigenous people of northern Japan with distinct language and animist traditions.",
+        "fact2": "Bear rituals, carved patterns, and oral epics characterize Ainu cultural revival efforts today."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [126.98, 37.57] },
+      "properties": {
+        "id": "korean_042",
+        "ethnicityName": "Koreans",
+        "region": "Korean Peninsula and global diaspora",
+        "fact1": "Koreans share a language and history across North and South Korean political borders.",
+        "fact2": "Kimchi, Hangul script, and pop culture exports like K-pop shape Korean global visibility today."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [100.5, 13.7] },
+      "properties": {
+        "id": "thai_043",
+        "ethnicityName": "Thai",
+        "region": "Central Thailand and Chao Phraya basin",
+        "fact1": "Thai people are a Tai-speaking group whose kingdoms flourished around rice agriculture and Buddhism.",
+        "fact2": "Theravada temples, street food culture, and royal ceremonies structure many Thai social spaces."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.8, 21.0] },
+      "properties": {
+        "id": "kinh_044",
+        "ethnicityName": "Kinh (Vietnamese)",
+        "region": "Lowland and coastal Vietnam",
+        "fact1": "The Kinh are the majority ethnic group in Vietnam, influenced by Confucian and village institutions.",
+        "fact2": "Rice paddies, ancestor worship, and phở cuisine are widely recognized aspects of Kinh culture."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [96.1, 16.8] },
+      "properties": {
+        "id": "bamar_045",
+        "ethnicityName": "Bamar",
+        "region": "Central Myanmar, Irrawaddy basin",
+        "fact1": "The Bamar are the largest ethnic group in Myanmar, historically centered around river kingdoms.",
+        "fact2": "Pagoda landscapes, Buddhist monastic life, and traditional theater mark Bamar cultural expression."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [103.8, 1.35] },
+      "properties": {
+        "id": "malay_046",
+        "ethnicityName": "Malays",
+        "region": "Malay Peninsula and maritime Southeast Asia",
+        "fact1": "Malays are an Austronesian people historically active in maritime trade and Islamic scholarship.",
+        "fact2": "Batiks, royal courts, and coastal fishing villages contribute to layered Malay cultural identities."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [120.98, 14.6] },
+      "properties": {
+        "id": "tagalog_047",
+        "ethnicityName": "Tagalog",
+        "region": "Luzon, Philippines",
+        "fact1": "Tagalog people helped shape the national language Filipino and Manila-centered urban culture.",
+        "fact2": "Fiestas, Catholic devotions, and overseas migration patterns influence many Tagalog family stories."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.2, -29.9] },
+      "properties": {
+        "id": "zulu_048",
+        "ethnicityName": "Zulu",
+        "region": "KwaZulu-Natal, South Africa",
+        "fact1": "The Zulu are a Nguni-speaking people whose kingdom rose to prominence in the 19th century.",
+        "fact2": "Beadwork, isicathamiya choral singing, and cattle symbolism remain important Zulu cultural forms."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [28.2, -25.7] },
+      "properties": {
+        "id": "sotho_049",
+        "ethnicityName": "Sotho",
+        "region": "Lesotho and South African highlands",
+        "fact1": "Sotho communities developed in highland farming areas with strong chieftaincy systems.",
+        "fact2": "Blanket clothing, mountain villages, and initiation schools characterize many Sotho traditions today."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [36.8, -1.3] },
+      "properties": {
+        "id": "kikuyu_050",
+        "ethnicityName": "Kikuyu",
+        "region": "Central Kenya highlands",
+        "fact1": "The Kikuyu are a Bantu-speaking people who farmed fertile highland soils near Mount Kenya.",
+        "fact2": "Land rights, age-set rituals, and storytelling feature prominently in Kikuyu cultural history."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [39.3, -6.8] },
+      "properties": {
+        "id": "swahili_051",
+        "ethnicityName": "Swahili Coastal Communities",
+        "region": "East African coast and islands",
+        "fact1": "Swahili groups emerged from centuries of interaction among African, Arab, and Persian traders.",
+        "fact2": "Stone towns, carved doors, and Swahili poetry reflect cosmopolitan Indian Ocean heritage."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [3.4, 6.45] },
+      "properties": {
+        "id": "yoruba_052",
+        "ethnicityName": "Yoruba",
+        "region": "Southwestern Nigeria and Benin",
+        "fact1": "The Yoruba are a large West African people with historic city-states like Ife and Oyo.",
+        "fact2": "Ifá divination, talking drums, and elaborate festivals influence Yoruba communities and diaspora religions."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [7.5, 9.1] },
+      "properties": {
+        "id": "hausa_053",
+        "ethnicityName": "Hausa",
+        "region": "Northern Nigeria and Niger",
+        "fact1": "The Hausa are a Sahelian trading people with walled cities linked by caravan routes.",
+        "fact2": "Islamic scholarship, radio dramas, and dye-pit crafts are notable aspects of Hausa cultural life."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-1.6, 6.7] },
+      "properties": {
+        "id": "ashanti_054",
+        "ethnicityName": "Ashanti",
+        "region": "Central Ghana forest zone",
+        "fact1": "The Ashanti built a powerful kingdom organized around gold trade and stool-based chieftaincy.",
+        "fact2": "Kente cloth, royal courts, and ancestral stools serve as enduring symbols of Ashanti sovereignty."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.1, 30.0] },
+      "properties": {
+        "id": "egyptian_arab_055",
+        "ethnicityName": "Egyptian Arabs",
+        "region": "Nile Valley, Egypt",
+        "fact1": "Egyptian Arabs are shaped by Pharaonic heritage, Arabization, and centuries of riverine settlement.",
+        "fact2": "Cairo’s film industry, popular music, and colloquial Arabic influence the wider Arab world culturally."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [85.3, 27.0] },
+      "properties": {
+        "id": "sherpa_056",
+        "ethnicityName": "Sherpas",
+        "region": "Eastern Nepal Himalayas",
+        "fact1": "Sherpas are a Himalayan people renowned internationally for high-altitude mountaineering expertise.",
+        "fact2": "Buddhist monasteries, yak herding, and trade routes shape Sherpa cultural landscapes and livelihoods."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.3, -14.0] },
+      "properties": {
+        "id": "chewa_057",
+        "ethnicityName": "Chewa",
+        "region": "Malawi and neighboring countries",
+        "fact1": "The Chewa are a Bantu-speaking people with matrilineal clans and farming traditions.",
+        "fact2": "Nyau masked dances and secret societies play central roles in Chewa ritual life."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-58.4, -34.6] },
+      "properties": {
+        "id": "mestizo_arg_058",
+        "ethnicityName": "Argentine Mestizos",
+        "region": "Argentina, Southern Cone",
+        "fact1": "Many Argentines have mixed European and Indigenous ancestry, expressed through regional identities.",
+        "fact2": "Tango music, gaucho lore, and European migration stories are key elements of Argentine culture."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-70.7, -33.5] },
+      "properties": {
+        "id": "mapuche_059",
+        "ethnicityName": "Mapuche",
+        "region": "Southern Chile and Argentina",
+        "fact1": "The Mapuche are an Indigenous people who resisted colonial control for centuries in the Southern Cone.",
+        "fact2": "Lonko leadership, textile arts, and land rights movements remain central to Mapuche identity today."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-77.0, -12.0] },
+      "properties": {
+        "id": "quechua_060",
+        "ethnicityName": "Quechua",
+        "region": "Andean highlands, Peru and neighboring countries",
+        "fact1": "Quechua peoples are descendants of Andean civilizations including the Inca Empire.",
+        "fact2": "Terraced agriculture, woven patterns, and syncretic festivals shape Quechua cultural landscapes."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-68.1, -16.5] },
+      "properties": {
+        "id": "aymara_061",
+        "ethnicityName": "Aymara",
+        "region": "Altiplano plateau, Bolivia and Peru",
+        "fact1": "The Aymara are Indigenous peoples of the high plateau around Lake Titicaca.",
+        "fact2": "Ritual offerings to mountain spirits and lake deities remain vibrant Aymara practices."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-47.9, -15.8] },
+      "properties": {
+        "id": "pardo_brazil_062",
+        "ethnicityName": "Brazilian Pardo Communities",
+        "region": "Brazil, especially coastal and central regions",
+        "fact1": "Pardo Brazilians have mixed Indigenous, European, and African ancestries with diverse local identities.",
+        "fact2": "Carnival, Afro-Brazilian religions, and regional music styles showcase blended cultural heritage in Brazil."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-99.1, 19.4] },
+      "properties": {
+        "id": "mestizo_mex_063",
+        "ethnicityName": "Mexican Mestizos",
+        "region": "Mexico, especially central and urban regions",
+        "fact1": "Most Mexicans identify as mestizo, blending Indigenous and European ancestries and traditions.",
+        "fact2": "Day of the Dead, muralism, and regional cuisines are central to modern Mexican cultural identity."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-99.9, 16.8] },
+      "properties": {
+        "id": "mixtec_064",
+        "ethnicityName": "Mixtec",
+        "region": "Oaxaca and neighboring Mexican states",
+        "fact1": "The Mixtec are an Indigenous Mesoamerican people with ancient codices and city-states.",
+        "fact2": "Migration, artisan jewelry, and community fiestas are central to contemporary Mixtec life."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-75.5, 6.3] },
+      "properties": {
+        "id": "paisa_065",
+        "ethnicityName": "Paisa Colombians",
+        "region": "Antioquia region, Colombia",
+        "fact1": "Paisa identity blends Spanish settler heritage with Andean coffee-growing traditions.",
+        "fact2": "Rural fincas, entrepreneurial culture, and regional music are key Paisa cultural themes."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-79.9, -2.2] },
+      "properties": {
+        "id": "montubio_066",
+        "ethnicityName": "Montubio",
+        "region": "Coastal Ecuador",
+        "fact1": "Montubios are rural coastal communities noted for cattle ranching and horsemanship.",
+        "fact2": "Rodeos, straw hats, and equestrian skills are emblematic of Montubio cultural expression."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-60.0, 4.9] },
+      "properties": {
+        "id": "indigenous_guyana_067",
+        "ethnicityName": "Indigenous Peoples of Guyana",
+        "region": "Interior forests of Guyana",
+        "fact1": "Guyana’s Indigenous groups include Arawak, Carib, Wapishana, and others living in forested territories.",
+        "fact2": "Cassava cultivation, river transport, and small-scale hunting remain important subsistence practices."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-61.5, 10.7] },
+      "properties": {
+        "id": "indo_trinidadian_068",
+        "ethnicityName": "Indo-Trinidadians",
+        "region": "Trinidad and Tobago",
+        "fact1": "Indo-Trinidadians descend mainly from Indian indentured laborers brought to Caribbean plantations.",
+        "fact2": "Hindu festivals, chutney music, and creolized cuisines mark Indo-Caribbean cultural innovations."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-73.9, 40.7] },
+      "properties": {
+        "id": "african_american_069",
+        "ethnicityName": "African Americans",
+        "region": "United States, especially urban and Southern regions",
+        "fact1": "African Americans trace ancestry to enslaved Africans and subsequent generations in the Americas.",
+        "fact2": "Jazz, civil rights activism, and Black church traditions are major pillars of African American life."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-87.6, 41.9] },
+      "properties": {
+        "id": "mexican_american_070",
+        "ethnicityName": "Mexican Americans",
+        "region": "United States Southwest and major cities",
+        "fact1": "Mexican Americans form one of the largest Latino groups in the United States.",
+        "fact2": "Bilingualism, lowrider culture, and cross-border family ties shape many Mexican American communities."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-123.1, 49.3] },
+      "properties": {
+        "id": "first_nations_bc_071",
+        "ethnicityName": "Coastal First Nations (BC)",
+        "region": "Pacific Northwest Coast, Canada",
+        "fact1": "Coastal First Nations include Haida, Tlingit, and others known for complex clan systems.",
+        "fact2": "Totem poles, longhouses, and potlatch ceremonies are central to northwest coastal Indigenous cultures."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-106.3, 56.1] },
+      "properties": {
+        "id": "cree_072",
+        "ethnicityName": "Cree",
+        "region": "Subarctic Canada",
+        "fact1": "The Cree are one of the largest First Nations groups, spread across vast northern territories.",
+        "fact2": "Seasonal hunting, traplines, and syllabics writing are important dimensions of Cree culture."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [133.8, -23.7] },
+      "properties": {
+        "id": "aboriginal_central_073",
+        "ethnicityName": "Central Australian Aboriginal Communities",
+        "region": "Central Desert, Australia",
+        "fact1": "Central Australian Aboriginal peoples maintain deep connections to Country through songlines and kin ties.",
+        "fact2": "Dot painting styles, bush foods, and Dreaming stories express complex cosmologies and land stewardship ethics."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [152.9, -27.5] },
+      "properties": {
+        "id": "aboriginal_east_074",
+        "ethnicityName": "Eastern Australian Aboriginal Communities",
+        "region": "Eastern coastal Australia",
+        "fact1": "Eastern Aboriginal groups experienced early colonial contact yet maintain enduring language revival efforts.",
+        "fact2": "Corroboree ceremonies, dance, and contemporary activism highlight cultural continuity despite displacement."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [174.8, -41.3] },
+      "properties": {
+        "id": "maori_075",
+        "ethnicityName": "Māori",
+        "region": "Aotearoa New Zealand",
+        "fact1": "Māori are the Indigenous Polynesian people of New Zealand with rich canoe migration histories.",
+        "fact2": "Marae meeting grounds, haka performances, and language revitalization efforts define modern Māori resurgence."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [151.2, -33.9] },
+      "properties": {
+        "id": "anglo_australian_076",
+        "ethnicityName": "Anglo-Australians",
+        "region": "Australia, especially urban coastal regions",
+        "fact1": "Anglo-Australians descend largely from British settlers and later European migrants.",
+        "fact2": "Beach culture, sport, and informal social norms play visible roles in Anglo-Australian identity."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [28.0, 61.0] },
+      "properties": {
+        "id": "karelian_077",
+        "ethnicityName": "Karelians",
+        "region": "Border regions of Finland and Russia",
+        "fact1": "Karelians are a Finnic people whose oral poetry influenced Finland’s national epic Kalevala.",
+        "fact2": "Forest villages, runo-song traditions, and cross-border kin ties are central to Karelian life."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [57.5, 23.6] },
+      "properties": {
+        "id": "baluchi_078",
+        "ethnicityName": "Baluch",
+        "region": "Baluchistan region of Iran, Pakistan, and Afghanistan",
+        "fact1": "Baluch people traditionally practiced semi-nomadic herding in arid plateau landscapes.",
+        "fact2": "Epic ballads, embroidery, and strong tribal codes shape Baluch cultural expression and politics."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.2, -3.4] },
+      "properties": {
+        "id": "chagga_079",
+        "ethnicityName": "Chagga",
+        "region": "Slopes of Mount Kilimanjaro, Tanzania",
+        "fact1": "The Chagga are mountain farmers known historically for banana and coffee cultivation.",
+        "fact2": "Irrigation furrows, clan rituals, and bilingual Swahili use characterize contemporary Chagga communities."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [42.5, 6.0] },
+      "properties": {
+        "id": "oromo_080",
+        "ethnicityName": "Oromo",
+        "region": "Ethiopia and northern Kenya",
+        "fact1": "The Oromo are a large Cushitic-speaking people with pastoral and agrarian livelihoods.",
+        "fact2": "Gadaa age-grade systems, coffee ceremonies, and Oromo-language music define key cultural arenas."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [38.7, 15.3] },
+      "properties": {
+        "id": "tigray_081",
+        "ethnicityName": "Tigrayans",
+        "region": "Northern Ethiopia and Eritrea",
+        "fact1": "Tigrayans speak Tigrinya and inhabit highland regions with ancient Christian monasteries.",
+        "fact2": "Rock-hewn churches, coffee rituals, and liturgical chant underpin many Tigrayan cultural practices."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [19.0, 42.7] },
+      "properties": {
+        "id": "albanian_082",
+        "ethnicityName": "Albanians",
+        "region": "Albania, Kosovo, and Balkans",
+        "fact1": "Albanians speak a unique Indo-European language with ancient Balkan roots.",
+        "fact2": "Kanun customary law, polyphonic singing, and migration histories shape Albanian identity narratives."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-8.6, 41.2] },
+      "properties": {
+        "id": "portuguese_083",
+        "ethnicityName": "Portuguese",
+        "region": "Portugal and Lusophone world",
+        "fact1": "The Portuguese were early global navigators who established far-reaching maritime empires.",
+        "fact2": "Fado music, seafaring folklore, and rural village life remain important symbols of Portuguese culture."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-3.2, 55.9] },
+      "properties": {
+        "id": "scottish_084",
+        "ethnicityName": "Scots",
+        "region": "Scotland and Scottish diaspora",
+        "fact1": "Scots include Lowland and Highland communities with distinct languages and clan histories.",
+        "fact2": "Bagpipes, tartan patterns, and literary traditions anchor many Scottish cultural expressions worldwide."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.3, 54.6] },
+      "properties": {
+        "id": "irish_085",
+        "ethnicityName": "Irish",
+        "region": "Ireland and global Irish diaspora",
+        "fact1": "Irish identity draws on Gaelic language, monastic scholarship, and colonial resistance histories.",
+        "fact2": "Traditional music sessions, storytelling, and Saint Patrick’s Day are widely recognized Irish symbols."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [77.4, 32.3] },
+      "properties": {
+        "id": "ladakhi_086",
+        "ethnicityName": "Ladakhi",
+        "region": "Ladakh, Indian Himalayas",
+        "fact1": "Ladakhis live in high-altitude valleys with Tibetan Buddhist monasteries and trade routes.",
+        "fact2": "Whitewashed villages, masked dances, and sustainable irrigation systems structure Ladakhi communities."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.0, -9.5] },
+      "properties": {
+        "id": "asmat_087",
+        "ethnicityName": "Asmat",
+        "region": "Southwestern New Guinea, Indonesia",
+        "fact1": "The Asmat are riverine peoples known for elaborate woodcarving traditions.",
+        "fact2": "Ancestral pole carvings and sago-based diets are central to Asmat cultural worlds."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [147.2, -9.5] },
+      "properties": {
+        "id": "motu_088",
+        "ethnicityName": "Motu",
+        "region": "Papua New Guinea south coast",
+        "fact1": "The Motu are coastal traders whose sailing fleets historically linked villages along Papua’s shores.",
+        "fact2": "Hiri trade voyages, clay pot production, and ceremonial exchanges mark Motu cultural identity."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [44.4, -20.0] },
+      "properties": {
+        "id": "merina_089",
+        "ethnicityName": "Merina",
+        "region": "Central highlands, Madagascar",
+        "fact1": "The Merina are a highland Malagasy group who established a dominant kingdom in the 19th century.",
+        "fact2": "Rice terraces, ancestor worship, and elaborate tombs define Merina landscapes and rituals."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [50.0, -15.0] },
+      "properties": {
+        "id": "sakalava_090",
+        "ethnicityName": "Sakalava",
+        "region": "Western coastal Madagascar",
+        "fact1": "The Sakalava are coastal Malagasy communities historically engaged in Indian Ocean trade.",
+        "fact2": "Royal tombs, spirit possession ceremonies, and coastal fishing shape Sakalava cultural life."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [95.3, 5.6] },
+      "properties": {
+        "id": "acehnese_091",
+        "ethnicityName": "Acehnese",
+        "region": "Aceh, northern Sumatra, Indonesia",
+        "fact1": "The Acehnese are a Muslim people once ruling a powerful sultanate in the Strait of Malacca.",
+        "fact2": "Seudati dances, Islamic scholarship, and tsunami memories influence Acehnese contemporary culture."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.8, -6.2] },
+      "properties": {
+        "id": "javanese_092",
+        "ethnicityName": "Javanese",
+        "region": "Java, Indonesia",
+        "fact1": "The Javanese are Indonesia’s largest ethnic group with layered Hindu-Buddhist and Islamic histories.",
+        "fact2": "Wayang shadow theater, batik textiles, and palace ceremonies are hallmarks of Javanese culture."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [115.2, -8.7] },
+      "properties": {
+        "id": "balinese_093",
+        "ethnicityName": "Balinese",
+        "region": "Bali, Indonesia",
+        "fact1": "Balinese people practice a distinctive form of Hinduism woven into every aspect of village life.",
+        "fact2": "Temple ceremonies, gamelan music, and dance-drama performances are central to Balinese identity and tourism."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [121.5, 25.0] },
+      "properties": {
+        "id": "hokkien_taiwan_094",
+        "ethnicityName": "Hokkien Taiwanese",
+        "region": "Taiwan, especially western plains",
+        "fact1": "Hokkien Taiwanese descend largely from Fujianese settlers and Indigenous mixing.",
+        "fact2": "Temple processions, night markets, and Taiwanese Hokkien media shape everyday cultural life on the island."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [120.9, 23.0] },
+      "properties": {
+        "id": "amis_095",
+        "ethnicityName": "Amis",
+        "region": "Eastern coastal Taiwan",
+        "fact1": "The Amis are the largest Indigenous group in Taiwan with coastal fishing and farming traditions.",
+        "fact2": "Harvest festivals, polyphonic singing, and youth cultural movements support Amis identity today."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.1, 13.5] },
+      "properties": {
+        "id": "tuareg_096",
+        "ethnicityName": "Tuareg",
+        "region": "Sahara and Sahel regions of Niger, Mali, and Algeria",
+        "fact1": "Tuareg are semi-nomadic Berber peoples famed for trans-Saharan caravan routes.",
+        "fact2": "Indigo veils, desert guitars, and poetic traditions convey Tuareg aesthetics and social code, the assouf."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [9.0, 34.0] },
+      "properties": {
+        "id": "amazigh_097",
+        "ethnicityName": "Amazigh (Berbers)",
+        "region": "Atlas Mountains and North African interior",
+        "fact1": "Amazigh communities speak diverse Berber languages across Morocco, Algeria, Tunisia, and beyond.",
+        "fact2": "Amazigh jewelry, mountain agriculture, and Tifinagh script are key aspects of cultural revival movements."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [58.4, 37.9] },
+      "properties": {
+        "id": "turkmen_098",
+        "ethnicityName": "Turkmen",
+        "region": "Turkmenistan and neighboring countries",
+        "fact1": "Turkmen are a Turkic people with historical livelihoods in steppe pastoralism and caravan trade.",
+        "fact2": "Carpet weaving, horse breeding, and epic storytelling are central to Turkmen cultural heritage."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [69.2, 41.3] },
+      "properties": {
+        "id": "uzbek_099",
+        "ethnicityName": "Uzbeks",
+        "region": "Uzbekistan and Central Asian oases",
+        "fact1": "Uzbeks are a Turkic-speaking people whose cities were hubs on the Silk Road.",
+        "fact2": "Registan squares, plov rice dishes, and suzani embroidery are emblematic of Uzbek life and art."
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [74.6, 42.9] },
+      "properties": {
+        "id": "kyrgyz_100",
+        "ethnicityName": "Kyrgyz",
+        "region": "Kyrgyzstan and Tien Shan mountains",
+        "fact1": "The Kyrgyz are traditionally nomadic herders who moved seasonally with their livestock.",
+        "fact2": "Yurt dwellings, horse games like kok-boru, and the Epic of Manas shape Kyrgyz national culture."
+      }
+    }
+  ]
+}
+
+
