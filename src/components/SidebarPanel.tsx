@@ -40,6 +40,9 @@ export default function SidebarPanel({
             <p className="mt-1 text-base font-semibold text-slate-50">
               {primary.region}
             </p>
+            {primary.regionFlags && (
+              <p className="mt-0.5 text-lg leading-tight">{primary.regionFlags}</p>
+            )}
           </div>
 
           <div className="space-y-3">

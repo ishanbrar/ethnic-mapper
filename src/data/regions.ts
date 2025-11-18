@@ -104,86 +104,154 @@ export const regions: Region[] = [
     ]
   },
   {
-    id: 'us_nyc_region',
-    name: 'New York City Metropolitan Area',
+    id: 'us_midwest_upper',
+    name: 'Upper Midwest',
     bounds: {
-      minLng: -75.0,
-      maxLng: -72.0,
-      minLat: 40.2,
-      maxLat: 41.2
+      minLng: -97.0,
+      maxLng: -87.0,
+      minLat: 43.0,
+      maxLat: 49.0
     },
     ethnicities: [
       {
-        id: 'nyc_non_hispanic_white',
-        ethnicityName: 'Non-Hispanic White New Yorkers',
-        region: 'New York City metro neighborhoods and suburbs',
+        id: 'upper_midwest_white',
+        ethnicityName: 'Upper Midwest White Americans',
+        region: 'Upper Midwest (Minnesota, Wisconsin, Michigan)',
         fact1:
-          'Non-Hispanic White New Yorkers include descendants of earlier European immigrants as well as newer arrivals from Eastern Europe and beyond.',
+          'Upper Midwest white Americans often trace ancestry to German, Scandinavian, and other Northern European immigrant communities.',
         fact2:
-          'Civic activism, arts patronage, and neighborhood-based identities in boroughs and suburbs shape many White New Yorker experiences.',
-        share: 0.32
+          'Lutheran churches, Scandinavian festivals, and strong community traditions shape Upper Midwest identity.',
+        share: 0.85,
+        population: '≈ 12M',
+        dominantReligion: 'Lutheranism / Catholicism',
+        totalFertilityRate: '≈ 1.7'
       },
       {
-        id: 'nyc_african_american',
-        ethnicityName: 'African Americans in NYC',
-        region: 'New York City, especially Harlem, Brooklyn, and the Bronx',
+        id: 'upper_midwest_african_american',
+        ethnicityName: 'Upper Midwest African Americans',
+        region: 'Upper Midwest cities (Minneapolis, Milwaukee, Detroit)',
         fact1:
-          'African Americans in New York City have shaped global culture through jazz, hip hop, theater, and civil rights movements.',
+          'Upper Midwest African Americans often trace roots to the Great Migration from the rural South to industrial cities.',
         fact2:
-          'Harlem Renaissance legacies, Black churches, and neighborhood organizing remain central to Black life in the city.',
-        share: 0.24
-      },
-      {
-        id: 'nyc_hispanic_latino',
-        ethnicityName: 'Hispanic / Latino New Yorkers',
-        region: 'New York City, especially the Bronx, Queens, and Brooklyn',
-        fact1:
-          'Hispanic New Yorkers include Puerto Rican, Dominican, Mexican, and many other Latin American communities.',
-        fact2:
-          'Salsa, reggaeton, bodegas, and transnational family ties define much of Latino urban culture in New York.',
-        share: 0.29
-      },
-      {
-        id: 'nyc_asian_american',
-        ethnicityName: 'Asian Americans in NYC',
-        region: 'New York City, especially Queens, Manhattan Chinatown, and Brooklyn',
-        fact1:
-          'Asian American New Yorkers include Chinese, Korean, South Asian, Filipino, and many other communities.',
-        fact2:
-          'Multi-lingual business districts, family-owned restaurants, and temple and church networks are central to Asian American life in New York.',
-        share: 0.16
+          'Urban neighborhoods, gospel music, and strong church communities remain central to many Upper Midwest Black communities.',
+        share: 0.08,
+        population: '≈ 1.1M',
+        dominantReligion: 'Christianity',
+        totalFertilityRate: '≈ 1.8'
       }
     ]
   },
   {
-    id: 'us_midwest',
-    name: 'US Midwest Heartland',
+    id: 'us_midwest_central',
+    name: 'Central Midwest',
     bounds: {
-      minLng: -105.0,
-      maxLng: -80.0,
-      minLat: 36.0,
-      maxLat: 49.5
+      minLng: -95.0,
+      maxLng: -87.0,
+      minLat: 38.0,
+      maxLat: 43.0
     },
     ethnicities: [
       {
-        id: 'white_midwest',
-        ethnicityName: 'White Midwesterners',
-        region: 'US Midwest small towns and cities',
+        id: 'central_midwest_white',
+        ethnicityName: 'Central Midwest White Americans',
+        region: 'Central Midwest (Iowa, Illinois, Missouri)',
         fact1:
-          'White Midwesterners often trace ancestry to German, Scandinavian, and other European immigrant communities.',
+          'Central Midwest white Americans often trace ancestry to German, Irish, and other European immigrant communities.',
         fact2:
-          'County fairs, high school sports, and church-based community life are central to many Midwestern local cultures.',
-        share: 0.7
+          'Agricultural traditions, county fairs, and church-based community life are central to many Central Midwest cultures.',
+        share: 0.78,
+        population: '≈ 15M',
+        dominantReligion: 'Catholicism / Protestantism',
+        totalFertilityRate: '≈ 1.8'
       },
       {
-        id: 'african_american_midwest',
-        ethnicityName: 'African Americans in the Midwest',
-        region: 'Industrial cities like Chicago, Detroit, and Cleveland',
+        id: 'central_midwest_african_american',
+        ethnicityName: 'Central Midwest African Americans',
+        region: 'Central Midwest cities (Chicago, St. Louis, Kansas City)',
         fact1:
-          'African Americans migrated to Midwestern cities during the Great Migration seeking industrial jobs and relative safety from Jim Crow.',
+          'Central Midwest African Americans often trace roots to the Great Migration from the rural South to industrial cities.',
         fact2:
-          'Midwestern Black neighborhoods contributed heavily to blues, soul, and later hip hop and house music cultures.',
-        share: 0.2
+          'Urban neighborhoods, blues music, and strong church communities remain central to many Central Midwest Black communities.',
+        share: 0.14,
+        population: '≈ 2.7M',
+        dominantReligion: 'Christianity',
+        totalFertilityRate: '≈ 1.7'
+      }
+    ]
+  },
+  {
+    id: 'us_southwest',
+    name: 'US Southwest',
+    bounds: {
+      minLng: -120.0,
+      maxLng: -103.0,
+      minLat: 31.0,
+      maxLat: 37.0
+    },
+    ethnicities: [
+      {
+        id: 'southwest_white',
+        ethnicityName: 'Southwest White Americans',
+        region: 'US Southwest (Arizona, New Mexico, Nevada)',
+        fact1:
+          'Southwest white Americans include diverse European heritage and retirees drawn to the region\'s climate.',
+        fact2:
+          'Desert lifestyle, outdoor recreation, and maintaining European cultural traditions.',
+        share: 0.65,
+        population: '≈ 8M',
+        dominantReligion: 'Christianity',
+        totalFertilityRate: '≈ 1.6'
+      },
+      {
+        id: 'southwest_hispanic',
+        ethnicityName: 'Southwest Hispanic/Latino',
+        region: 'Southwest Hispanic communities (Mexican, Central American)',
+        fact1:
+          'Southwest Hispanics maintain Spanish language, diverse Latin American cultures, and strong community networks.',
+        fact2:
+          'Migration from Mexico and Central America, maintaining Hispanic identity and cultural traditions.',
+        share: 0.28,
+        population: '≈ 3.5M',
+        dominantReligion: 'Catholicism',
+        totalFertilityRate: '≈ 2.0'
+      }
+    ]
+  },
+  {
+    id: 'us_southeast',
+    name: 'US Southeast',
+    bounds: {
+      minLng: -90.0,
+      maxLng: -75.0,
+      minLat: 30.0,
+      maxLat: 36.0
+    },
+    ethnicities: [
+      {
+        id: 'southeast_white',
+        ethnicityName: 'Southeast White Americans',
+        region: 'US Southeast (Alabama, Mississippi, Georgia, South Carolina)',
+        fact1:
+          'Southeast white Americans often trace ancestry to British, Irish, and other European immigrant communities.',
+        fact2:
+          'Southern traditions, church-based community life, and maintaining European cultural heritage.',
+        share: 0.62,
+        population: '≈ 18M',
+        dominantReligion: 'Protestantism',
+        totalFertilityRate: '≈ 1.7'
+      },
+      {
+        id: 'southeast_african_american',
+        ethnicityName: 'Southeast African Americans',
+        region: 'Southeast African American communities',
+        fact1:
+          'Southeast African Americans maintain deep roots in the region, with many tracing ancestry to slavery and Reconstruction.',
+        fact2:
+          'Gospel music, strong church communities, and maintaining Black cultural traditions shape Southeast Black identity.',
+        share: 0.32,
+        population: '≈ 9.3M',
+        dominantReligion: 'Christianity',
+        totalFertilityRate: '≈ 1.8'
       }
     ]
   },
@@ -3371,6 +3439,19 @@ export const regions: Region[] = [
         totalFertilityRate: '≈ 1.4'
       },
       {
+        id: 'nyc_african_american',
+        ethnicityName: 'NYC African Americans',
+        region: 'African American communities in NYC',
+        fact1:
+          'NYC African Americans maintain connections to Great Migration, Harlem Renaissance, and contemporary Black culture.',
+        fact2:
+          'Hip hop, gospel, and strong community institutions shape NYC Black identity.',
+        share: 0.24,
+        population: '≈ 2M',
+        dominantReligion: 'Christianity',
+        totalFertilityRate: '≈ 1.6'
+      },
+      {
         id: 'nyc_hispanic',
         ethnicityName: 'NYC Hispanic/Latino',
         region: 'Hispanic communities in NYC (Puerto Rican, Dominican, Mexican)',
@@ -3383,6 +3464,19 @@ export const regions: Region[] = [
         dominantReligion: 'Catholicism',
         totalFertilityRate: '≈ 1.8'
       },
+      {
+        id: 'nyc_asian_american',
+        ethnicityName: 'NYC Asian Americans',
+        region: 'Asian American communities in NYC (Chinese, Korean, South Asian)',
+        fact1:
+          'NYC Asian Americans maintain diverse Asian languages, cultural practices, and urban adaptation.',
+        fact2:
+          'Chinatown, Flushing, and diverse Asian business districts.',
+        share: 0.13,
+        population: '≈ 1.1M',
+        dominantReligion: 'Buddhism / Hinduism / Christianity',
+        totalFertilityRate: '≈ 1.3'
+      }
     ]
   },
   {
@@ -5176,6 +5270,95 @@ export const regions: Region[] = [
         population: '≈ 0.65M',
         dominantReligion: 'Christianity',
         totalFertilityRate: '≈ 1.6'
+      }
+    ]
+  },
+  {
+    id: 'us_boston_metro',
+    name: 'Boston Metropolitan Region',
+    bounds: {
+      minLng: -71.2,
+      maxLng: -70.8,
+      minLat: 42.2,
+      maxLat: 42.5
+    },
+    ethnicities: [
+      {
+        id: 'boston_white_americans',
+        ethnicityName: 'Boston White Americans',
+        region: 'White American communities in Boston',
+        fact1:
+          'Boston white Americans include Irish, Italian, and other European heritage communities.',
+        fact2:
+          'Neighborhood identities, Irish pubs, and diverse European traditions shape Boston white identity.',
+        share: 0.52,
+        population: '≈ 0.35M',
+        dominantReligion: 'Catholicism',
+        totalFertilityRate: '≈ 1.3'
+      },
+      {
+        id: 'boston_african_american',
+        ethnicityName: 'Boston African Americans',
+        region: 'African American communities in Boston',
+        fact1:
+          'Boston African Americans maintain connections to Great Migration and contemporary Black culture.',
+        fact2:
+          'Gospel, strong community institutions, and maintaining Black identity.',
+        share: 0.24,
+        population: '≈ 0.16M',
+        dominantReligion: 'Christianity',
+        totalFertilityRate: '≈ 1.6'
+      },
+      {
+        id: 'boston_hispanic',
+        ethnicityName: 'Boston Hispanic/Latino',
+        region: 'Hispanic communities in Boston (Puerto Rican, Dominican)',
+        fact1:
+          'Boston Hispanics maintain Spanish language and diverse Latin American cultures.',
+        fact2:
+          'Maintaining connections to Latin America and urban adaptation.',
+        share: 0.20,
+        population: '≈ 0.13M',
+        dominantReligion: 'Catholicism',
+        totalFertilityRate: '≈ 1.8'
+      }
+    ]
+  },
+  {
+    id: 'us_denver_metro',
+    name: 'Denver Metropolitan Region',
+    bounds: {
+      minLng: -105.1,
+      maxLng: -104.8,
+      minLat: 39.6,
+      maxLat: 39.9
+    },
+    ethnicities: [
+      {
+        id: 'denver_white_americans',
+        ethnicityName: 'Denver White Americans',
+        region: 'White American communities in Denver',
+        fact1:
+          'Denver white Americans include diverse European heritage and outdoor recreation enthusiasts.',
+        fact2:
+          'Mountain lifestyle, outdoor recreation, and maintaining European cultural traditions.',
+        share: 0.68,
+        population: '≈ 0.5M',
+        dominantReligion: 'Christianity',
+        totalFertilityRate: '≈ 1.5'
+      },
+      {
+        id: 'denver_hispanic',
+        ethnicityName: 'Denver Hispanic/Latino',
+        region: 'Hispanic communities in Denver (Mexican, Central American)',
+        fact1:
+          'Denver Hispanics maintain Spanish language and diverse Latin American cultures.',
+        fact2:
+          'Migration from Mexico and Central America, maintaining Hispanic identity.',
+        share: 0.22,
+        population: '≈ 0.16M',
+        dominantReligion: 'Catholicism',
+        totalFertilityRate: '≈ 1.9'
       }
     ]
   },
@@ -7788,6 +7971,30 @@ export const regions: Region[] = [
   }
 ];
 
+// Helper to expand bounds to match visual boxes (same as enforceMinimumSize in MapContainer)
+function expandBoundsForClickDetection(
+  minLng: number,
+  maxLng: number,
+  minLat: number,
+  maxLat: number
+): { minLng: number; maxLng: number; minLat: number; maxLat: number } {
+  const MIN_BOX_SIZE = 1.0; // Must match MIN_BOX_SIZE in MapContainer
+  const centerLng = (minLng + maxLng) / 2;
+  const centerLat = (minLat + maxLat) / 2;
+  const width = maxLng - minLng;
+  const height = maxLat - minLat;
+
+  const adjustedWidth = Math.max(width, MIN_BOX_SIZE);
+  const adjustedHeight = Math.max(height, MIN_BOX_SIZE);
+
+  return {
+    minLng: centerLng - adjustedWidth / 2,
+    maxLng: centerLng + adjustedWidth / 2,
+    minLat: centerLat - adjustedHeight / 2,
+    maxLat: centerLat + adjustedHeight / 2
+  };
+}
+
 export function findRegionForCoordinates(
   lng: number,
   lat: number
@@ -7798,12 +8005,21 @@ export function findRegionForCoordinates(
 
   for (const candidateLng of candidates) {
     for (const r of regions) {
+      // Use expanded bounds to match visual boxes
+      const expanded = expandBoundsForClickDetection(
+        r.bounds.minLng,
+        r.bounds.maxLng,
+        r.bounds.minLat,
+        r.bounds.maxLat
+      );
+      
       if (
-        candidateLng >= r.bounds.minLng &&
-        candidateLng <= r.bounds.maxLng &&
-        lat >= r.bounds.minLat &&
-        lat <= r.bounds.maxLat
+        candidateLng >= expanded.minLng &&
+        candidateLng <= expanded.maxLng &&
+        lat >= expanded.minLat &&
+        lat <= expanded.maxLat
       ) {
+        // Use original area for smallest region selection
         const area =
           (r.bounds.maxLng - r.bounds.minLng) *
           (r.bounds.maxLat - r.bounds.minLat);

@@ -232,21 +232,38 @@ export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
             const region = findRegionForCoordinates(pointLng, pointLat);
             if (region) {
               setSelectedRegionFeature(createRegionHighlightFeature(region));
-              // Update region property to use the region's name
-              const baseEthnicityWithRegion = {
-                ...baseEthnicity,
-                region: region.name
-              };
-              const merged = [
-                baseEthnicityWithRegion,
-                ...region.ethnicities
-                  .filter((e) => e.id !== baseEthnicity.id)
-                  .map((e) => ({ ...e, region: region.name }))
-              ];
-              onSelectEthnicity(merged);
+              // Only include baseEthnicity if it has valid data
+              const validBaseEthnicity = baseEthnicity.id && baseEthnicity.ethnicityName !== 'Unknown group'
+                ? {
+                    ...baseEthnicity,
+                    region: region.name
+                  }
+                : null;
+              
+              const merged = validBaseEthnicity
+                ? [
+                    validBaseEthnicity,
+                    ...region.ethnicities
+                      .filter((e) => e.id !== baseEthnicity.id)
+                      .map((e) => ({ ...e, region: region.name }))
+                  ]
+                : region.ethnicities.map((e) => ({ ...e, region: region.name }));
+              
+              // Filter out any invalid ethnicities
+              const filtered = merged.filter(
+                (e) => e.id && e.ethnicityName && e.ethnicityName !== 'Unknown group'
+              );
+              
+              onSelectEthnicity(filtered.length > 0 ? filtered : null);
             } else {
-              setSelectedRegionFeature(null);
-              onSelectEthnicity([baseEthnicity]);
+              // Only show baseEthnicity if it's valid
+              if (baseEthnicity.id && baseEthnicity.ethnicityName !== 'Unknown group') {
+                setSelectedRegionFeature(null);
+                onSelectEthnicity([baseEthnicity]);
+              } else {
+                setSelectedRegionFeature(null);
+                onSelectEthnicity(null);
+              }
             }
             return;
           }
@@ -298,21 +315,38 @@ export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
         const region = findRegionForCoordinates(lng, lat);
         if (region) {
           setSelectedRegionFeature(createRegionHighlightFeature(region));
-          // Update region property to use the region's name
-          const baseEthnicityWithRegion = {
-            ...baseEthnicity,
-            region: region.name
-          };
-          const merged = [
-            baseEthnicityWithRegion,
-            ...region.ethnicities
-              .filter((e) => e.id !== baseEthnicity.id)
-              .map((e) => ({ ...e, region: region.name }))
-          ];
-          onSelectEthnicity(merged);
+          // Only include baseEthnicity if it has valid data (not "Unknown group")
+          const validBaseEthnicity = baseEthnicity.id && baseEthnicity.ethnicityName !== 'Unknown group'
+            ? {
+                ...baseEthnicity,
+                region: region.name
+              }
+            : null;
+          
+          const merged = validBaseEthnicity
+            ? [
+                validBaseEthnicity,
+                ...region.ethnicities
+                  .filter((e) => e.id !== baseEthnicity.id)
+                  .map((e) => ({ ...e, region: region.name }))
+              ]
+            : region.ethnicities.map((e) => ({ ...e, region: region.name }));
+          
+          // Filter out any invalid ethnicities
+          const filtered = merged.filter(
+            (e) => e.id && e.ethnicityName && e.ethnicityName !== 'Unknown group'
+          );
+          
+          onSelectEthnicity(filtered.length > 0 ? filtered : null);
         } else {
-          setSelectedRegionFeature(null);
-          onSelectEthnicity([baseEthnicity]);
+          // Only show baseEthnicity if it's valid
+          if (baseEthnicity.id && baseEthnicity.ethnicityName !== 'Unknown group') {
+            setSelectedRegionFeature(null);
+            onSelectEthnicity([baseEthnicity]);
+          } else {
+            setSelectedRegionFeature(null);
+            onSelectEthnicity(null);
+          }
         }
         return;
       }
@@ -325,11 +359,14 @@ export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
       if (region && region.ethnicities.length > 0) {
         setSelectedRegionFeature(createRegionHighlightFeature(region));
         // Update the region property of all ethnicities to use the region's name
-        const ethnicitiesWithRegionName = region.ethnicities.map((ethnicity) => ({
-          ...ethnicity,
-          region: region.name
-        }));
-        onSelectEthnicity(ethnicitiesWithRegionName);
+        // Filter out any invalid ethnicities
+        const ethnicitiesWithRegionName = region.ethnicities
+          .filter((e) => e.id && e.ethnicityName && e.ethnicityName !== 'Unknown group')
+          .map((ethnicity) => ({
+            ...ethnicity,
+            region: region.name
+          }));
+        onSelectEthnicity(ethnicitiesWithRegionName.length > 0 ? ethnicitiesWithRegionName : null);
       } else {
         // If no region found, try to find a point box that might contain this click
         // This handles cases where we click on expanded point box edges
@@ -369,20 +406,38 @@ export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
             const region = findRegionForCoordinates(pointLng, pointLat);
             if (region) {
               setSelectedRegionFeature(createRegionHighlightFeature(region));
-              const baseEthnicityWithRegion = {
-                ...baseEthnicity,
-                region: region.name
-              };
-              const merged = [
-                baseEthnicityWithRegion,
-                ...region.ethnicities
-                  .filter((e) => e.id !== baseEthnicity.id)
-                  .map((e) => ({ ...e, region: region.name }))
-              ];
-              onSelectEthnicity(merged);
+              // Only include baseEthnicity if it has valid data
+              const validBaseEthnicity = baseEthnicity.id && baseEthnicity.ethnicityName !== 'Unknown group'
+                ? {
+                    ...baseEthnicity,
+                    region: region.name
+                  }
+                : null;
+              
+              const merged = validBaseEthnicity
+                ? [
+                    validBaseEthnicity,
+                    ...region.ethnicities
+                      .filter((e) => e.id !== baseEthnicity.id)
+                      .map((e) => ({ ...e, region: region.name }))
+                  ]
+                : region.ethnicities.map((e) => ({ ...e, region: region.name }));
+              
+              // Filter out any invalid ethnicities
+              const filtered = merged.filter(
+                (e) => e.id && e.ethnicityName && e.ethnicityName !== 'Unknown group'
+              );
+              
+              onSelectEthnicity(filtered.length > 0 ? filtered : null);
             } else {
-              setSelectedRegionFeature(null);
-              onSelectEthnicity([baseEthnicity]);
+              // Only show baseEthnicity if it's valid
+              if (baseEthnicity.id && baseEthnicity.ethnicityName !== 'Unknown group') {
+                setSelectedRegionFeature(null);
+                onSelectEthnicity([baseEthnicity]);
+              } else {
+                setSelectedRegionFeature(null);
+                onSelectEthnicity(null);
+              }
             }
             return;
           }

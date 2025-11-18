@@ -17,6 +17,10 @@ export type Ethnicity = {
   population?: string;
   dominantReligion?: string;
   totalFertilityRate?: string;
+  /**
+   * Optional string of flag emojis describing the geographic footprint of the region.
+   */
+  regionFlags?: string;
 };
 
 
