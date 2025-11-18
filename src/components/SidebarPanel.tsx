@@ -6,6 +6,26 @@ type SidebarPanelProps = {
   selectedEthnicities: Ethnicity[] | null;
 };
 
+// Helper function to get religion emoji
+function getReligionEmoji(religion: string | undefined): string {
+  if (!religion) return '';
+  
+  const religionLower = religion.toLowerCase();
+  
+  if (religionLower.includes('islam') || religionLower.includes('muslim')) return '☪️';
+  if (religionLower.includes('christianity') || religionLower.includes('christian') || religionLower.includes('catholic')) return '✝️';
+  if (religionLower.includes('judaism') || religionLower.includes('jewish') || religionLower.includes('juda')) return '✡️';
+  if (religionLower.includes('buddhism') || religionLower.includes('buddhist')) return '☸️';
+  if (religionLower.includes('hinduism') || religionLower.includes('hindu')) return '🕉️';
+  if (religionLower.includes('sikhism') || religionLower.includes('sikh')) return '☬';
+  if (religionLower.includes('shinto')) return '⛩️';
+  if (religionLower.includes('taoism') || religionLower.includes('tao')) return '☯️';
+  if (religionLower.includes('traditional') || religionLower.includes('folk')) return '🪔';
+  if (religionLower.includes('orthodox')) return '☦️';
+  
+  return '🕯️'; // Default/generic religion emoji
+}
+
 export default function SidebarPanel({
   selectedEthnicities
 }: SidebarPanelProps) {
@@ -14,10 +34,6 @@ export default function SidebarPanel({
 
   return (
     <div className="flex h-full flex-col rounded-2xl border border-slate-800/70 bg-slate-950/80 p-4 shadow-soft transition-transform duration-300 md:translate-x-0">
-      <h2 className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">
-        Ethnicity Insight
-      </h2>
-
       {!hasSelection && (
         <div className="mt-4 flex flex-1 flex-col items-start justify-center space-y-3 text-sm text-slate-400">
           <p className="text-slate-300">
@@ -32,16 +48,13 @@ export default function SidebarPanel({
       )}
 
       {hasSelection && primary && (
-        <div className="mt-2 flex-1 space-y-4 text-sm text-slate-200 transition-opacity duration-300">
+        <div className="flex-1 space-y-4 text-sm text-slate-200 transition-opacity duration-300">
           <div>
-            <p className="text-xs font-medium uppercase tracking-[0.25em] text-emerald-400">
-              Region
-            </p>
-            <p className="mt-1 text-base font-semibold text-slate-50">
+            <p className="text-lg font-bold text-slate-50">
               {primary.region}
             </p>
             {primary.regionFlags && (
-              <p className="mt-0.5 text-lg leading-tight">{primary.regionFlags}</p>
+              <p className="mt-1 text-lg leading-tight">{primary.regionFlags}</p>
             )}
           </div>
 
@@ -63,7 +76,7 @@ export default function SidebarPanel({
                         {ethnicity.ethnicityName}
                       </p>
                       {typeof ethnicity.share === 'number' && (
-                        <span className="text-[11px] font-medium uppercase tracking-wide text-emerald-400/80">
+                        <span className="text-base font-bold text-emerald-400">
                           ≈ {(ethnicity.share * 100).toFixed(0)}%
                         </span>
                       )}
@@ -77,28 +90,32 @@ export default function SidebarPanel({
                         <span className="mt-1 h-1.5 w-4 rounded-full bg-emerald-400/50" />
                         <span>{ethnicity.fact2}</span>
                       </li>
-                      <li className="pt-1 text-[11px] text-slate-300">
-                        <span className="font-semibold text-slate-200">
-                          Demographics:
-                        </span>{' '}
-                        <span>
-                          <span className="font-medium">Pop:</span>{' '}
-                          {ethnicity.population ?? 'varies / not specified'}
-                          {' · '}
-                        </span>
-                        <span>
-                          <span className="font-medium">Religion:</span>{' '}
-                          {ethnicity.dominantReligion ??
-                            'varies / not specified'}
-                          {' · '}
-                        </span>
-                        <span>
-                          <span className="font-medium">TFR:</span>{' '}
-                          {ethnicity.totalFertilityRate ??
-                            'varies / not specified'}
-                        </span>
-                      </li>
                     </ul>
+                    <div className="mt-3 space-y-1.5 border-t border-slate-800/60 pt-3">
+                      <div className="text-sm">
+                        <span className="font-bold text-slate-100">Population: </span>
+                        <span className="font-semibold text-slate-200">
+                          {ethnicity.population ?? 'varies / not specified'}
+                        </span>
+                      </div>
+                      <div className="text-sm">
+                        <span className="font-bold text-slate-100">Religion: </span>
+                        <span className="font-semibold text-slate-200">
+                          {ethnicity.dominantReligion ?? 'varies / not specified'}
+                        </span>
+                        {ethnicity.dominantReligion && (
+                          <span className="ml-1.5 text-base">
+                            {getReligionEmoji(ethnicity.dominantReligion)}
+                          </span>
+                        )}
+                      </div>
+                      <div className="text-sm">
+                        <span className="font-bold text-slate-100">TFR: </span>
+                        <span className="font-semibold text-slate-200">
+                          {ethnicity.totalFertilityRate ?? 'varies / not specified'}
+                        </span>
+                      </div>
+                    </div>
                   </li>
                 ))}
             </ul>
