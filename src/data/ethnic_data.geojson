@@ -9,7 +9,8 @@
         "ethnicityName": "Sámi People",
         "region": "Arctic Fennoscandia (Norway, Sweden, Finland, Russia)",
         "fact1": "The Sámi are Indigenous reindeer herders and fishers of northern Fennoscandia with distinct Uralic languages.",
-        "fact2": "Traditional Sámi culture centers on seasonal migrations, joik singing, and duodji handicrafts."
+        "fact2": "Traditional Sámi culture centers on seasonal migrations, joik singing, and duodji handicrafts.",
+        "languages": "Sámi languages, Norwegian, Swedish, Finnish"
       }
     },
     {
@@ -20,7 +21,8 @@
         "ethnicityName": "Norwegians",
         "region": "Norway, Scandinavia",
         "fact1": "Norwegians are a North Germanic people shaped by maritime trade, fjord settlements, and Viking heritage.",
-        "fact2": "Modern Norwegian identity blends social democracy, outdoor culture, and strong local dialect traditions."
+        "fact2": "Modern Norwegian identity blends social democracy, outdoor culture, and strong local dialect traditions.",
+        "languages": "Norwegian, English"
       }
     },
     {
@@ -31,7 +33,8 @@
         "ethnicityName": "Swedes",
         "region": "Sweden, Scandinavia",
         "fact1": "Swedes are a North Germanic ethnic group known for Lutheran heritage and egalitarian social norms.",
-        "fact2": "Contemporary Swedish culture emphasizes design minimalism, environmentalism, and collective welfare values."
+        "fact2": "Contemporary Swedish culture emphasizes design minimalism, environmentalism, and collective welfare values.",
+        "languages": "Swedish, English"
       }
     },
     {
@@ -42,7 +45,8 @@
         "ethnicityName": "Finns",
         "region": "Finland and Finnish diaspora",
         "fact1": "Finns are a Finno-Ugric people with a language distinct from neighboring Scandinavian tongues.",
-        "fact2": "Finnish culture values silence, sauna rituals, and close ties to forested lake landscapes."
+        "fact2": "Finnish culture values silence, sauna rituals, and close ties to forested lake landscapes.",
+        "languages": "Finnish, Swedish, English"
       }
     },
     {
@@ -53,7 +57,8 @@
         "ethnicityName": "Lithuanians",
         "region": "Baltic region, Lithuania",
         "fact1": "Lithuanians are a Baltic people whose language preserves many archaic Indo-European features.",
-        "fact2": "Folk song traditions, pagan Baltic symbols, and Catholic festivals coexist in modern Lithuanian culture."
+        "fact2": "Folk song traditions, pagan Baltic symbols, and Catholic festivals coexist in modern Lithuanian culture.",
+        "languages": "Lithuanian, Russian, English"
       }
     },
     {
@@ -64,7 +69,8 @@
         "ethnicityName": "Latvians",
         "region": "Latvia, Baltic region",
         "fact1": "Latvians are a Baltic ethnic group historically shaped by Hanseatic trade and agrarian life.",
-        "fact2": "Midsummer solstice celebrations, folk costumes, and choral singing remain central cultural symbols."
+        "fact2": "Midsummer solstice celebrations, folk costumes, and choral singing remain central cultural symbols.",
+        "languages": "Latvian, Russian, English"
       }
     },
     {
@@ -75,7 +81,8 @@
         "ethnicityName": "Estonians",
         "region": "Estonia, Baltic Sea coast",
         "fact1": "Estonians are a Finno-Ugric people with cultural links to Finns and ancient forest settlements.",
-        "fact2": "A \"singing revolution\" helped restore Estonian independence, highlighting the power of choral traditions."
+        "fact2": "A \"singing revolution\" helped restore Estonian independence, highlighting the power of choral traditions.",
+        "languages": "Estonian, Russian, English"
       }
     },
     {
@@ -86,7 +93,8 @@
         "ethnicityName": "Slovenes",
         "region": "Slovenia and neighboring Alpine regions",
         "fact1": "Slovenes are a South Slavic people whose homeland bridges Alpine, Pannonian, and Adriatic zones.",
-        "fact2": "Folk dances, polka music, and vineyard culture shape many rural Slovenian identities."
+        "fact2": "Folk dances, polka music, and vineyard culture shape many rural Slovenian identities.",
+        "languages": "Slovenian, Croatian, English"
       }
     },
     {
@@ -97,7 +105,8 @@
         "ethnicityName": "Austrians",
         "region": "Austria, Central Europe",
         "fact1": "Austrians are a German-speaking people deeply influenced by Habsburg imperial history.",
-        "fact2": "Classical music, coffeehouse culture, and alpine village traditions coexist in Austrian life."
+        "fact2": "Classical music, coffeehouse culture, and alpine village traditions coexist in Austrian life.",
+        "languages": "German, English"
       }
     },
     {
@@ -108,7 +117,8 @@
         "ethnicityName": "Swiss (German-speaking)",
         "region": "Alpine Switzerland",
         "fact1": "German-speaking Swiss communities developed around mountain valleys, trade routes, and urban cantons.",
-        "fact2": "Direct democracy, multilingualism, and local autonomy are cornerstones of Swiss civic culture."
+        "fact2": "Direct democracy, multilingualism, and local autonomy are cornerstones of Swiss civic culture.",
+        "languages": "German, French, Italian, Romansh"
       }
     },
 
@@ -120,7 +130,8 @@
         "ethnicityName": "French",
         "region": "France and global Francophone diaspora",
         "fact1": "The French are a Western European people shaped by Roman, Celtic, and Frankish legacies.",
-        "fact2": "Cuisine, philosophy, fashion, and language policy play strong roles in French national identity."
+        "fact2": "Cuisine, philosophy, fashion, and language policy play strong roles in French national identity.",
+        "languages": "French, English"
       }
     },
     {
@@ -131,7 +142,8 @@
         "ethnicityName": "Castilians",
         "region": "Central Spain (Castile) and Spanish-speaking world",
         "fact1": "Castilians historically led the unification of Spain and the expansion of the Spanish language.",
-        "fact2": "Cervantes, Golden Age literature, and Madrid urban culture shape Castilian identity narratives."
+        "fact2": "Cervantes, Golden Age literature, and Madrid urban culture shape Castilian identity narratives.",
+        "languages": "Spanish, English"
       }
     },
     {
@@ -142,7 +154,8 @@
         "ethnicityName": "Basques",
         "region": "Western Pyrenees, Spain and France",
         "fact1": "Basques speak Euskara, a language isolate unrelated to surrounding Indo-European tongues.",
-        "fact2": "Rural sports, txalaparta percussion, and strong local institutions support Basque cultural resilience."
+        "fact2": "Rural sports, txalaparta percussion, and strong local institutions support Basque cultural resilience.",
+        "languages": "Euskera, Spanish, French"
       }
     },
     {
@@ -153,7 +166,8 @@
         "ethnicityName": "Catalans",
         "region": "Catalonia, Valencia, Balearic Islands, Andorra",
         "fact1": "Catalans are a Romance-speaking people with distinct language, civil law, and political traditions.",
-        "fact2": "Castells human towers, senyera flags, and urban modernism define much Catalan public culture."
+        "fact2": "Castells human towers, senyera flags, and urban modernism define much Catalan public culture.",
+        "languages": "Catalan, Spanish, French"
       }
     },
     {
@@ -164,7 +178,8 @@
         "ethnicityName": "Italians",
         "region": "Italy and extensive global diaspora",
         "fact1": "Italians descend from diverse regional cultures unified under a modern nation-state in the 19th century.",
-        "fact2": "Family networks, food rituals, and strong regional identities anchor Italian everyday life."
+        "fact2": "Family networks, food rituals, and strong regional identities anchor Italian everyday life.",
+        "languages": "Italian, English"
       }
     },
     {
@@ -175,7 +190,8 @@
         "ethnicityName": "Hungarians (Magyars)",
         "region": "Hungary and Carpathian Basin",
         "fact1": "Hungarians are a Uralic-speaking people whose medieval kingdom shaped Central European politics.",
-        "fact2": "Csárdás dance, paprika cuisine, and Budapest café culture are iconic Hungarian markers."
+        "fact2": "Csárdás dance, paprika cuisine, and Budapest café culture are iconic Hungarian markers.",
+        "languages": "Hungarian, English, German"
       }
     },
     {
@@ -186,7 +202,8 @@
         "ethnicityName": "Poles",
         "region": "Poland and Polish diaspora communities",
         "fact1": "Poles are a West Slavic people whose statehood has shifted through partitions and uprisings.",
-        "fact2": "Catholic pilgrimages, solidarity movements, and folk dances underpin Polish cultural memory."
+        "fact2": "Catholic pilgrimages, solidarity movements, and folk dances underpin Polish cultural memory.",
+        "languages": "Polish, English, German"
       }
     },
     {
@@ -197,7 +214,8 @@
         "ethnicityName": "Russians",
         "region": "European Russia and Siberia",
         "fact1": "Russians are an East Slavic people whose culture spans from Orthodox Christianity to Soviet legacies.",
-        "fact2": "Literature, ballet, and dacha countryside life remain important symbols in Russian identity debates."
+        "fact2": "Literature, ballet, and dacha countryside life remain important symbols in Russian identity debates.",
+        "languages": "Russian, English"
       }
     },
     {
@@ -208,7 +226,8 @@
         "ethnicityName": "Ukrainians",
         "region": "Ukraine and global Ukrainian diaspora",
         "fact1": "Ukrainians are an East Slavic people with strong Cossack, agrarian, and folk song traditions.",
-        "fact2": "Vyshyvanka embroidery and vibrant village rituals express Ukrainian cultural continuity and resilience."
+        "fact2": "Vyshyvanka embroidery and vibrant village rituals express Ukrainian cultural continuity and resilience.",
+        "languages": "Ukrainian, Russian, English"
       }
     },
     {
@@ -219,7 +238,8 @@
         "ethnicityName": "Belarusians",
         "region": "Belarus and nearby borderlands",
         "fact1": "Belarusians are an East Slavic group with historical ties to the Grand Duchy of Lithuania.",
-        "fact2": "Rural crafts, forest folklore, and bilingualism shape many Belarusian local identities."
+        "fact2": "Rural crafts, forest folklore, and bilingualism shape many Belarusian local identities.",
+        "languages": "Belarusian, Russian, English"
       }
     },
 
@@ -231,7 +251,8 @@
         "ethnicityName": "Georgians (Kartvelians)",
         "region": "Georgia, South Caucasus",
         "fact1": "Georgians are a Kartvelian-speaking people known for ancient wine-making traditions.",
-        "fact2": "Polyphonic singing and supra feasts with toasting rituals structure Georgian social life."
+        "fact2": "Polyphonic singing and supra feasts with toasting rituals structure Georgian social life.",
+        "languages": "Georgian, Russian, English"
       }
     },
     {

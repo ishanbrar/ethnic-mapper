@@ -13,13 +13,15 @@ export default function HomePage() {
   const [selectedEthnicities, setSelectedEthnicities] = useState<
     Ethnicity[] | null
   >(null);
+  const [selectedRegion, setSelectedRegion] = useState<any>(null);
   const [isMobilePanelOpen, setIsMobilePanelOpen] = useState(false);
   const [showScrollIndicator, setShowScrollIndicator] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Auto-open mobile panel when selection is made
-  const handleSelectEthnicity = (ethnicities: Ethnicity[] | null) => {
+  const handleSelectEthnicity = (ethnicities: Ethnicity[] | null, region?: any) => {
     setSelectedEthnicities(ethnicities);
+    setSelectedRegion(region);
     if (ethnicities && ethnicities.length > 0) {
       setIsMobilePanelOpen(true);
     }
@@ -67,7 +69,7 @@ export default function HomePage() {
       
       {/* Desktop Sidebar */}
       <aside className="hidden w-full max-w-sm md:block">
-        <SidebarPanel selectedEthnicities={selectedEthnicities} />
+        <SidebarPanel selectedEthnicities={selectedEthnicities} selectedRegion={selectedRegion} />
       </aside>
 
       {/* Mobile Bottom Sheet */}
@@ -115,7 +117,7 @@ export default function HomePage() {
                 style={{ maxHeight: 'calc(85vh - 48px)' }}
                 onClick={(e) => e.stopPropagation()}
               >
-                <SidebarPanel selectedEthnicities={selectedEthnicities} />
+                <SidebarPanel selectedEthnicities={selectedEthnicities} selectedRegion={selectedRegion} />
               </div>
               
               {/* Scroll Indicator - only on mobile when there's more content */}

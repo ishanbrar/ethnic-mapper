@@ -13,6 +13,10 @@ export type Region = {
     minLat: number;
     maxLat: number;
   };
+  /**
+   * Human Development Index level for this region.
+   */
+  hdi?: string;
   ethnicities: Ethnicity[];
 };
 
@@ -26,6 +30,7 @@ export const regions: Region[] = [
       minLat: 29.0,
       maxLat: 33.7
     },
+    hdi: 'Very High (0.919)',
     ethnicities: [
       {
         id: 'israeli_jews',
@@ -35,7 +40,8 @@ export const regions: Region[] = [
           'Israeli Jews form the majority population in Israel, combining Ashkenazi, Mizrahi, Sephardi, Ethiopian, and Russian-speaking communities.',
         fact2:
           'Hebrew language revival, military service, and layered diaspora histories strongly shape Israeli Jewish identity.',
-        share: 0.75
+        share: 0.75,
+        languages: 'Hebrew, Russian, English, Yiddish'
       },
       {
         id: 'palestinian_arabs',
@@ -45,7 +51,8 @@ export const regions: Region[] = [
           'Palestinian Arabs who are citizens of Israel maintain Arabic language, local village networks, and urban communities.',
         fact2:
           'They navigate dual identities, participating in Israeli civic life while maintaining distinct Palestinian cultural traditions.',
-        share: 0.2
+        share: 0.2,
+        languages: 'Arabic, Hebrew'
       }
     ]
   },
@@ -58,6 +65,7 @@ export const regions: Region[] = [
       minLat: 31.0,
       maxLat: 32.8
     },
+    hdi: 'High (0.715)',
     ethnicities: [
       {
         id: 'palestinian_wb_gaza',
@@ -70,7 +78,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 3.5'
+        totalFertilityRate: '≈ 3.5',
+        languages: 'Arabic'
       },
       {
         id: 'israeli_settlers_wb',
@@ -83,7 +92,8 @@ export const regions: Region[] = [
         share: 0.08,
         population: '≈ 0.4M',
         dominantReligion: 'Judaism',
-        totalFertilityRate: '≈ 4.0'
+        totalFertilityRate: '≈ 4.0',
+        languages: 'Hebrew, English'
       }
     ]
   },
@@ -96,6 +106,7 @@ export const regions: Region[] = [
       minLat: 25.0,
       maxLat: 30.5
     },
+    hdi: 'Very High (0.926)',
     ethnicities: [
       {
         id: 'mexican_american_south_tx',
@@ -105,7 +116,8 @@ export const regions: Region[] = [
           'South Texas has majority Mexican American communities with deep cross-border kinship and migration histories.',
         fact2:
           'Spanglish, conjunto and Tejano music, and shared festivals across the border shape everyday Hispanic culture in the region.',
-        share: 0.7
+        share: 0.7,
+        languages: 'Spanish, English'
       },
       {
         id: 'anglo_texan_south_tx',
@@ -115,7 +127,8 @@ export const regions: Region[] = [
           'Anglo Texans in the region often trace settler roots to cattle ranching, oil development, and frontier expansion.',
         fact2:
           'Rodeo culture, Protestant church life, and barbecue traditions are strong identity markers for many Anglo Texans.',
-        share: 0.25
+        share: 0.25,
+        languages: 'English'
       }
     ]
   },
@@ -128,6 +141,7 @@ export const regions: Region[] = [
       minLat: 43.0,
       maxLat: 49.0
     },
+    hdi: 'Very High (0.926)',
     ethnicities: [
       {
         id: 'upper_midwest_white',
@@ -140,7 +154,8 @@ export const regions: Region[] = [
         share: 0.85,
         population: '≈ 12M',
         dominantReligion: 'Lutheranism / Catholicism',
-        totalFertilityRate: '≈ 1.7'
+        totalFertilityRate: '≈ 1.7',
+        languages: 'English, German'
       },
       {
         id: 'upper_midwest_african_american',
@@ -153,7 +168,8 @@ export const regions: Region[] = [
         share: 0.08,
         population: '≈ 1.1M',
         dominantReligion: 'Christianity',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'English'
       }
     ]
   },
@@ -166,6 +182,7 @@ export const regions: Region[] = [
       minLat: 38.0,
       maxLat: 43.0
     },
+    hdi: 'Very High (0.926)',
     ethnicities: [
       {
         id: 'central_midwest_white',
@@ -178,7 +195,8 @@ export const regions: Region[] = [
         share: 0.78,
         population: '≈ 15M',
         dominantReligion: 'Catholicism / Protestantism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'English, German'
       },
       {
         id: 'central_midwest_african_american',
@@ -191,7 +209,8 @@ export const regions: Region[] = [
         share: 0.14,
         population: '≈ 2.7M',
         dominantReligion: 'Christianity',
-        totalFertilityRate: '≈ 1.7'
+        totalFertilityRate: '≈ 1.7',
+        languages: 'English'
       }
     ]
   },
@@ -204,6 +223,7 @@ export const regions: Region[] = [
       minLat: 31.0,
       maxLat: 37.0
     },
+    hdi: 'Very High (0.926)',
     ethnicities: [
       {
         id: 'southwest_white',
@@ -216,7 +236,8 @@ export const regions: Region[] = [
         share: 0.65,
         population: '≈ 8M',
         dominantReligion: 'Christianity',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'English'
       },
       {
         id: 'southwest_hispanic',
@@ -229,7 +250,8 @@ export const regions: Region[] = [
         share: 0.28,
         population: '≈ 3.5M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 2.0'
+        totalFertilityRate: '≈ 2.0',
+        languages: 'Spanish, English'
       }
     ]
   },
@@ -242,6 +264,7 @@ export const regions: Region[] = [
       minLat: 30.0,
       maxLat: 36.0
     },
+    hdi: 'Very High (0.926)',
     ethnicities: [
       {
         id: 'southeast_white',
@@ -254,7 +277,8 @@ export const regions: Region[] = [
         share: 0.62,
         population: '≈ 18M',
         dominantReligion: 'Protestantism',
-        totalFertilityRate: '≈ 1.7'
+        totalFertilityRate: '≈ 1.7',
+        languages: 'English'
       },
       {
         id: 'southeast_african_american',
@@ -267,7 +291,8 @@ export const regions: Region[] = [
         share: 0.32,
         population: '≈ 9.3M',
         dominantReligion: 'Christianity',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'English'
       },
       {
         id: 'southeast_hispanic',
@@ -280,7 +305,8 @@ export const regions: Region[] = [
         share: 0.05,
         population: '≈ 1.5M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 2.1'
+        totalFertilityRate: '≈ 2.1',
+        languages: 'Spanish, English'
       }
     ]
   },
@@ -293,6 +319,7 @@ export const regions: Region[] = [
       minLat: 41.0,
       maxLat: 60.0
     },
+    hdi: 'Very High (0.930)',
     ethnicities: [
       {
         id: 'western_europeans',
@@ -302,8 +329,9 @@ export const regions: Region[] = [
         fact1:
           'Western Europeans encompass diverse national groups shaped by Roman, medieval, and industrial histories.',
         fact2:
-          'Dense cities, welfare states, and strong regional cultures coexist across Western Europe’s mosaic of identities.',
-        share: 0.75
+          'Dense cities, welfare states, and strong regional cultures coexist across Western Europe\'s mosaic of identities.',
+        share: 0.75,
+        languages: 'French, German, English, Spanish, Italian, Portuguese, Dutch'
       },
       {
         id: 'maghrebi_diaspora_west_eu',
@@ -313,7 +341,8 @@ export const regions: Region[] = [
           'Maghrebi diaspora populations bring Amazigh and Arab cultural traditions into European urban neighborhoods.',
         fact2:
           'Mosques, cafés, and transnational media connect youth culture across North Africa and European cities.',
-        share: 0.2
+        share: 0.2,
+        languages: 'Arabic, Berber, French, Spanish, Dutch'
       }
     ]
   },
@@ -328,6 +357,7 @@ export const regions: Region[] = [
       minLat: 24.6,
       maxLat: 25.8
     },
+    hdi: 'Medium (0.641)',
     ethnicities: [
       {
         id: 'karachi_muhajir_communities',
@@ -340,7 +370,8 @@ export const regions: Region[] = [
         share: 0.4,
         population: '≈ 7.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.8'
+        totalFertilityRate: '≈ 2.8',
+        languages: 'Urdu, English'
       },
       {
         id: 'karachi_sindhi_baluchi_mixtures',
@@ -353,7 +384,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 4.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 3.2'
+        totalFertilityRate: '≈ 3.2',
+        languages: 'Sindhi, Balochi, Urdu'
       },
       {
         id: 'karachi_pakhtun_migrants',
@@ -366,7 +398,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 3.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 3.5'
+        totalFertilityRate: '≈ 3.5',
+        languages: 'Pashto, Urdu'
       }
     ]
   },
@@ -379,6 +412,7 @@ export const regions: Region[] = [
       minLat: 31.2,
       maxLat: 31.8
     },
+    hdi: 'Medium (0.641)',
     ethnicities: [
       {
         id: 'lahori_punjabis',
@@ -391,7 +425,8 @@ export const regions: Region[] = [
         share: 0.7,
         population: '≈ 12M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 3.1'
+        totalFertilityRate: '≈ 3.1',
+        languages: 'Punjabi, Urdu'
       },
       {
         id: 'lahore_urdu_speakers',
@@ -404,7 +439,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 3.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.9'
+        totalFertilityRate: '≈ 2.9',
+        languages: 'Urdu, Punjabi'
       }
     ]
   },
@@ -417,6 +453,7 @@ export const regions: Region[] = [
       minLat: 30.0,
       maxLat: 32.5
     },
+    hdi: 'Medium (0.641)',
     ethnicities: [
       {
         id: 'pakistani_punjab_rural_muslims',
@@ -429,7 +466,8 @@ export const regions: Region[] = [
         share: 0.75,
         population: '≈ 45M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 3.4'
+        totalFertilityRate: '≈ 3.4',
+        languages: 'Punjabi, Urdu'
       },
       {
         id: 'pakistani_punjab_saraiki',
@@ -442,7 +480,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 12M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 3.5'
+        totalFertilityRate: '≈ 3.5',
+        languages: 'Saraiki, Punjabi, Urdu'
       }
     ]
   },
@@ -455,6 +494,7 @@ export const regions: Region[] = [
       minLat: 30.5,
       maxLat: 31.8
     },
+    hdi: 'High (0.721)',
     ethnicities: [
       {
         id: 'sikh_punjabis_amritsar',
@@ -467,7 +507,8 @@ export const regions: Region[] = [
         share: 0.65,
         population: '≈ 12M',
         dominantReligion: 'Sikhism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Punjabi, Hindi, English'
       },
       {
         id: 'hindu_punjabis_amritsar',
@@ -480,7 +521,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 4.5M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.9'
+        totalFertilityRate: '≈ 1.9',
+        languages: 'Punjabi, Hindi, English'
       }
     ]
   },
@@ -493,6 +535,7 @@ export const regions: Region[] = [
       minLat: 29.5,
       maxLat: 31.0
     },
+    hdi: 'High (0.721)',
     ethnicities: [
       {
         id: 'sikh_punjabis_malwa',
@@ -505,7 +548,8 @@ export const regions: Region[] = [
         share: 0.7,
         population: '≈ 10M',
         dominantReligion: 'Sikhism',
-        totalFertilityRate: '≈ 1.7'
+        totalFertilityRate: '≈ 1.7',
+        languages: 'Punjabi, Hindi, English'
       },
       {
         id: 'hindu_punjabis_malwa',
@@ -518,7 +562,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 3.5M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Punjabi, Hindi, English'
       }
     ]
   },
@@ -531,6 +576,7 @@ export const regions: Region[] = [
       minLat: 33.4,
       maxLat: 33.8
     },
+    hdi: 'Medium (0.641)',
     ethnicities: [
       {
         id: 'islamabad_urban_migrants',
@@ -543,7 +589,8 @@ export const regions: Region[] = [
         share: 0.7,
         population: '≈ 2.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.9'
+        totalFertilityRate: '≈ 2.9',
+        languages: 'Urdu, Punjabi, English'
       },
       {
         id: 'rawalpindi_punjabi_communities',
@@ -556,7 +603,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 0.7M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 3.0'
+        totalFertilityRate: '≈ 3.0',
+        languages: 'Punjabi, Urdu'
       },
       {
         id: 'islamabad_pashtun_migrants',
@@ -569,7 +617,8 @@ export const regions: Region[] = [
         share: 0.08,
         population: '≈ 0.3M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 3.2'
+        totalFertilityRate: '≈ 3.2',
+        languages: 'Pashto, Urdu'
       }
     ]
   },
@@ -582,6 +631,7 @@ export const regions: Region[] = [
       minLat: 33.5,
       maxLat: 35.0
     },
+    hdi: 'Medium (0.641)',
     ethnicities: [
       {
         id: 'peshawar_pashtuns',
@@ -594,7 +644,8 @@ export const regions: Region[] = [
         share: 0.75,
         population: '≈ 4.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 3.6'
+        totalFertilityRate: '≈ 3.6',
+        languages: 'Pashto, Urdu'
       },
       {
         id: 'peshawar_afghan_refugees',
@@ -607,7 +658,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 0.9M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 4.0'
+        totalFertilityRate: '≈ 4.0',
+        languages: 'Pashto, Dari, Urdu'
       },
       {
         id: 'peshawar_hindkowan',
@@ -620,7 +672,8 @@ export const regions: Region[] = [
         share: 0.08,
         population: '≈ 0.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 3.0'
+        totalFertilityRate: '≈ 3.0',
+        languages: 'Hindko, Urdu'
       }
     ]
   },
@@ -633,6 +686,7 @@ export const regions: Region[] = [
       minLat: 25.0,
       maxLat: 27.0
     },
+    hdi: 'Medium (0.641)',
     ethnicities: [
       {
         id: 'sindhi_interior_communities',
@@ -645,7 +699,8 @@ export const regions: Region[] = [
         share: 0.65,
         population: '≈ 12M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 3.3'
+        totalFertilityRate: '≈ 3.3',
+        languages: 'Sindhi, Urdu'
       },
       {
         id: 'sindh_interior_baloch',
@@ -658,7 +713,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 3.7M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 3.5'
+        totalFertilityRate: '≈ 3.5',
+        languages: 'Balochi, Sindhi, Urdu'
       },
       {
         id: 'sindh_interior_hindus',
@@ -671,7 +727,8 @@ export const regions: Region[] = [
         share: 0.12,
         population: '≈ 2.2M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 2.8'
+        totalFertilityRate: '≈ 2.8',
+        languages: 'Sindhi, Hindi'
       }
     ]
   },
@@ -684,6 +741,7 @@ export const regions: Region[] = [
       minLat: 24.0,
       maxLat: 26.5
     },
+    hdi: 'Medium (0.641)',
     ethnicities: [
       {
         id: 'thari_hindu_communities',
@@ -696,7 +754,8 @@ export const regions: Region[] = [
         share: 0.4,
         population: '≈ 2.5M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 2.8'
+        totalFertilityRate: '≈ 2.8',
+        languages: 'Thari, Sindhi, Hindi'
       },
       {
         id: 'muslim_thari_pastoralists',
@@ -709,7 +768,8 @@ export const regions: Region[] = [
         share: 0.35,
         population: '≈ 2M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 3.2'
+        totalFertilityRate: '≈ 3.2',
+        languages: 'Thari, Sindhi, Urdu'
       }
     ]
   },
@@ -722,6 +782,7 @@ export const regions: Region[] = [
       minLat: 27.5,
       maxLat: 29.5
     },
+    hdi: 'High (0.750)',
     ethnicities: [
       {
         id: 'delhi_hindi_speakers',
@@ -734,7 +795,8 @@ export const regions: Region[] = [
         share: 0.45,
         population: '≈ 9M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Hindi, English'
       },
       {
         id: 'delhi_punjabi_migrants',
@@ -747,7 +809,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 4M',
         dominantReligion: 'Sikhism / Hinduism',
-        totalFertilityRate: '≈ 1.7'
+        totalFertilityRate: '≈ 1.7',
+        languages: 'Punjabi, Hindi, English'
       },
       {
         id: 'delhi_urdu_speakers',
@@ -760,7 +823,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 3M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.4'
+        totalFertilityRate: '≈ 2.4',
+        languages: 'Urdu, Hindi'
       }
     ]
   },
@@ -773,6 +837,7 @@ export const regions: Region[] = [
       minLat: 27.0,
       maxLat: 28.5
     },
+    hdi: 'Medium (0.650)',
     ethnicities: [
       {
         id: 'western_up_hindus',
@@ -785,7 +850,8 @@ export const regions: Region[] = [
         share: 0.7,
         population: '≈ 25M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 2.3'
+        totalFertilityRate: '≈ 2.3',
+        languages: 'Hindi, English'
       },
       {
         id: 'western_up_muslims',
@@ -798,7 +864,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 9M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.8'
+        totalFertilityRate: '≈ 2.8',
+        languages: 'Urdu, Hindi'
       }
     ]
   },
@@ -811,6 +878,7 @@ export const regions: Region[] = [
       minLat: 25.0,
       maxLat: 27.5
     },
+    hdi: 'Medium (0.650)',
     ethnicities: [
       {
         id: 'awadhi_hindus',
@@ -823,7 +891,8 @@ export const regions: Region[] = [
         share: 0.5,
         population: '≈ 30M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 2.4'
+        totalFertilityRate: '≈ 2.4',
+        languages: 'Awadhi, Hindi, Urdu'
       },
       {
         id: 'bhojpuri_hindus',
@@ -836,7 +905,8 @@ export const regions: Region[] = [
         share: 0.35,
         population: '≈ 21M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 2.5'
+        totalFertilityRate: '≈ 2.5',
+        languages: 'Bhojpuri, Hindi'
       }
     ]
   },
@@ -849,6 +919,7 @@ export const regions: Region[] = [
       minLat: 24.5,
       maxLat: 27.0
     },
+    hdi: 'Medium (0.620)',
     ethnicities: [
       {
         id: 'bihar_hindus',
@@ -861,7 +932,8 @@ export const regions: Region[] = [
         share: 0.7,
         population: '≈ 70M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 2.6'
+        totalFertilityRate: '≈ 2.6',
+        languages: 'Hindi, Bhojpuri, Maithili'
       },
       {
         id: 'bihar_muslims',
@@ -874,7 +946,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 20M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 3.0'
+        totalFertilityRate: '≈ 3.0',
+        languages: 'Urdu, Hindi, Bhojpuri'
       }
     ]
   },
@@ -887,6 +960,7 @@ export const regions: Region[] = [
       minLat: 25.0,
       maxLat: 27.5
     },
+    hdi: 'Medium (0.680)',
     ethnicities: [
       {
         id: 'rajasthani_marwar',
@@ -899,7 +973,8 @@ export const regions: Region[] = [
         share: 0.8,
         population: '≈ 15M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 2.2'
+        totalFertilityRate: '≈ 2.2',
+        languages: 'Rajasthani, Hindi'
       },
       {
         id: 'rajasthan_marwar_muslims',
@@ -912,7 +987,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 2.8M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.5'
+        totalFertilityRate: '≈ 2.5',
+        languages: 'Rajasthani, Urdu, Hindi'
       }
     ]
   },
@@ -925,6 +1001,7 @@ export const regions: Region[] = [
       minLat: 21.5,
       maxLat: 24.5
     },
+    hdi: 'High (0.720)',
     ethnicities: [
       {
         id: 'gujarati_patels_traders',
@@ -937,7 +1014,8 @@ export const regions: Region[] = [
         share: 0.65,
         population: '≈ 35M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.9'
+        totalFertilityRate: '≈ 1.9',
+        languages: 'Gujarati, Hindi, English'
       },
       {
         id: 'gujarati_muslims',
@@ -950,7 +1028,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 8M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.5'
+        totalFertilityRate: '≈ 2.5',
+        languages: 'Gujarati, Urdu, Hindi'
       }
     ]
   },
@@ -963,6 +1042,7 @@ export const regions: Region[] = [
       minLat: 18.7,
       maxLat: 19.5
     },
+    hdi: 'High (0.750)',
     ethnicities: [
       {
         id: 'mumbai_marathis',
@@ -975,7 +1055,8 @@ export const regions: Region[] = [
         share: 0.3,
         population: '≈ 4.5M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'Marathi, Hindi, English'
       },
       {
         id: 'mumbai_migrant_multitudes',
@@ -988,7 +1069,8 @@ export const regions: Region[] = [
         share: 0.5,
         population: '≈ 7.5M',
         dominantReligion: 'Hinduism / Islam',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Hindi, Marathi, Gujarati, Tamil, Telugu, Bengali'
       }
     ]
   },
@@ -1001,6 +1083,7 @@ export const regions: Region[] = [
       minLat: 14.5,
       maxLat: 18.8
     },
+    hdi: 'High (0.720)',
     ethnicities: [
       {
         id: 'konkani_hindus',
@@ -1013,7 +1096,8 @@ export const regions: Region[] = [
         share: 0.35,
         population: '≈ 3.5M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.7'
+        totalFertilityRate: '≈ 1.7',
+        languages: 'Konkani, Marathi, Hindi'
       },
       {
         id: 'goan_catholics',
@@ -1026,7 +1110,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 0.5M',
         dominantReligion: 'Christianity (Catholic)',
-        totalFertilityRate: '≈ 1.5'
+        totalFertilityRate: '≈ 1.5',
+        languages: 'Konkani, Portuguese, English'
       }
     ]
   },
@@ -1039,6 +1124,7 @@ export const regions: Region[] = [
       minLat: 11.5,
       maxLat: 13.5
     },
+    hdi: 'High (0.730)',
     ethnicities: [
       {
         id: 'bangalore_kannadigas',
@@ -1051,7 +1137,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 3.5M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.5'
+        totalFertilityRate: '≈ 1.5',
+        languages: 'Kannada, English, Hindi'
       },
       {
         id: 'bangalore_internal_migrants',
@@ -1064,7 +1151,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 3.5M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.7'
+        totalFertilityRate: '≈ 1.7',
+        languages: 'Hindi, Telugu, Tamil, Bengali'
       },
       {
         id: 'mysore_kannadigas',
@@ -1077,7 +1165,8 @@ export const regions: Region[] = [
         share: 0.45,
         population: '≈ 8M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'Kannada, English'
       }
     ]
   },
@@ -1090,6 +1179,7 @@ export const regions: Region[] = [
       minLat: 8.5,
       maxLat: 12.5
     },
+    hdi: 'High (0.779)',
     ethnicities: [
       {
         id: 'malayali_hindus_kerala',
@@ -1102,7 +1192,8 @@ export const regions: Region[] = [
         share: 0.4,
         population: '≈ 9M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'Malayalam, English'
       },
       {
         id: 'malabar_muslims_kerala',
@@ -1115,7 +1206,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 5.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Malayalam, Arabic, English'
       },
       {
         id: 'kerala_christian_communities',
@@ -1128,7 +1220,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 4.5M',
         dominantReligion: 'Christianity (Orthodox / Catholic)',
-        totalFertilityRate: '≈ 1.5'
+        totalFertilityRate: '≈ 1.5',
+        languages: 'Malayalam, English, Syriac'
       }
     ]
   },
@@ -1141,6 +1234,7 @@ export const regions: Region[] = [
       minLat: 12.8,
       maxLat: 13.2
     },
+    hdi: 'High (0.740)',
     ethnicities: [
       {
         id: 'chennai_tamil_urbanites',
@@ -1153,7 +1247,8 @@ export const regions: Region[] = [
         share: 0.7,
         population: '≈ 5.5M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.5'
+        totalFertilityRate: '≈ 1.5',
+        languages: 'Tamil, English, Hindi'
       },
       {
         id: 'chennai_muslims',
@@ -1166,7 +1261,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 1.2M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Tamil, Urdu, Arabic, English'
       },
       {
         id: 'chennai_telugu_migrants',
@@ -1179,7 +1275,8 @@ export const regions: Region[] = [
         share: 0.12,
         population: '≈ 0.9M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'Telugu, Tamil, English'
       }
     ]
   },
@@ -1192,6 +1289,7 @@ export const regions: Region[] = [
       minLat: 8.5,
       maxLat: 12.0
     },
+    hdi: 'High (0.708)',
     ethnicities: [
       {
         id: 'tamil_interior_communities',
@@ -1204,7 +1302,8 @@ export const regions: Region[] = [
         share: 0.85,
         population: '≈ 18M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'Tamil, English'
       },
       {
         id: 'tamil_nadu_muslims',
@@ -1217,7 +1316,8 @@ export const regions: Region[] = [
         share: 0.12,
         population: '≈ 2.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 1.9'
+        totalFertilityRate: '≈ 1.9',
+        languages: 'Tamil, Urdu, Arabic'
       }
     ]
   },
@@ -1230,6 +1330,7 @@ export const regions: Region[] = [
       minLat: 14.5,
       maxLat: 18.5
     },
+    hdi: 'High (0.715)',
     ethnicities: [
       {
         id: 'andhra_coastal_telugus',
@@ -1242,7 +1343,8 @@ export const regions: Region[] = [
         share: 0.85,
         population: '≈ 25M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.7'
+        totalFertilityRate: '≈ 1.7',
+        languages: 'Telugu, English, Hindi'
       },
       {
         id: 'andhra_coastal_muslims',
@@ -1255,7 +1357,8 @@ export const regions: Region[] = [
         share: 0.12,
         population: '≈ 3.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.0'
+        totalFertilityRate: '≈ 2.0',
+        languages: 'Telugu, Urdu, Arabic'
       }
     ]
   },
@@ -1268,6 +1371,7 @@ export const regions: Region[] = [
       minLat: 16.0,
       maxLat: 19.0
     },
+    hdi: 'High (0.720)',
     ethnicities: [
       {
         id: 'hyderabadi_urdu_speakers',
@@ -1280,7 +1384,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 2.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.0'
+        totalFertilityRate: '≈ 2.0',
+        languages: 'Urdu, Telugu, Hindi, Arabic'
       },
       {
         id: 'hyderabad_telugus',
@@ -1293,7 +1398,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 3M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'Telugu, English, Hindi'
       },
       {
         id: 'telangana_rural_populations',
@@ -1306,7 +1412,8 @@ export const regions: Region[] = [
         share: 0.5,
         population: '≈ 20M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Telugu, Hindi'
       }
     ]
   },
@@ -1319,6 +1426,7 @@ export const regions: Region[] = [
       minLat: 21.5,
       maxLat: 23.0
     },
+    hdi: 'Medium (0.641)',
     ethnicities: [
       {
         id: 'kolkata_bengali_urbanites',
@@ -1331,7 +1439,8 @@ export const regions: Region[] = [
         share: 0.5,
         population: '≈ 5M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.4'
+        totalFertilityRate: '≈ 1.4',
+        languages: 'Bengali, English, Hindi'
       },
       {
         id: 'sundarbans_delta_communities',
@@ -1344,7 +1453,8 @@ export const regions: Region[] = [
         share: 0.4,
         population: '≈ 4M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.7'
+        totalFertilityRate: '≈ 1.7',
+        languages: 'Bengali'
       }
     ]
   },
@@ -1357,6 +1467,7 @@ export const regions: Region[] = [
       minLat: 23.6,
       maxLat: 23.9
     },
+    hdi: 'Medium (0.661)',
     ethnicities: [
       {
         id: 'dhaka_bengali_muslims',
@@ -1369,7 +1480,8 @@ export const regions: Region[] = [
         share: 0.85,
         population: '≈ 12M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.0'
+        totalFertilityRate: '≈ 2.0',
+        languages: 'Bengali, English'
       },
       {
         id: 'dhaka_bengali_hindus',
@@ -1382,7 +1494,8 @@ export const regions: Region[] = [
         share: 0.1,
         population: '≈ 1.4M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Bengali, English'
       },
       {
         id: 'dhaka_bihari_communities',
@@ -1395,7 +1508,8 @@ export const regions: Region[] = [
         share: 0.03,
         population: '≈ 0.4M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.2'
+        totalFertilityRate: '≈ 2.2',
+        languages: 'Urdu, Bengali'
       }
     ]
   },
@@ -1408,6 +1522,7 @@ export const regions: Region[] = [
       minLat: 23.0,
       maxLat: 25.0
     },
+    hdi: 'Medium (0.661)',
     ethnicities: [
       {
         id: 'bengali_bangladesh_rural',
@@ -1420,7 +1535,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 120M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.1'
+        totalFertilityRate: '≈ 2.1',
+        languages: 'Bengali'
       },
       {
         id: 'bangladesh_rural_hindus',
@@ -1433,7 +1549,8 @@ export const regions: Region[] = [
         share: 0.08,
         population: '≈ 10.5M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 2.0'
+        totalFertilityRate: '≈ 2.0',
+        languages: 'Bengali'
       }
     ]
   },
@@ -1446,6 +1563,7 @@ export const regions: Region[] = [
       minLat: 21.5,
       maxLat: 23.5
     },
+    hdi: 'Medium (0.580)',
     ethnicities: [
       {
         id: 'chakma_communities',
@@ -1458,7 +1576,8 @@ export const regions: Region[] = [
         share: 0.35,
         population: '≈ 0.5M',
         dominantReligion: 'Buddhism',
-        totalFertilityRate: '≈ 2.3'
+        totalFertilityRate: '≈ 2.3',
+        languages: 'Chakma, Bengali'
       },
       {
         id: 'marma_and_other_jumma_groups',
@@ -1471,7 +1590,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 0.3M',
         dominantReligion: 'Buddhism',
-        totalFertilityRate: '≈ 2.4'
+        totalFertilityRate: '≈ 2.4',
+        languages: 'Marma, Tripura, Chakma'
       }
     ]
   },
@@ -1484,6 +1604,7 @@ export const regions: Region[] = [
       minLat: 27.5,
       maxLat: 27.9
     },
+    hdi: 'Medium (0.602)',
     ethnicities: [
       {
         id: 'urban_newars',
@@ -1496,7 +1617,8 @@ export const regions: Region[] = [
         share: 0.4,
         population: '≈ 0.5M',
         dominantReligion: 'Buddhism / Hinduism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Newari, Nepali, English'
       },
       {
         id: 'kathmandu_in_migrants',
@@ -1509,7 +1631,8 @@ export const regions: Region[] = [
         share: 0.4,
         population: '≈ 0.5M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 2.0'
+        totalFertilityRate: '≈ 2.0',
+        languages: 'Nepali, Hindi, English'
       }
     ]
   },
@@ -1522,6 +1645,7 @@ export const regions: Region[] = [
       minLat: 26.0,
       maxLat: 29.5
     },
+    hdi: 'Medium (0.602)',
     ethnicities: [
       {
         id: 'terai_madhesi_groups',
@@ -1534,7 +1658,8 @@ export const regions: Region[] = [
         share: 0.35,
         population: '≈ 8M',
         dominantReligion: 'Hinduism / Islam',
-        totalFertilityRate: '≈ 2.3'
+        totalFertilityRate: '≈ 2.3',
+        languages: 'Maithili, Hindi, Nepali'
       },
       {
         id: 'hill_brahmin_chhetri_nepal',
@@ -1547,7 +1672,8 @@ export const regions: Region[] = [
         share: 0.3,
         population: '≈ 6M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 2.1'
+        totalFertilityRate: '≈ 2.1',
+        languages: 'Nepali, Hindi'
       },
       {
         id: 'janajati_hill_groups',
@@ -1560,7 +1686,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 5M',
         dominantReligion: 'Hinduism / Buddhism',
-        totalFertilityRate: '≈ 2.2'
+        totalFertilityRate: '≈ 2.2',
+        languages: 'Tamang, Gurung, Magar, Nepali'
       }
     ]
   },
@@ -1573,6 +1700,7 @@ export const regions: Region[] = [
       minLat: 25.5,
       maxLat: 27.5
     },
+    hdi: 'Medium (0.614)',
     ethnicities: [
       {
         id: 'assamese_valley_populations',
@@ -1585,7 +1713,8 @@ export const regions: Region[] = [
         share: 0.5,
         population: '≈ 15M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.9'
+        totalFertilityRate: '≈ 1.9',
+        languages: 'Assamese, Bengali, Hindi'
       },
       {
         id: 'assam_bengali_muslims',
@@ -1598,7 +1727,8 @@ export const regions: Region[] = [
         share: 0.3,
         population: '≈ 9M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.5'
+        totalFertilityRate: '≈ 2.5',
+        languages: 'Bengali, Assamese'
       }
     ]
   },
@@ -1611,6 +1741,7 @@ export const regions: Region[] = [
       minLat: 22.5,
       maxLat: 27.5
     },
+    hdi: 'High (0.705)',
     ethnicities: [
       {
         id: 'naga_communities',
@@ -1623,7 +1754,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 2.5M',
         dominantReligion: 'Christianity (Baptist)',
-        totalFertilityRate: '≈ 2.0'
+        totalFertilityRate: '≈ 2.0',
+        languages: 'Naga languages, English, Hindi'
       },
       {
         id: 'meitei_valley_population',
@@ -1636,7 +1768,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 1.5M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.9'
+        totalFertilityRate: '≈ 1.9',
+        languages: 'Meitei, Hindi, English'
       },
       {
         id: 'tripuri_communities',
@@ -1649,7 +1782,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 1M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Tripuri, Bengali, Hindi'
       },
       {
         id: 'mizo_highlanders',
@@ -1662,7 +1796,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 1.2M',
         dominantReligion: 'Christianity (Presbyterian)',
-        totalFertilityRate: '≈ 2.1'
+        totalFertilityRate: '≈ 2.1',
+        languages: 'Mizo, English, Hindi'
       }
     ]
   },
@@ -1675,6 +1810,7 @@ export const regions: Region[] = [
       minLat: 5.5,
       maxLat: 10.0
     },
+    hdi: 'High (0.782)',
     ethnicities: [
       {
         id: 'sinhalese_majority',
@@ -1687,7 +1823,8 @@ export const regions: Region[] = [
         share: 0.75,
         population: '≈ 16M',
         dominantReligion: 'Buddhism (Theravada)',
-        totalFertilityRate: '≈ 1.9'
+        totalFertilityRate: '≈ 1.9',
+        languages: 'Sinhala, English'
       },
       {
         id: 'sri_lankan_tamils',
@@ -1700,7 +1837,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 2.5M',
         dominantReligion: 'Hinduism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Tamil, English'
       }
     ]
   },
@@ -1714,6 +1852,7 @@ export const regions: Region[] = [
       minLat: 30.7,
       maxLat: 31.8
     },
+    hdi: 'Very High (0.850)',
     ethnicities: [
       {
         id: 'shanghai_han_urban',
@@ -1726,7 +1865,8 @@ export const regions: Region[] = [
         share: 0.85,
         population: '≈ 18M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 0.7'
+        totalFertilityRate: '≈ 0.7',
+        languages: 'Mandarin, Shanghainese, English'
       },
       {
         id: 'shanghai_migrants',
@@ -1739,7 +1879,8 @@ export const regions: Region[] = [
         share: 0.1,
         population: '≈ 2.5M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 1.2'
+        totalFertilityRate: '≈ 1.2',
+        languages: 'Mandarin, Regional dialects'
       }
     ]
   },
@@ -1752,6 +1893,7 @@ export const regions: Region[] = [
       minLat: 22.5,
       maxLat: 23.8
     },
+    hdi: 'Very High (0.830)',
     ethnicities: [
       {
         id: 'guangzhou_cantonese',
@@ -1764,7 +1906,8 @@ export const regions: Region[] = [
         share: 0.7,
         population: '≈ 12M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 0.8'
+        totalFertilityRate: '≈ 0.8',
+        languages: 'Cantonese, Mandarin, English'
       },
       {
         id: 'pearl_river_migrants',
@@ -1777,7 +1920,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 4.5M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 1.1'
+        totalFertilityRate: '≈ 1.1',
+        languages: 'Mandarin, Regional dialects'
       }
     ]
   },
@@ -1790,6 +1934,7 @@ export const regions: Region[] = [
       minLat: 39.5,
       maxLat: 40.5
     },
+    hdi: 'Very High (0.860)',
     ethnicities: [
       {
         id: 'beijing_han_urban',
@@ -1802,7 +1947,8 @@ export const regions: Region[] = [
         share: 0.8,
         population: '≈ 16M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 0.7'
+        totalFertilityRate: '≈ 0.7',
+        languages: 'Mandarin, English'
       },
       {
         id: 'beijing_manchu_communities',
@@ -1815,7 +1961,8 @@ export const regions: Region[] = [
         share: 0.05,
         population: '≈ 1M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 0.8'
+        totalFertilityRate: '≈ 0.8',
+        languages: 'Manchu, Mandarin'
       }
     ]
   },
@@ -1828,6 +1975,7 @@ export const regions: Region[] = [
       minLat: 30.2,
       maxLat: 31.5
     },
+    hdi: 'High (0.780)',
     ethnicities: [
       {
         id: 'sichuan_han_basin',
@@ -1840,7 +1988,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 20M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 1.0'
+        totalFertilityRate: '≈ 1.0',
+        languages: 'Sichuanese, Mandarin'
       },
       {
         id: 'sichuan_tibetan_communities',
@@ -1853,7 +2002,8 @@ export const regions: Region[] = [
         share: 0.08,
         population: '≈ 1.8M',
         dominantReligion: 'Buddhism',
-        totalFertilityRate: '≈ 1.5'
+        totalFertilityRate: '≈ 1.5',
+        languages: 'Tibetan, Mandarin'
       }
     ]
   },
@@ -1866,6 +2016,7 @@ export const regions: Region[] = [
       minLat: 30.0,
       maxLat: 31.5
     },
+    hdi: 'Very High (0.820)',
     ethnicities: [
       {
         id: 'yangtze_delta_han',
@@ -1878,7 +2029,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 15M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 0.8'
+        totalFertilityRate: '≈ 0.8',
+        languages: 'Wu dialect, Mandarin, English'
       },
       {
         id: 'yangtze_delta_migrants',
@@ -1891,7 +2043,8 @@ export const regions: Region[] = [
         share: 0.08,
         population: '≈ 1.3M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 1.1'
+        totalFertilityRate: '≈ 1.1',
+        languages: 'Mandarin, Regional dialects'
       }
     ]
   },
@@ -1904,6 +2057,7 @@ export const regions: Region[] = [
       minLat: 40.0,
       maxLat: 48.0
     },
+    hdi: 'High (0.760)',
     ethnicities: [
       {
         id: 'northeast_han_chinese',
@@ -1916,7 +2070,8 @@ export const regions: Region[] = [
         share: 0.85,
         population: '≈ 80M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 0.7'
+        totalFertilityRate: '≈ 0.7',
+        languages: 'Northeastern Mandarin, Russian'
       },
       {
         id: 'northeast_korean_chinese',
@@ -1929,7 +2084,8 @@ export const regions: Region[] = [
         share: 0.1,
         population: '≈ 2M',
         dominantReligion: 'Buddhism / Christianity',
-        totalFertilityRate: '≈ 0.8'
+        totalFertilityRate: '≈ 0.8',
+        languages: 'Korean, Mandarin'
       }
     ]
   },
@@ -1943,6 +2099,7 @@ export const regions: Region[] = [
       minLat: -13.8,
       maxLat: -13.0
     },
+    hdi: 'High (0.777)',
     ethnicities: [
       {
         id: 'cusco_quechua',
@@ -1955,7 +2112,8 @@ export const regions: Region[] = [
         share: 0.6,
         population: '≈ 0.8M',
         dominantReligion: 'Catholicism (Folk)',
-        totalFertilityRate: '≈ 2.5'
+        totalFertilityRate: '≈ 2.5',
+        languages: 'Quechua, Spanish'
       },
       {
         id: 'cusco_mestizo',
@@ -1968,7 +2126,8 @@ export const regions: Region[] = [
         share: 0.35,
         population: '≈ 0.5M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 2.2'
+        totalFertilityRate: '≈ 2.2',
+        languages: 'Spanish, Quechua'
       }
     ]
   },
@@ -1981,6 +2140,7 @@ export const regions: Region[] = [
       minLat: -12.3,
       maxLat: -11.7
     },
+    hdi: 'High (0.777)',
     ethnicities: [
       {
         id: 'lima_mestizo_urban',
@@ -1993,7 +2153,8 @@ export const regions: Region[] = [
         share: 0.5,
         population: '≈ 5M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Spanish, English'
       },
       {
         id: 'lima_andean_migrants',
@@ -2006,7 +2167,8 @@ export const regions: Region[] = [
         share: 0.3,
         population: '≈ 3M',
         dominantReligion: 'Catholicism (Folk)',
-        totalFertilityRate: '≈ 2.3'
+        totalFertilityRate: '≈ 2.3',
+        languages: 'Quechua, Aymara, Spanish'
       },
       {
         id: 'lima_afro_peruvian',
@@ -2019,7 +2181,8 @@ export const regions: Region[] = [
         share: 0.08,
         population: '≈ 0.8M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 2.0'
+        totalFertilityRate: '≈ 2.0',
+        languages: 'Spanish'
       },
       {
         id: 'lima_chinese_peruvian',
@@ -2032,7 +2195,8 @@ export const regions: Region[] = [
         share: 0.05,
         population: '≈ 0.5M',
         dominantReligion: 'Buddhism / Catholicism',
-        totalFertilityRate: '≈ 1.7'
+        totalFertilityRate: '≈ 1.7',
+        languages: 'Mandarin, Cantonese, Spanish'
       }
     ]
   },
@@ -2045,6 +2209,7 @@ export const regions: Region[] = [
       minLat: -16.8,
       maxLat: -15.5
     },
+    hdi: 'High (0.718)',
     ethnicities: [
       {
         id: 'la_paz_aymara',
@@ -2057,7 +2222,8 @@ export const regions: Region[] = [
         share: 0.5,
         population: '≈ 1.5M',
         dominantReligion: 'Catholicism (Folk)',
-        totalFertilityRate: '≈ 2.8'
+        totalFertilityRate: '≈ 2.8',
+        languages: 'Aymara, Spanish'
       },
       {
         id: 'altiplano_quechua',
@@ -2070,7 +2236,8 @@ export const regions: Region[] = [
         share: 0.3,
         population: '≈ 0.9M',
         dominantReligion: 'Catholicism (Folk)',
-        totalFertilityRate: '≈ 3.0'
+        totalFertilityRate: '≈ 3.0',
+        languages: 'Quechua, Spanish'
       },
       {
         id: 'la_paz_mestizo',
@@ -2083,7 +2250,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 0.45M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 2.5'
+        totalFertilityRate: '≈ 2.5',
+        languages: 'Spanish, Aymara, Quechua'
       }
     ]
   },
@@ -2096,6 +2264,7 @@ export const regions: Region[] = [
       minLat: -0.5,
       maxLat: 0.3
     },
+    hdi: 'High (0.740)',
     ethnicities: [
       {
         id: 'quito_mestizo',
@@ -2108,7 +2277,8 @@ export const regions: Region[] = [
         share: 0.7,
         population: '≈ 1.5M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 2.0'
+        totalFertilityRate: '≈ 2.0',
+        languages: 'Spanish, English'
       },
       {
         id: 'quito_quichua',
@@ -2121,7 +2291,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 0.5M',
         dominantReligion: 'Catholicism (Folk)',
-        totalFertilityRate: '≈ 2.5'
+        totalFertilityRate: '≈ 2.5',
+        languages: 'Quichua, Spanish'
       }
     ]
   },
@@ -2135,6 +2306,7 @@ export const regions: Region[] = [
       minLat: 14.5,
       maxLat: 15.0
     },
+    hdi: 'Medium (0.511)',
     ethnicities: [
       {
         id: 'dakar_wolof',
@@ -2147,7 +2319,8 @@ export const regions: Region[] = [
         share: 0.7,
         population: '≈ 2.5M',
         dominantReligion: 'Islam (Sufi)',
-        totalFertilityRate: '≈ 3.8'
+        totalFertilityRate: '≈ 3.8',
+        languages: 'Wolof, French, Arabic'
       },
       {
         id: 'dakar_fulani',
@@ -2160,7 +2333,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 0.7M',
         dominantReligion: 'Islam (Sufi)',
-        totalFertilityRate: '≈ 4.2'
+        totalFertilityRate: '≈ 4.2',
+        languages: 'Pulaar, Wolof, French'
       }
     ]
   },
@@ -2173,6 +2347,7 @@ export const regions: Region[] = [
       minLat: 12.5,
       maxLat: 12.8
     },
+    hdi: 'Low (0.428)',
     ethnicities: [
       {
         id: 'bamako_bambara',
@@ -2185,7 +2360,8 @@ export const regions: Region[] = [
         share: 0.5,
         population: '≈ 2M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 5.2'
+        totalFertilityRate: '≈ 5.2',
+        languages: 'Bamanankan, French, Arabic'
       },
       {
         id: 'bamako_fulani',
@@ -2198,7 +2374,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 1M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 5.5'
+        totalFertilityRate: '≈ 5.5',
+        languages: 'Pulaar, Bamanankan, French'
       }
     ]
   },
@@ -2211,6 +2388,7 @@ export const regions: Region[] = [
       minLat: 13.4,
       maxLat: 13.6
     },
+    hdi: 'Low (0.394)',
     ethnicities: [
       {
         id: 'niamey_hausa',
@@ -2223,7 +2401,8 @@ export const regions: Region[] = [
         share: 0.5,
         population: '≈ 1.2M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 6.2'
+        totalFertilityRate: '≈ 6.2',
+        languages: 'Hausa, French, Arabic'
       },
       {
         id: 'niamey_zarma',
@@ -2236,7 +2415,8 @@ export const regions: Region[] = [
         share: 0.3,
         population: '≈ 0.7M',
         dominantReligion: 'Islam / Traditional',
-        totalFertilityRate: '≈ 6.0'
+        totalFertilityRate: '≈ 6.0',
+        languages: 'Zarma, Hausa, French'
       }
     ]
   },
@@ -2249,6 +2429,7 @@ export const regions: Region[] = [
       minLat: 16.0,
       maxLat: 20.0
     },
+    hdi: 'Low (0.394)',
     ethnicities: [
       {
         id: 'niger_tuareg',
@@ -2261,7 +2442,8 @@ export const regions: Region[] = [
         share: 0.8,
         population: '≈ 1.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 6.5'
+        totalFertilityRate: '≈ 6.5',
+        languages: 'Tamasheq, Arabic, French'
       },
       {
         id: 'niger_sahara_arabs',
@@ -2274,7 +2456,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 0.3M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 6.0'
+        totalFertilityRate: '≈ 6.0',
+        languages: 'Arabic, Tamasheq, French'
       }
     ]
   },
@@ -2288,6 +2471,7 @@ export const regions: Region[] = [
       minLat: 21.2,
       maxLat: 21.7
     },
+    hdi: 'Very High (0.926)',
     ethnicities: [
       {
         id: 'honolulu_hawaiian',
@@ -2300,7 +2484,8 @@ export const regions: Region[] = [
         share: 0.1,
         population: '≈ 0.15M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 2.1'
+        totalFertilityRate: '≈ 2.1',
+        languages: 'Hawaiian, English'
       },
       {
         id: 'honolulu_asian_american',
@@ -2313,7 +2498,8 @@ export const regions: Region[] = [
         share: 0.4,
         population: '≈ 0.5M',
         dominantReligion: 'Buddhism / Christianity',
-        totalFertilityRate: '≈ 1.5'
+        totalFertilityRate: '≈ 1.5',
+        languages: 'Japanese, Filipino, Chinese, English'
       }
     ]
   },
@@ -2326,6 +2512,7 @@ export const regions: Region[] = [
       minLat: -13.9,
       maxLat: -13.7
     },
+    hdi: 'High (0.707)',
     ethnicities: [
       {
         id: 'apia_samoans',
@@ -2338,7 +2525,8 @@ export const regions: Region[] = [
         share: 0.95,
         population: '≈ 0.2M',
         dominantReligion: 'Christianity',
-        totalFertilityRate: '≈ 3.5'
+        totalFertilityRate: '≈ 3.5',
+        languages: 'Samoan, English'
       },
       {
         id: 'samoa_chinese_europeans',
@@ -2351,7 +2539,8 @@ export const regions: Region[] = [
         share: 0.03,
         population: '≈ 0.006M',
         dominantReligion: 'Christianity / Buddhism',
-        totalFertilityRate: '≈ 2.0'
+        totalFertilityRate: '≈ 2.0',
+        languages: 'English, Mandarin, Samoan'
       }
     ]
   },
@@ -2364,6 +2553,7 @@ export const regions: Region[] = [
       minLat: -18.2,
       maxLat: -18.0
     },
+    hdi: 'High (0.730)',
     ethnicities: [
       {
         id: 'suva_fijians',
@@ -2376,7 +2566,8 @@ export const regions: Region[] = [
         share: 0.55,
         population: '≈ 0.5M',
         dominantReligion: 'Christianity',
-        totalFertilityRate: '≈ 2.8'
+        totalFertilityRate: '≈ 2.8',
+        languages: 'Fijian, English'
       },
       {
         id: 'suva_indo_fijians',
@@ -2389,7 +2580,8 @@ export const regions: Region[] = [
         share: 0.4,
         population: '≈ 0.35M',
         dominantReligion: 'Hinduism / Islam',
-        totalFertilityRate: '≈ 2.5'
+        totalFertilityRate: '≈ 2.5',
+        languages: 'Hindi, Fiji Hindi, English'
       }
     ]
   },
@@ -2403,6 +2595,7 @@ export const regions: Region[] = [
       minLat: -24.7,
       maxLat: -24.6
     },
+    hdi: 'High (0.735)',
     ethnicities: [
       {
         id: 'gaborone_tswana',
@@ -2415,7 +2608,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 0.3M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 2.6'
+        totalFertilityRate: '≈ 2.6',
+        languages: 'Tswana, English'
       },
       {
         id: 'botswana_kalanga',
@@ -2428,7 +2622,8 @@ export const regions: Region[] = [
         share: 0.08,
         population: '≈ 0.03M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 2.8'
+        totalFertilityRate: '≈ 2.8',
+        languages: 'Kalanga, Tswana, English'
       }
     ]
   },
@@ -2441,6 +2636,7 @@ export const regions: Region[] = [
       minLat: -17.9,
       maxLat: -17.7
     },
+    hdi: 'Medium (0.593)',
     ethnicities: [
       {
         id: 'harare_shona',
@@ -2453,7 +2649,8 @@ export const regions: Region[] = [
         share: 0.8,
         population: '≈ 1.5M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 3.2'
+        totalFertilityRate: '≈ 3.2',
+        languages: 'Shona, English'
       },
       {
         id: 'harare_ndebele',
@@ -2466,7 +2663,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 0.3M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 3.4'
+        totalFertilityRate: '≈ 3.4',
+        languages: 'Ndebele, English'
       }
     ]
   },
@@ -2840,6 +3038,7 @@ export const regions: Region[] = [
       minLat: 35.4,
       maxLat: 35.9
     },
+    hdi: 'Very High (0.925)',
     ethnicities: [
       {
         id: 'tokyo_japanese',
@@ -2852,7 +3051,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 14M',
         dominantReligion: 'Shinto / Buddhism',
-        totalFertilityRate: '≈ 1.2'
+        totalFertilityRate: '≈ 1.2',
+        languages: 'Japanese, English'
       },
       {
         id: 'tokyo_korean_japanese',
@@ -2865,7 +3065,8 @@ export const regions: Region[] = [
         share: 0.05,
         population: '≈ 0.7M',
         dominantReligion: 'Buddhism / Christianity',
-        totalFertilityRate: '≈ 1.1'
+        totalFertilityRate: '≈ 1.1',
+        languages: 'Korean, Japanese'
       },
       {
         id: 'tokyo_chinese_communities',
@@ -2878,7 +3079,8 @@ export const regions: Region[] = [
         share: 0.03,
         population: '≈ 0.4M',
         dominantReligion: 'Buddhism / Christianity',
-        totalFertilityRate: '≈ 1.0'
+        totalFertilityRate: '≈ 1.0',
+        languages: 'Mandarin, Japanese, English'
       }
     ]
   },
@@ -2891,6 +3093,7 @@ export const regions: Region[] = [
       minLat: 34.4,
       maxLat: 34.9
     },
+    hdi: 'Very High (0.925)',
     ethnicities: [
       {
         id: 'osaka_japanese',
@@ -2903,7 +3106,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 9M',
         dominantReligion: 'Shinto / Buddhism',
-        totalFertilityRate: '≈ 1.3'
+        totalFertilityRate: '≈ 1.3',
+        languages: 'Japanese (Kansai dialect), English'
       },
       {
         id: 'osaka_korean_japanese',
@@ -2916,7 +3120,8 @@ export const regions: Region[] = [
         share: 0.07,
         population: '≈ 0.6M',
         dominantReligion: 'Buddhism / Christianity',
-        totalFertilityRate: '≈ 1.2'
+        totalFertilityRate: '≈ 1.2',
+        languages: 'Korean, Japanese'
       }
     ]
   },
@@ -2930,6 +3135,7 @@ export const regions: Region[] = [
       minLat: 37.4,
       maxLat: 37.7
     },
+    hdi: 'Very High (0.925)',
     ethnicities: [
       {
         id: 'seoul_koreans',
@@ -2942,7 +3148,8 @@ export const regions: Region[] = [
         share: 0.95,
         population: '≈ 10M',
         dominantReligion: 'Buddhism / Christianity',
-        totalFertilityRate: '≈ 0.7'
+        totalFertilityRate: '≈ 0.7',
+        languages: 'Korean, English'
       },
       {
         id: 'seoul_chinese_communities',
@@ -2955,7 +3162,8 @@ export const regions: Region[] = [
         share: 0.03,
         population: '≈ 0.3M',
         dominantReligion: 'Buddhism / Christianity',
-        totalFertilityRate: '≈ 0.8'
+        totalFertilityRate: '≈ 0.8',
+        languages: 'Mandarin, Korean'
       }
     ]
   },
@@ -2968,6 +3176,7 @@ export const regions: Region[] = [
       minLat: 35.0,
       maxLat: 35.3
     },
+    hdi: 'Very High (0.925)',
     ethnicities: [
       {
         id: 'busan_koreans',
@@ -2980,7 +3189,8 @@ export const regions: Region[] = [
         share: 0.95,
         population: '≈ 3.5M',
         dominantReligion: 'Buddhism / Christianity',
-        totalFertilityRate: '≈ 0.8'
+        totalFertilityRate: '≈ 0.8',
+        languages: 'Korean (Busan dialect), English'
       },
       {
         id: 'busan_chinese_communities',
@@ -2993,7 +3203,8 @@ export const regions: Region[] = [
         share: 0.03,
         population: '≈ 0.1M',
         dominantReligion: 'Buddhism / Christianity',
-        totalFertilityRate: '≈ 0.9'
+        totalFertilityRate: '≈ 0.9',
+        languages: 'Mandarin, Korean'
       }
     ]
   },
@@ -3303,6 +3514,7 @@ export const regions: Region[] = [
       minLat: 18.7,
       maxLat: 18.9
     },
+    hdi: 'High (0.777)',
     ethnicities: [
       {
         id: 'chiang_mai_lanna',
@@ -3315,7 +3527,8 @@ export const regions: Region[] = [
         share: 0.8,
         population: '≈ 1.5M',
         dominantReligion: 'Buddhism (Theravada)',
-        totalFertilityRate: '≈ 1.4'
+        totalFertilityRate: '≈ 1.4',
+        languages: 'Northern Thai, Thai, English'
       },
       {
         id: 'chiang_mai_hill_tribes',
@@ -3328,7 +3541,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 0.3M',
         dominantReligion: 'Animism / Christianity',
-        totalFertilityRate: '≈ 2.5'
+        totalFertilityRate: '≈ 2.5',
+        languages: 'Hmong, Karen, Thai'
       }
     ]
   },
@@ -3342,6 +3556,7 @@ export const regions: Region[] = [
       minLat: 10.6,
       maxLat: 10.9
     },
+    hdi: 'High (0.703)',
     ethnicities: [
       {
         id: 'hcmc_vietnamese',
@@ -3354,7 +3569,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 9M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 1.5'
+        totalFertilityRate: '≈ 1.5',
+        languages: 'Vietnamese, English'
       },
       {
         id: 'hcmc_chinese_vietnamese',
@@ -3367,7 +3583,8 @@ export const regions: Region[] = [
         share: 0.05,
         population: '≈ 0.5M',
         dominantReligion: 'Buddhism / Taoism',
-        totalFertilityRate: '≈ 1.4'
+        totalFertilityRate: '≈ 1.4',
+        languages: 'Cantonese, Teochew, Vietnamese'
       }
     ]
   },
@@ -3380,6 +3597,7 @@ export const regions: Region[] = [
       minLat: 20.9,
       maxLat: 21.1
     },
+    hdi: 'High (0.703)',
     ethnicities: [
       {
         id: 'hanoi_vietnamese',
@@ -3392,7 +3610,8 @@ export const regions: Region[] = [
         share: 0.95,
         population: '≈ 5M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'Vietnamese, English'
       },
       {
         id: 'hanoi_muong',
@@ -3405,7 +3624,8 @@ export const regions: Region[] = [
         share: 0.03,
         population: '≈ 0.15M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Muong, Vietnamese'
       }
     ]
   },
@@ -3419,6 +3639,7 @@ export const regions: Region[] = [
       minLat: 16.7,
       maxLat: 16.9
     },
+    hdi: 'Medium (0.585)',
     ethnicities: [
       {
         id: 'yangon_burmese',
@@ -3431,7 +3652,8 @@ export const regions: Region[] = [
         share: 0.7,
         population: '≈ 5M',
         dominantReligion: 'Buddhism (Theravada)',
-        totalFertilityRate: '≈ 2.0'
+        totalFertilityRate: '≈ 2.0',
+        languages: 'Burmese, English'
       },
       {
         id: 'yangon_karen',
@@ -3444,7 +3666,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 1M',
         dominantReligion: 'Christianity / Buddhism',
-        totalFertilityRate: '≈ 2.3'
+        totalFertilityRate: '≈ 2.3',
+        languages: 'Karen, Burmese'
       }
     ]
   },
@@ -3458,6 +3681,7 @@ export const regions: Region[] = [
       minLat: 11.5,
       maxLat: 11.6
     },
+    hdi: 'Medium (0.593)',
     ethnicities: [
       {
         id: 'phnom_penh_khmer',
@@ -3470,7 +3694,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 2M',
         dominantReligion: 'Buddhism (Theravada)',
-        totalFertilityRate: '≈ 2.5'
+        totalFertilityRate: '≈ 2.5',
+        languages: 'Khmer, English'
       },
       {
         id: 'phnom_penh_chinese',
@@ -3483,7 +3708,8 @@ export const regions: Region[] = [
         share: 0.05,
         population: '≈ 0.1M',
         dominantReligion: 'Buddhism / Taoism',
-        totalFertilityRate: '≈ 2.0'
+        totalFertilityRate: '≈ 2.0',
+        languages: 'Chinese, Khmer'
       },
       {
         id: 'phnom_penh_vietnamese',
@@ -3496,7 +3722,8 @@ export const regions: Region[] = [
         share: 0.03,
         population: '≈ 0.06M',
         dominantReligion: 'Buddhism / Catholicism',
-        totalFertilityRate: '≈ 2.2'
+        totalFertilityRate: '≈ 2.2',
+        languages: 'Vietnamese, Khmer'
       }
     ]
   },
@@ -3510,6 +3737,7 @@ export const regions: Region[] = [
       minLat: 17.9,
       maxLat: 18.0
     },
+    hdi: 'Medium (0.607)',
     ethnicities: [
       {
         id: 'vientiane_lao',
@@ -3522,7 +3750,8 @@ export const regions: Region[] = [
         share: 0.85,
         population: '≈ 0.8M',
         dominantReligion: 'Buddhism (Theravada)',
-        totalFertilityRate: '≈ 2.6'
+        totalFertilityRate: '≈ 2.6',
+        languages: 'Lao, French, English'
       },
       {
         id: 'vientiane_hmong',
@@ -3535,7 +3764,8 @@ export const regions: Region[] = [
         share: 0.1,
         population: '≈ 0.1M',
         dominantReligion: 'Animism / Christianity',
-        totalFertilityRate: '≈ 3.0'
+        totalFertilityRate: '≈ 3.0',
+        languages: 'Hmong, Lao'
       }
     ]
   },
@@ -3549,6 +3779,7 @@ export const regions: Region[] = [
       minLat: 5.5,
       maxLat: 5.7
     },
+    hdi: 'Medium (0.632)',
     ethnicities: [
       {
         id: 'accra_akan',
@@ -3561,7 +3792,8 @@ export const regions: Region[] = [
         share: 0.6,
         population: '≈ 3M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 3.2'
+        totalFertilityRate: '≈ 3.2',
+        languages: 'Twi, Fante, English'
       },
       {
         id: 'accra_ga',
@@ -3574,7 +3806,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 1M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 3.4'
+        totalFertilityRate: '≈ 3.4',
+        languages: 'Ga, English'
       }
     ]
   },
@@ -3587,6 +3820,7 @@ export const regions: Region[] = [
       minLat: 6.3,
       maxLat: 6.6
     },
+    hdi: 'Medium (0.535)',
     ethnicities: [
       {
         id: 'lagos_yoruba',
@@ -3599,7 +3833,8 @@ export const regions: Region[] = [
         share: 0.5,
         population: '≈ 8M',
         dominantReligion: 'Islam / Christianity',
-        totalFertilityRate: '≈ 4.5'
+        totalFertilityRate: '≈ 4.5',
+        languages: 'Yoruba, English, Hausa'
       },
       {
         id: 'lagos_igbo',
@@ -3612,7 +3847,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 4M',
         dominantReligion: 'Christianity',
-        totalFertilityRate: '≈ 4.2'
+        totalFertilityRate: '≈ 4.2',
+        languages: 'Igbo, English'
       },
       {
         id: 'lagos_hausa',
@@ -3625,7 +3861,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 2.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 4.8'
+        totalFertilityRate: '≈ 4.8',
+        languages: 'Hausa, English'
       }
     ]
   },
@@ -3638,6 +3875,7 @@ export const regions: Region[] = [
       minLat: 12.0,
       maxLat: 12.1
     },
+    hdi: 'Low (0.394)',
     ethnicities: [
       {
         id: 'kano_hausa',
@@ -3650,7 +3888,8 @@ export const regions: Region[] = [
         share: 0.8,
         population: '≈ 4M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 6.0'
+        totalFertilityRate: '≈ 6.0',
+        languages: 'Hausa, Arabic, English'
       },
       {
         id: 'kano_fulani',
@@ -3663,7 +3902,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 0.8M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 6.2'
+        totalFertilityRate: '≈ 6.2',
+        languages: 'Pulaar, Hausa, Arabic'
       }
     ]
   },
@@ -3677,6 +3917,7 @@ export const regions: Region[] = [
       minLat: 8.9,
       maxLat: 9.1
     },
+    hdi: 'Low (0.498)',
     ethnicities: [
       {
         id: 'addis_amhara',
@@ -3689,7 +3930,8 @@ export const regions: Region[] = [
         share: 0.4,
         population: '≈ 2M',
         dominantReligion: 'Orthodox Christianity',
-        totalFertilityRate: '≈ 3.5'
+        totalFertilityRate: '≈ 3.5',
+        languages: 'Amharic, English'
       },
       {
         id: 'addis_oromo',
@@ -3702,7 +3944,8 @@ export const regions: Region[] = [
         share: 0.35,
         population: '≈ 1.8M',
         dominantReligion: 'Islam / Christianity',
-        totalFertilityRate: '≈ 3.8'
+        totalFertilityRate: '≈ 3.8',
+        languages: 'Oromo, Amharic, English'
       }
     ]
   },
@@ -3715,6 +3958,7 @@ export const regions: Region[] = [
       minLat: -1.4,
       maxLat: -1.2
     },
+    hdi: 'Medium (0.601)',
     ethnicities: [
       {
         id: 'nairobi_kikuyu',
@@ -3727,7 +3971,8 @@ export const regions: Region[] = [
         share: 0.4,
         population: '≈ 2M',
         dominantReligion: 'Christianity',
-        totalFertilityRate: '≈ 3.2'
+        totalFertilityRate: '≈ 3.2',
+        languages: 'Kikuyu, Swahili, English'
       },
       {
         id: 'nairobi_luo',
@@ -3740,7 +3985,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 1M',
         dominantReligion: 'Christianity',
-        totalFertilityRate: '≈ 3.5'
+        totalFertilityRate: '≈ 3.5',
+        languages: 'Luo, Swahili, English'
       },
       {
         id: 'nairobi_luhya',
@@ -3753,7 +3999,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 0.8M',
         dominantReligion: 'Christianity',
-        totalFertilityRate: '≈ 3.4'
+        totalFertilityRate: '≈ 3.4',
+        languages: 'Luhya, Swahili, English'
       }
     ]
   },
@@ -3766,6 +4013,7 @@ export const regions: Region[] = [
       minLat: -6.9,
       maxLat: -6.7
     },
+    hdi: 'Medium (0.549)',
     ethnicities: [
       {
         id: 'dar_swahili',
@@ -3778,7 +4026,8 @@ export const regions: Region[] = [
         share: 0.3,
         population: '≈ 1.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 3.8'
+        totalFertilityRate: '≈ 3.8',
+        languages: 'Swahili, Arabic, English'
       },
       {
         id: 'dar_bantu',
@@ -3791,7 +4040,8 @@ export const regions: Region[] = [
         share: 0.5,
         population: '≈ 2.5M',
         dominantReligion: 'Christianity / Islam',
-        totalFertilityRate: '≈ 4.0'
+        totalFertilityRate: '≈ 4.0',
+        languages: 'Swahili, Bantu languages, English'
       }
     ]
   },
@@ -3805,6 +4055,7 @@ export const regions: Region[] = [
       minLat: -26.3,
       maxLat: -26.0
     },
+    hdi: 'High (0.709)',
     ethnicities: [
       {
         id: 'johannesburg_zulu',
@@ -3817,7 +4068,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 1.5M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 2.5'
+        totalFertilityRate: '≈ 2.5',
+        languages: 'Zulu, English, Afrikaans'
       },
       {
         id: 'johannesburg_xhosa',
@@ -3830,7 +4082,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 1.2M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 2.4'
+        totalFertilityRate: '≈ 2.4',
+        languages: 'Xhosa, English, Afrikaans'
       },
       {
         id: 'johannesburg_afrikaans',
@@ -3843,7 +4096,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 0.9M',
         dominantReligion: 'Christianity',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Afrikaans, English'
       }
     ]
   },
@@ -3856,6 +4110,7 @@ export const regions: Region[] = [
       minLat: -34.0,
       maxLat: -33.8
     },
+    hdi: 'High (0.709)',
     ethnicities: [
       {
         id: 'cape_town_coloured',
@@ -3868,7 +4123,8 @@ export const regions: Region[] = [
         share: 0.45,
         population: '≈ 1.5M',
         dominantReligion: 'Christianity / Islam',
-        totalFertilityRate: '≈ 2.2'
+        totalFertilityRate: '≈ 2.2',
+        languages: 'Afrikaans, English'
       },
       {
         id: 'cape_town_xhosa',
@@ -3881,7 +4137,8 @@ export const regions: Region[] = [
         share: 0.3,
         population: '≈ 1M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 2.5'
+        totalFertilityRate: '≈ 2.5',
+        languages: 'Xhosa, English, Afrikaans'
       }
     ]
   },
@@ -4766,6 +5023,7 @@ export const regions: Region[] = [
       minLat: 19.2,
       maxLat: 19.6
     },
+    hdi: 'High (0.779)',
     ethnicities: [
       {
         id: 'mexico_city_mestizo',
@@ -4778,7 +5036,8 @@ export const regions: Region[] = [
         share: 0.7,
         population: '≈ 9M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Spanish, English'
       },
       {
         id: 'mexico_city_indigenous',
@@ -4791,7 +5050,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 2M',
         dominantReligion: 'Catholicism (Folk)',
-        totalFertilityRate: '≈ 2.2'
+        totalFertilityRate: '≈ 2.2',
+        languages: 'Nahuatl, Otomi, Spanish'
       }
     ]
   },
@@ -4804,6 +5064,7 @@ export const regions: Region[] = [
       minLat: 20.6,
       maxLat: 20.7
     },
+    hdi: 'High (0.779)',
     ethnicities: [
       {
         id: 'guadalajara_mestizo',
@@ -4816,7 +5077,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 5M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.9'
+        totalFertilityRate: '≈ 1.9',
+        languages: 'Spanish'
       }
     ]
   },
@@ -4830,6 +5092,7 @@ export const regions: Region[] = [
       minLat: 4.5,
       maxLat: 4.8
     },
+    hdi: 'High (0.767)',
     ethnicities: [
       {
         id: 'bogota_mestizo',
@@ -4842,7 +5105,8 @@ export const regions: Region[] = [
         share: 0.75,
         population: '≈ 7M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.7'
+        totalFertilityRate: '≈ 1.7',
+        languages: 'Spanish, English'
       },
       {
         id: 'bogota_afro_colombian',
@@ -4855,7 +5119,8 @@ export const regions: Region[] = [
         share: 0.1,
         population: '≈ 0.9M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 2.0'
+        totalFertilityRate: '≈ 2.0',
+        languages: 'Spanish'
       }
     ]
   },
@@ -4869,6 +5134,7 @@ export const regions: Region[] = [
       minLat: -34.7,
       maxLat: -34.5
     },
+    hdi: 'Very High (0.842)',
     ethnicities: [
       {
         id: 'buenos_aires_european_argentines',
@@ -4881,7 +5147,8 @@ export const regions: Region[] = [
         share: 0.85,
         population: '≈ 12M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'Spanish, Italian, English'
       },
       {
         id: 'buenos_aires_mestizo',
@@ -4894,7 +5161,8 @@ export const regions: Region[] = [
         share: 0.1,
         population: '≈ 1.4M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Spanish'
       }
     ]
   },
@@ -4908,6 +5176,7 @@ export const regions: Region[] = [
       minLat: -33.6,
       maxLat: -33.3
     },
+    hdi: 'Very High (0.855)',
     ethnicities: [
       {
         id: 'santiago_chileans',
@@ -4920,7 +5189,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 6M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.5'
+        totalFertilityRate: '≈ 1.5',
+        languages: 'Spanish, English'
       },
       {
         id: 'santiago_mapuche',
@@ -4933,7 +5203,8 @@ export const regions: Region[] = [
         share: 0.05,
         population: '≈ 0.3M',
         dominantReligion: 'Catholicism / Traditional',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Mapudungun, Spanish'
       }
     ]
   },
@@ -5882,6 +6153,7 @@ export const regions: Region[] = [
       minLat: 34.2,
       maxLat: 34.3
     },
+    hdi: 'High (0.780)',
     ethnicities: [
       {
         id: 'xian_han_chinese',
@@ -5894,7 +6166,8 @@ export const regions: Region[] = [
         share: 0.95,
         population: '≈ 8M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 1.0'
+        totalFertilityRate: '≈ 1.0',
+        languages: 'Mandarin, Shaanxi dialect'
       },
       {
         id: 'xian_hui_muslims',
@@ -5907,7 +6180,8 @@ export const regions: Region[] = [
         share: 0.03,
         population: '≈ 0.25M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 1.2'
+        totalFertilityRate: '≈ 1.2',
+        languages: 'Mandarin, Arabic'
       }
     ]
   },
@@ -5920,6 +6194,7 @@ export const regions: Region[] = [
       minLat: 22.1,
       maxLat: 22.5
     },
+    hdi: 'Very High (0.952)',
     ethnicities: [
       {
         id: 'hong_kong_cantonese',
@@ -5932,7 +6207,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 6.5M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 0.8'
+        totalFertilityRate: '≈ 0.8',
+        languages: 'Cantonese, English, Mandarin'
       },
       {
         id: 'hong_kong_filipino_communities',
@@ -5945,7 +6221,8 @@ export const regions: Region[] = [
         share: 0.05,
         population: '≈ 0.35M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.5'
+        totalFertilityRate: '≈ 1.5',
+        languages: 'Filipino, English, Cantonese'
       },
       {
         id: 'hong_kong_indonesian_communities',
@@ -5958,7 +6235,8 @@ export const regions: Region[] = [
         share: 0.03,
         population: '≈ 0.2M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'Indonesian, English, Cantonese'
       }
     ]
   },
@@ -6732,6 +7010,7 @@ export const regions: Region[] = [
       minLat: 55.5,
       maxLat: 58.0
     },
+    hdi: 'Very High (0.863)',
     ethnicities: [
       {
         id: 'latvian_006',
@@ -6742,7 +7021,8 @@ export const regions: Region[] = [
         share: 0.6,
         population: '≈ 1.2M',
         dominantReligion: 'Lutheranism / Catholicism',
-        totalFertilityRate: '≈ 1.5'
+        totalFertilityRate: '≈ 1.5',
+        languages: 'Latvian, Russian, English'
       }
     ]
   },
@@ -6755,6 +7035,7 @@ export const regions: Region[] = [
       minLat: 57.5,
       maxLat: 59.5
     },
+    hdi: 'Very High (0.890)',
     ethnicities: [
       {
         id: 'estonian_007',
@@ -6765,7 +7046,8 @@ export const regions: Region[] = [
         share: 0.7,
         population: '≈ 0.9M',
         dominantReligion: 'Lutheranism',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'Estonian, Russian, English'
       }
     ]
   },
@@ -6778,6 +7060,7 @@ export const regions: Region[] = [
       minLat: 45.5,
       maxLat: 46.9
     },
+    hdi: 'Very High (0.918)',
     ethnicities: [
       {
         id: 'slovene_008',
@@ -6788,7 +7071,8 @@ export const regions: Region[] = [
         share: 0.85,
         population: '≈ 2M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'Slovenian, Croatian, English'
       }
     ]
   },
@@ -6801,6 +7085,7 @@ export const regions: Region[] = [
       minLat: 46.0,
       maxLat: 49.0
     },
+    hdi: 'Very High (0.922)',
     ethnicities: [
       {
         id: 'austrian_009',
@@ -6811,7 +7096,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 8.9M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.5'
+        totalFertilityRate: '≈ 1.5',
+        languages: 'German, English'
       }
     ]
   },
@@ -6824,6 +7110,7 @@ export const regions: Region[] = [
       minLat: 45.8,
       maxLat: 47.8
     },
+    hdi: 'Very High (0.962)',
     ethnicities: [
       {
         id: 'swiss_010',
@@ -6834,7 +7121,8 @@ export const regions: Region[] = [
         share: 0.65,
         population: '≈ 5.5M',
         dominantReligion: 'Catholicism / Protestantism',
-        totalFertilityRate: '≈ 1.5'
+        totalFertilityRate: '≈ 1.5',
+        languages: 'German, French, Italian, Romansh'
       }
     ]
   },
@@ -6847,6 +7135,7 @@ export const regions: Region[] = [
       minLat: 42.0,
       maxLat: 51.0
     },
+    hdi: 'Very High (0.903)',
     ethnicities: [
       {
         id: 'french_011',
@@ -6857,7 +7146,8 @@ export const regions: Region[] = [
         share: 0.85,
         population: '≈ 55M',
         dominantReligion: 'Catholicism / None',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'French, English'
       }
     ]
   },
@@ -6870,6 +7160,7 @@ export const regions: Region[] = [
       minLat: 39.0,
       maxLat: 42.0
     },
+    hdi: 'Very High (0.905)',
     ethnicities: [
       {
         id: 'castilian_012',
@@ -6880,7 +7171,8 @@ export const regions: Region[] = [
         share: 0.7,
         population: '≈ 15M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.2'
+        totalFertilityRate: '≈ 1.2',
+        languages: 'Spanish, English'
       }
     ]
   },
@@ -6893,6 +7185,7 @@ export const regions: Region[] = [
       minLat: 42.0,
       maxLat: 43.5
     },
+    hdi: 'Very High (0.905)',
     ethnicities: [
       {
         id: 'basque_013',
@@ -6903,7 +7196,8 @@ export const regions: Region[] = [
         share: 0.5,
         population: '≈ 2.2M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.3'
+        totalFertilityRate: '≈ 1.3',
+        languages: 'Euskera, Spanish, French'
       }
     ]
   },
@@ -7362,6 +7656,7 @@ export const regions: Region[] = [
       minLat: 31.0,
       maxLat: 46.0
     },
+    hdi: 'Very High (0.925)',
     ethnicities: [
       {
         id: 'japanese_040',
@@ -7372,7 +7667,8 @@ export const regions: Region[] = [
         share: 0.98,
         population: '≈ 125M',
         dominantReligion: 'Shinto / Buddhism',
-        totalFertilityRate: '≈ 1.3'
+        totalFertilityRate: '≈ 1.3',
+        languages: 'Japanese'
       }
     ]
   },
@@ -7385,6 +7681,7 @@ export const regions: Region[] = [
       minLat: 41.0,
       maxLat: 45.5
     },
+    hdi: 'Very High (0.925)',
     ethnicities: [
       {
         id: 'ainu_041',
@@ -7395,7 +7692,8 @@ export const regions: Region[] = [
         share: 0.01,
         population: '≈ 0.02M',
         dominantReligion: 'Animism',
-        totalFertilityRate: '≈ 1.2'
+        totalFertilityRate: '≈ 1.2',
+        languages: 'Ainu, Japanese'
       }
     ]
   },
@@ -7408,6 +7706,7 @@ export const regions: Region[] = [
       minLat: 33.0,
       maxLat: 43.0
     },
+    hdi: 'Very High (0.925)',
     ethnicities: [
       {
         id: 'korean_042',
@@ -7418,7 +7717,8 @@ export const regions: Region[] = [
         share: 0.99,
         population: '≈ 77M',
         dominantReligion: 'Buddhism / Christianity',
-        totalFertilityRate: '≈ 0.7'
+        totalFertilityRate: '≈ 0.7',
+        languages: 'Korean'
       }
     ]
   },
@@ -7707,6 +8007,7 @@ export const regions: Region[] = [
       minLat: 22.0,
       maxLat: 31.7
     },
+    hdi: 'High (0.700)',
     ethnicities: [
       {
         id: 'egyptian_arab_055',
@@ -7717,7 +8018,8 @@ export const regions: Region[] = [
         share: 0.99,
         population: '≈ 105M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.8'
+        totalFertilityRate: '≈ 2.8',
+        languages: 'Arabic, English'
       }
     ]
   },
@@ -7730,6 +8032,7 @@ export const regions: Region[] = [
       minLat: 26.3,
       maxLat: 30.4
     },
+    hdi: 'Medium (0.602)',
     ethnicities: [
       {
         id: 'sherpa_056',
@@ -7740,7 +8043,8 @@ export const regions: Region[] = [
         share: 0.05,
         population: '≈ 0.15M',
         dominantReligion: 'Buddhism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Sherpa, Nepali, English'
       },
       {
         id: 'newar_035',
@@ -7751,7 +8055,8 @@ export const regions: Region[] = [
         share: 0.05,
         population: '≈ 1.5M',
         dominantReligion: 'Hinduism / Buddhism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Newari, Nepali, English'
       }
     ]
   },
@@ -7764,6 +8069,7 @@ export const regions: Region[] = [
       minLat: -17.1,
       maxLat: -9.4
     },
+    hdi: 'Low (0.512)',
     ethnicities: [
       {
         id: 'chewa_057',
@@ -7774,7 +8080,8 @@ export const regions: Region[] = [
         share: 0.35,
         population: '≈ 7M',
         dominantReligion: 'Christianity',
-        totalFertilityRate: '≈ 4.2'
+        totalFertilityRate: '≈ 4.2',
+        languages: 'Chewa, English'
       }
     ]
   },
@@ -7787,6 +8094,7 @@ export const regions: Region[] = [
       minLat: -55.0,
       maxLat: -21.8
     },
+    hdi: 'Very High (0.842)',
     ethnicities: [
       {
         id: 'mestizo_arg_058',
@@ -7797,7 +8105,8 @@ export const regions: Region[] = [
         share: 0.7,
         population: '≈ 32M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'Spanish, Italian, English'
       }
     ]
   },
@@ -7810,6 +8119,7 @@ export const regions: Region[] = [
       minLat: -43.0,
       maxLat: -35.0
     },
+    hdi: 'Very High (0.855)',
     ethnicities: [
       {
         id: 'mapuche_059',
@@ -7820,7 +8130,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 1.5M',
         dominantReligion: 'Catholicism / Traditional',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Mapudungun, Spanish'
       }
     ]
   },
@@ -7833,6 +8144,7 @@ export const regions: Region[] = [
       minLat: -18.4,
       maxLat: -0.0
     },
+    hdi: 'High (0.762)',
     ethnicities: [
       {
         id: 'quechua_060',
@@ -7843,7 +8155,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 8M',
         dominantReligion: 'Catholicism (Folk)',
-        totalFertilityRate: '≈ 2.5'
+        totalFertilityRate: '≈ 2.5',
+        languages: 'Quechua, Spanish'
       }
     ]
   },
@@ -7856,6 +8169,7 @@ export const regions: Region[] = [
       minLat: -22.9,
       maxLat: -9.7
     },
+    hdi: 'High (0.692)',
     ethnicities: [
       {
         id: 'aymara_061',
@@ -7866,7 +8180,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 2.5M',
         dominantReligion: 'Catholicism (Folk)',
-        totalFertilityRate: '≈ 2.8'
+        totalFertilityRate: '≈ 2.8',
+        languages: 'Aymara, Spanish'
       }
     ]
   },
@@ -7879,6 +8194,7 @@ export const regions: Region[] = [
       minLat: -33.8,
       maxLat: 5.3
     },
+    hdi: 'High (0.754)',
     ethnicities: [
       {
         id: 'pardo_brazil_062',
@@ -7889,7 +8205,8 @@ export const regions: Region[] = [
         share: 0.45,
         population: '≈ 95M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'Portuguese, English'
       }
     ]
   },
@@ -7902,6 +8219,7 @@ export const regions: Region[] = [
       minLat: 14.5,
       maxLat: 32.7
     },
+    hdi: 'High (0.779)',
     ethnicities: [
       {
         id: 'mestizo_mex_063',
@@ -7912,7 +8230,8 @@ export const regions: Region[] = [
         share: 0.75,
         population: '≈ 95M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.9'
+        totalFertilityRate: '≈ 1.9',
+        languages: 'Spanish, English'
       }
     ]
   },
@@ -7925,6 +8244,7 @@ export const regions: Region[] = [
       minLat: 15.7,
       maxLat: 18.7
     },
+    hdi: 'High (0.779)',
     ethnicities: [
       {
         id: 'mixtec_064',
@@ -7935,7 +8255,8 @@ export const regions: Region[] = [
         share: 0.4,
         population: '≈ 0.8M',
         dominantReligion: 'Catholicism (Folk)',
-        totalFertilityRate: '≈ 2.5'
+        totalFertilityRate: '≈ 2.5',
+        languages: 'Mixtec, Spanish'
       }
     ]
   },
@@ -7948,6 +8269,7 @@ export const regions: Region[] = [
       minLat: 5.5,
       maxLat: 8.3
     },
+    hdi: 'High (0.767)',
     ethnicities: [
       {
         id: 'paisa_065',
@@ -7958,7 +8280,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 7.5M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Spanish, English'
       }
     ]
   },
@@ -7971,6 +8294,7 @@ export const regions: Region[] = [
       minLat: -4.2,
       maxLat: 1.5
     },
+    hdi: 'High (0.740)',
     ethnicities: [
       {
         id: 'montubio_066',
@@ -7981,7 +8305,8 @@ export const regions: Region[] = [
         share: 0.08,
         population: '≈ 1.4M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 2.2'
+        totalFertilityRate: '≈ 2.2',
+        languages: 'Spanish, English'
       }
     ]
   },
@@ -7994,6 +8319,7 @@ export const regions: Region[] = [
       minLat: 1.2,
       maxLat: 8.5
     },
+    hdi: 'High (0.714)',
     ethnicities: [
       {
         id: 'indigenous_guyana_067',
@@ -8004,7 +8330,8 @@ export const regions: Region[] = [
         share: 0.1,
         population: '≈ 0.08M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 3.0'
+        totalFertilityRate: '≈ 3.0',
+        languages: 'Arawak, Carib, English'
       }
     ]
   },
@@ -8017,6 +8344,7 @@ export const regions: Region[] = [
       minLat: 10.0,
       maxLat: 11.4
     },
+    hdi: 'High (0.810)',
     ethnicities: [
       {
         id: 'indo_trinidadian_068',
@@ -8027,7 +8355,8 @@ export const regions: Region[] = [
         share: 0.35,
         population: '≈ 0.5M',
         dominantReligion: 'Hinduism / Islam',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Hindi, English, Tamil'
       }
     ]
   },
@@ -8040,6 +8369,7 @@ export const regions: Region[] = [
       minLat: 48.3,
       maxLat: 60.0
     },
+    hdi: 'Very High (0.936)',
     ethnicities: [
       {
         id: 'first_nations_bc_071',
@@ -8050,7 +8380,8 @@ export const regions: Region[] = [
         share: 0.06,
         population: '≈ 0.2M',
         dominantReligion: 'Traditional / Christianity',
-        totalFertilityRate: '≈ 2.0'
+        totalFertilityRate: '≈ 2.0',
+        languages: 'Haida, Tlingit, English'
       }
     ]
   },
@@ -8063,6 +8394,7 @@ export const regions: Region[] = [
       minLat: 49.0,
       maxLat: 60.0
     },
+    hdi: 'Very High (0.936)',
     ethnicities: [
       {
         id: 'cree_072',
@@ -8073,7 +8405,8 @@ export const regions: Region[] = [
         share: 0.05,
         population: '≈ 0.35M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 2.5'
+        totalFertilityRate: '≈ 2.5',
+        languages: 'Cree, English, French'
       }
     ]
   },
@@ -8086,6 +8419,7 @@ export const regions: Region[] = [
       minLat: -26.0,
       maxLat: -20.0
     },
+    hdi: 'Very High (0.951)',
     ethnicities: [
       {
         id: 'aboriginal_central_073',
@@ -8096,7 +8430,8 @@ export const regions: Region[] = [
         share: 0.3,
         population: '≈ 0.1M',
         dominantReligion: 'Traditional / Christianity',
-        totalFertilityRate: '≈ 2.2'
+        totalFertilityRate: '≈ 2.2',
+        languages: 'Aboriginal languages, English'
       }
     ]
   },
@@ -8109,6 +8444,7 @@ export const regions: Region[] = [
       minLat: -37.5,
       maxLat: -28.0
     },
+    hdi: 'Very High (0.951)',
     ethnicities: [
       {
         id: 'aboriginal_east_074',
@@ -8119,7 +8455,8 @@ export const regions: Region[] = [
         share: 0.03,
         population: '≈ 0.3M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 2.2'
+        totalFertilityRate: '≈ 2.2',
+        languages: 'Aboriginal languages, English'
       }
     ]
   },
@@ -8132,6 +8469,7 @@ export const regions: Region[] = [
       minLat: -47.3,
       maxLat: -34.4
     },
+    hdi: 'Very High (0.937)',
     ethnicities: [
       {
         id: 'maori_075',
@@ -8142,7 +8480,8 @@ export const regions: Region[] = [
         share: 0.17,
         population: '≈ 0.9M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 2.1'
+        totalFertilityRate: '≈ 2.1',
+        languages: 'Māori, English'
       }
     ]
   },
@@ -8155,6 +8494,7 @@ export const regions: Region[] = [
       minLat: 60.5,
       maxLat: 63.0
     },
+    hdi: 'Very High (0.890)',
     ethnicities: [
       {
         id: 'karelian_077',
@@ -8165,7 +8505,8 @@ export const regions: Region[] = [
         share: 0.1,
         population: '≈ 0.06M',
         dominantReligion: 'Orthodox Christianity',
-        totalFertilityRate: '≈ 1.4'
+        totalFertilityRate: '≈ 1.4',
+        languages: 'Karelian, Finnish, Russian'
       }
     ]
   },
@@ -8178,6 +8519,7 @@ export const regions: Region[] = [
       minLat: 25.0,
       maxLat: 32.0
     },
+    hdi: 'Medium (0.557)',
     ethnicities: [
       {
         id: 'baluchi_078',
@@ -8188,7 +8530,8 @@ export const regions: Region[] = [
         share: 0.8,
         population: '≈ 15M',
         dominantReligion: 'Sunni Islam',
-        totalFertilityRate: '≈ 3.2'
+        totalFertilityRate: '≈ 3.2',
+        languages: 'Baluchi, Urdu, Persian'
       }
     ]
   },
@@ -8201,6 +8544,7 @@ export const regions: Region[] = [
       minLat: -4.0,
       maxLat: -2.5
     },
+    hdi: 'Medium (0.549)',
     ethnicities: [
       {
         id: 'chagga_079',
@@ -8211,7 +8555,8 @@ export const regions: Region[] = [
         share: 0.02,
         population: '≈ 1.2M',
         dominantReligion: 'Christianity',
-        totalFertilityRate: '≈ 3.5'
+        totalFertilityRate: '≈ 3.5',
+        languages: 'Chagga, Swahili, English'
       }
     ]
   },
@@ -8224,6 +8569,7 @@ export const regions: Region[] = [
       minLat: 3.4,
       maxLat: 10.0
     },
+    hdi: 'Low (0.498)',
     ethnicities: [
       {
         id: 'oromo_080',
@@ -8234,7 +8580,8 @@ export const regions: Region[] = [
         share: 0.34,
         population: '≈ 40M',
         dominantReligion: 'Islam / Christianity',
-        totalFertilityRate: '≈ 3.8'
+        totalFertilityRate: '≈ 3.8',
+        languages: 'Oromo, Amharic, English'
       }
     ]
   },
@@ -8247,6 +8594,7 @@ export const regions: Region[] = [
       minLat: 12.4,
       maxLat: 15.0
     },
+    hdi: 'Low (0.498)',
     ethnicities: [
       {
         id: 'tigray_081',
@@ -8257,7 +8605,8 @@ export const regions: Region[] = [
         share: 0.06,
         population: '≈ 7M',
         dominantReligion: 'Orthodox Christianity',
-        totalFertilityRate: '≈ 3.5'
+        totalFertilityRate: '≈ 3.5',
+        languages: 'Tigrinya, Amharic, English'
       }
     ]
   },
@@ -8270,6 +8619,7 @@ export const regions: Region[] = [
       minLat: 39.6,
       maxLat: 42.7
     },
+    hdi: 'High (0.796)',
     ethnicities: [
       {
         id: 'albanian_082',
@@ -8280,7 +8630,8 @@ export const regions: Region[] = [
         share: 0.95,
         population: '≈ 6M',
         dominantReligion: 'Islam / Orthodox Christianity',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'Albanian, English'
       }
     ]
   },
@@ -8293,6 +8644,7 @@ export const regions: Region[] = [
       minLat: 36.8,
       maxLat: 42.2
     },
+    hdi: 'Very High (0.866)',
     ethnicities: [
       {
         id: 'portuguese_083',
@@ -8303,7 +8655,8 @@ export const regions: Region[] = [
         share: 0.95,
         population: '≈ 10M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.2'
+        totalFertilityRate: '≈ 1.2',
+        languages: 'Portuguese, English'
       }
     ]
   },
@@ -8316,6 +8669,7 @@ export const regions: Region[] = [
       minLat: 54.6,
       maxLat: 60.9
     },
+    hdi: 'Very High (0.925)',
     ethnicities: [
       {
         id: 'scottish_084',
@@ -8326,7 +8680,8 @@ export const regions: Region[] = [
         share: 0.85,
         population: '≈ 5.5M',
         dominantReligion: 'Presbyterianism',
-        totalFertilityRate: '≈ 1.3'
+        totalFertilityRate: '≈ 1.3',
+        languages: 'English, Scots Gaelic'
       }
     ]
   },
@@ -8339,6 +8694,7 @@ export const regions: Region[] = [
       minLat: 51.4,
       maxLat: 55.4
     },
+    hdi: 'Very High (0.945)',
     ethnicities: [
       {
         id: 'irish_085',
@@ -8349,7 +8705,8 @@ export const regions: Region[] = [
         share: 0.85,
         population: '≈ 5M',
         dominantReligion: 'Catholicism',
-        totalFertilityRate: '≈ 1.6'
+        totalFertilityRate: '≈ 1.6',
+        languages: 'Irish Gaelic, English'
       }
     ]
   },
@@ -8362,6 +8719,7 @@ export const regions: Region[] = [
       minLat: 32.0,
       maxLat: 35.3
     },
+    hdi: 'Medium (0.663)',
     ethnicities: [
       {
         id: 'ladakhi_086',
@@ -8372,7 +8730,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 0.3M',
         dominantReligion: 'Buddhism',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Ladakhi, Hindi, English'
       }
     ]
   },
@@ -8385,6 +8744,7 @@ export const regions: Region[] = [
       minLat: -9.5,
       maxLat: -0.9
     },
+    hdi: 'High (0.718)',
     ethnicities: [
       {
         id: 'asmat_087',
@@ -8395,7 +8755,8 @@ export const regions: Region[] = [
         share: 0.3,
         population: '≈ 0.1M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 3.0'
+        totalFertilityRate: '≈ 3.0',
+        languages: 'Asmat, Indonesian'
       },
       {
         id: 'motu_088',
@@ -8406,7 +8767,8 @@ export const regions: Region[] = [
         share: 0.2,
         population: '≈ 0.15M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 3.2'
+        totalFertilityRate: '≈ 3.2',
+        languages: 'Motu, Tok Pisin, English'
       }
     ]
   },
@@ -8419,6 +8781,7 @@ export const regions: Region[] = [
       minLat: -21.0,
       maxLat: -18.0
     },
+    hdi: 'Medium (0.501)',
     ethnicities: [
       {
         id: 'merina_089',
@@ -8429,7 +8792,8 @@ export const regions: Region[] = [
         share: 0.25,
         population: '≈ 7M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 3.5'
+        totalFertilityRate: '≈ 3.5',
+        languages: 'Malagasy, French'
       }
     ]
   },
@@ -8442,6 +8806,7 @@ export const regions: Region[] = [
       minLat: -20.0,
       maxLat: -13.0
     },
+    hdi: 'Medium (0.501)',
     ethnicities: [
       {
         id: 'sakalava_090',
@@ -8452,7 +8817,8 @@ export const regions: Region[] = [
         share: 0.15,
         population: '≈ 4M',
         dominantReligion: 'Traditional / Christianity',
-        totalFertilityRate: '≈ 3.8'
+        totalFertilityRate: '≈ 3.8',
+        languages: 'Malagasy, French'
       }
     ]
   },
@@ -8465,6 +8831,7 @@ export const regions: Region[] = [
       minLat: 2.0,
       maxLat: 6.0
     },
+    hdi: 'High (0.718)',
     ethnicities: [
       {
         id: 'acehnese_091',
@@ -8475,7 +8842,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 4.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.3'
+        totalFertilityRate: '≈ 2.3',
+        languages: 'Acehnese, Indonesian'
       }
     ]
   },
@@ -8488,6 +8856,7 @@ export const regions: Region[] = [
       minLat: -8.8,
       maxLat: -5.9
     },
+    hdi: 'High (0.718)',
     ethnicities: [
       {
         id: 'javanese_092',
@@ -8498,7 +8867,8 @@ export const regions: Region[] = [
         share: 0.4,
         population: '≈ 100M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.0'
+        totalFertilityRate: '≈ 2.0',
+        languages: 'Javanese, Indonesian'
       }
     ]
   },
@@ -8511,6 +8881,7 @@ export const regions: Region[] = [
       minLat: 21.9,
       maxLat: 25.3
     },
+    hdi: 'Very High (0.926)',
     ethnicities: [
       {
         id: 'hokkien_taiwan_094',
@@ -8521,7 +8892,8 @@ export const regions: Region[] = [
         share: 0.7,
         population: '≈ 16M',
         dominantReligion: 'Buddhism / Folk Religion',
-        totalFertilityRate: '≈ 0.9'
+        totalFertilityRate: '≈ 0.9',
+        languages: 'Taiwanese Hokkien, Mandarin, English'
       },
       {
         id: 'amis_095',
@@ -8532,7 +8904,8 @@ export const regions: Region[] = [
         share: 0.02,
         population: '≈ 0.2M',
         dominantReligion: 'Christianity / Traditional',
-        totalFertilityRate: '≈ 1.5'
+        totalFertilityRate: '≈ 1.5',
+        languages: 'Amis, Mandarin, Taiwanese'
       }
     ]
   },
@@ -8545,6 +8918,7 @@ export const regions: Region[] = [
       minLat: 15.0,
       maxLat: 25.0
     },
+    hdi: 'Low (0.394)',
     ethnicities: [
       {
         id: 'tuareg_096',
@@ -8555,7 +8929,8 @@ export const regions: Region[] = [
         share: 0.9,
         population: '≈ 2.5M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 6.5'
+        totalFertilityRate: '≈ 6.5',
+        languages: 'Tamasheq, Arabic, French'
       }
     ]
   },
@@ -8568,6 +8943,7 @@ export const regions: Region[] = [
       minLat: 29.0,
       maxLat: 35.0
     },
+    hdi: 'Medium (0.686)',
     ethnicities: [
       {
         id: 'amazigh_097',
@@ -8578,7 +8954,8 @@ export const regions: Region[] = [
         share: 0.3,
         population: '≈ 20M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.3'
+        totalFertilityRate: '≈ 2.3',
+        languages: 'Tamazight, Arabic, French'
       }
     ]
   },
@@ -8591,6 +8968,7 @@ export const regions: Region[] = [
       minLat: 35.1,
       maxLat: 42.8
     },
+    hdi: 'High (0.745)',
     ethnicities: [
       {
         id: 'turkmen_098',
@@ -8601,7 +8979,8 @@ export const regions: Region[] = [
         share: 0.85,
         population: '≈ 6M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.8'
+        totalFertilityRate: '≈ 2.8',
+        languages: 'Turkmen, Russian'
       }
     ]
   },
@@ -8614,6 +8993,7 @@ export const regions: Region[] = [
       minLat: 37.1,
       maxLat: 45.6
     },
+    hdi: 'High (0.727)',
     ethnicities: [
       {
         id: 'uzbek_099',
@@ -8624,7 +9004,8 @@ export const regions: Region[] = [
         share: 0.8,
         population: '≈ 35M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.4'
+        totalFertilityRate: '≈ 2.4',
+        languages: 'Uzbek, Russian'
       }
     ]
   },
@@ -8637,6 +9018,7 @@ export const regions: Region[] = [
       minLat: 39.1,
       maxLat: 43.3
     },
+    hdi: 'High (0.692)',
     ethnicities: [
       {
         id: 'kyrgyz_100',
@@ -8647,7 +9029,8 @@ export const regions: Region[] = [
         share: 0.73,
         population: '≈ 6M',
         dominantReligion: 'Islam',
-        totalFertilityRate: '≈ 2.8'
+        totalFertilityRate: '≈ 2.8',
+        languages: 'Kyrgyz, Russian'
       }
     ]
   },
@@ -8660,6 +9043,7 @@ export const regions: Region[] = [
       minLat: 65.0,
       maxLat: 71.0
     },
+    hdi: 'Very High (0.890)',
     ethnicities: [
       {
         id: 'sami_001',
@@ -8670,7 +9054,8 @@ export const regions: Region[] = [
         share: 0.05,
         population: '≈ 0.08M',
         dominantReligion: 'Lutheranism / Traditional',
-        totalFertilityRate: '≈ 1.8'
+        totalFertilityRate: '≈ 1.8',
+        languages: 'Sámi languages, Norwegian, Swedish, Finnish'
       }
     ]
   }

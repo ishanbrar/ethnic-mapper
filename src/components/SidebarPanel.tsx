@@ -1,9 +1,11 @@
 'use client';
 
 import { Ethnicity } from '@/types/ethnicity';
+import { Region } from '@/data/regions';
 
 type SidebarPanelProps = {
   selectedEthnicities: Ethnicity[] | null;
+  selectedRegion?: Region | null;
 };
 
 // Helper function to get religion emoji
@@ -26,8 +28,23 @@ function getReligionEmoji(religion: string | undefined): string {
   return '🕯️'; // Default/generic religion emoji
 }
 
+// Helper function to get HDI color based on level
+function getHDIColor(hdi: string | undefined): string {
+  if (!hdi) return 'text-gray-400';
+  
+  const hdiLower = hdi.toLowerCase();
+  
+  if (hdiLower.includes('very high')) return 'text-green-400';
+  if (hdiLower.includes('high')) return 'text-blue-400';
+  if (hdiLower.includes('medium')) return 'text-yellow-400';
+  if (hdiLower.includes('low')) return 'text-red-400';
+  
+  return 'text-gray-400'; // Default
+}
+
 export default function SidebarPanel({
-  selectedEthnicities
+  selectedEthnicities,
+  selectedRegion
 }: SidebarPanelProps) {
   const hasSelection = Array.isArray(selectedEthnicities) && selectedEthnicities.length > 0;
   const primary = hasSelection ? selectedEthnicities[0] : null;
@@ -53,6 +70,11 @@ export default function SidebarPanel({
             <p className="text-lg font-bold text-slate-50">
               {primary.region}
             </p>
+            {selectedRegion?.hdi && (
+              <p className={`mt-2 text-sm font-semibold ${getHDIColor(selectedRegion.hdi)}`}>
+                HDI: {selectedRegion.hdi}
+              </p>
+            )}
             {primary.regionFlags && (
               <p className="mt-1 text-lg leading-tight">{primary.regionFlags}</p>
             )}
@@ -113,6 +135,12 @@ export default function SidebarPanel({
                         <span className="font-bold text-slate-100">TFR: </span>
                         <span className="font-semibold text-slate-200">
                           {ethnicity.totalFertilityRate ?? 'varies / not specified'}
+                        </span>
+                      </div>
+                      <div className="text-sm">
+                        <span className="font-bold text-slate-100">Languages: </span>
+                        <span className="font-semibold text-slate-200">
+                          {ethnicity.languages ?? 'varies / not specified'}
                         </span>
                       </div>
                     </div>

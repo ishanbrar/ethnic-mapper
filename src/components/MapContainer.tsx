@@ -15,7 +15,7 @@ import { Region, regions, findRegionForCoordinates } from '@/data/regions';
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
 type MapContainerProps = {
-  onSelectEthnicity: (ethnicities: Ethnicity[] | null) => void;
+  onSelectEthnicity: (ethnicities: Ethnicity[] | null, region?: Region | null) => void;
 };
 
 const clusterLayer: any = {
@@ -255,15 +255,15 @@ export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
                 (e) => e.id && e.ethnicityName && e.ethnicityName !== 'Unknown group'
               );
               
-              onSelectEthnicity(filtered.length > 0 ? filtered : null);
+              onSelectEthnicity(filtered.length > 0 ? filtered : null, region);
             } else {
               // Only show baseEthnicity if it's valid
               if (baseEthnicity.id && baseEthnicity.ethnicityName !== 'Unknown group') {
                 setSelectedRegionFeature(null);
-                onSelectEthnicity([baseEthnicity]);
+                onSelectEthnicity([baseEthnicity], null);
               } else {
                 setSelectedRegionFeature(null);
-                onSelectEthnicity(null);
+                onSelectEthnicity(null, null);
               }
             }
             return;
@@ -338,15 +338,15 @@ export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
             (e) => e.id && e.ethnicityName && e.ethnicityName !== 'Unknown group'
           );
           
-          onSelectEthnicity(filtered.length > 0 ? filtered : null);
+          onSelectEthnicity(filtered.length > 0 ? filtered : null, region);
         } else {
           // Only show baseEthnicity if it's valid
           if (baseEthnicity.id && baseEthnicity.ethnicityName !== 'Unknown group') {
             setSelectedRegionFeature(null);
-            onSelectEthnicity([baseEthnicity]);
+            onSelectEthnicity([baseEthnicity], null);
           } else {
             setSelectedRegionFeature(null);
-            onSelectEthnicity(null);
+            onSelectEthnicity(null, null);
           }
         }
         return;
@@ -367,7 +367,7 @@ export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
             ...ethnicity,
             region: region.name
           }));
-        onSelectEthnicity(ethnicitiesWithRegionName.length > 0 ? ethnicitiesWithRegionName : null);
+        onSelectEthnicity(ethnicitiesWithRegionName.length > 0 ? ethnicitiesWithRegionName : null, region);
       } else {
         // If no region found, try to find a point box that might contain this click
         // This handles cases where we click on expanded point box edges
@@ -429,15 +429,15 @@ export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
                 (e) => e.id && e.ethnicityName && e.ethnicityName !== 'Unknown group'
               );
               
-              onSelectEthnicity(filtered.length > 0 ? filtered : null);
+              onSelectEthnicity(filtered.length > 0 ? filtered : null, region);
             } else {
               // Only show baseEthnicity if it's valid
               if (baseEthnicity.id && baseEthnicity.ethnicityName !== 'Unknown group') {
                 setSelectedRegionFeature(null);
-                onSelectEthnicity([baseEthnicity]);
+                onSelectEthnicity([baseEthnicity], null);
               } else {
                 setSelectedRegionFeature(null);
-                onSelectEthnicity(null);
+                onSelectEthnicity(null, null);
               }
             }
             return;
@@ -445,7 +445,7 @@ export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
         }
         
         setSelectedRegionFeature(null);
-        onSelectEthnicity(null);
+        onSelectEthnicity(null, null);
       }
     },
     [onSelectEthnicity, regionsCollection]

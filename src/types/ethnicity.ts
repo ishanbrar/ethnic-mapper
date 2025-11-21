@@ -18,6 +18,10 @@ export type Ethnicity = {
   dominantReligion?: string;
   totalFertilityRate?: string;
   /**
+   * Optional prevalent languages spoken by this ethnic group.
+   */
+  languages?: string;
+  /**
    * Optional string of flag emojis describing the geographic footprint of the region.
    */
   regionFlags?: string;
