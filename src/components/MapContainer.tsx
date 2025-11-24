@@ -11,11 +11,14 @@ import type { GeoJSONSource } from 'mapbox-gl';
 import { Ethnicity } from '@/types/ethnicity';
 import ethnicData from '@/data/ethnic_data.geojson';
 import { Region, regions, findRegionForCoordinates } from '@/data/regions';
+import { FilterState } from './FilterPanel';
+import { getFilteredGeoJSONData, filterRegions, regionMatchesFilters, filterEthnicitiesInRegion } from '@/utils/filterUtils';
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
 type MapContainerProps = {
   onSelectEthnicity: (ethnicities: Ethnicity[] | null, region?: Region | null) => void;
+  filters: FilterState;
 };
 
 const clusterLayer: any = {
@@ -124,7 +127,7 @@ function createRegionHighlightFeature(region: Region | null) {
   };
 }
 
-export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
+export default function MapContainer({ onSelectEthnicity, filters }: MapContainerProps) {
   const mapRef = useRef<MapRef | null>(null);
   const [selectedRegionFeature, setSelectedRegionFeature] = useState<any | null>(
     null
@@ -135,7 +138,9 @@ export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
 
   const regionsCollection = useMemo(() => {
     const palette = ['#0f766e', '#1d4ed8', '#a855f7', '#f97316', '#22c55e'];
-    const features = regions.map((region, index) => {
+    const filteredRegions = filterRegions(regions, filters);
+    
+    const features = filteredRegions.map((region, index) => {
       const feature: any = createRegionHighlightFeature(region);
       if (!feature) return null;
       feature.properties = {
@@ -146,8 +151,11 @@ export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
       return feature;
     });
 
-    // Add clickable boxes for each ethnicity point
-    const ethnicFeatures = (ethnicData as any).features?.map((point: any) => {
+    // Get filtered GeoJSON data
+    const filteredEthnicData = getFilteredGeoJSONData(ethnicData, regions, filters);
+
+    // Add clickable boxes for each ethnicity point (only for visible ethnicities)
+    const ethnicFeatures = filteredEthnicData.features?.map((point: any) => {
       const [lng, lat] = point.geometry.coordinates;
       let boxSize = .5; // Create a 2.0 degree box around each point for easier clicking
       // Enforce minimum size
@@ -189,7 +197,11 @@ export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
       type: 'FeatureCollection',
       features: [...features.filter(Boolean), ...ethnicFeatures]
     } as any;
-  }, []);
+  }, [filters]);
+
+  const filteredEthnicData = useMemo(() => {
+    return getFilteredGeoJSONData(ethnicData, regions, filters);
+  }, [filters]);
 
   const handleClick = useCallback(
     (event: MapLayerMouseEvent) => {
@@ -357,17 +369,23 @@ export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
       // the expanded bounds. Since we expanded boxes for display, we should still
       // be able to find regions even if clicking on expanded edges.
       const region = findRegionForCoordinates(lng, lat);
-      if (region && region.ethnicities.length > 0) {
-        setSelectedRegionFeature(createRegionHighlightFeature(region));
-        // Update the region property of all ethnicities to use the region's name
-        // Filter out any invalid ethnicities
-        const ethnicitiesWithRegionName = region.ethnicities
-          .filter((e) => e.id && e.ethnicityName && e.ethnicityName !== 'Unknown group')
-          .map((ethnicity) => ({
-            ...ethnicity,
-            region: region.name
-          }));
-        onSelectEthnicity(ethnicitiesWithRegionName.length > 0 ? ethnicitiesWithRegionName : null, region);
+      if (region && regionMatchesFilters(region, filters)) {
+        const filteredRegionEthnicities = filterEthnicitiesInRegion(region, filters);
+        if (filteredRegionEthnicities.length > 0) {
+          setSelectedRegionFeature(createRegionHighlightFeature(region));
+          // Update the region property of all ethnicities to use the region's name
+          // Filter out any invalid ethnicities
+          const ethnicitiesWithRegionName = filteredRegionEthnicities
+            .filter((e) => e.id && e.ethnicityName && e.ethnicityName !== 'Unknown group')
+            .map((ethnicity) => ({
+              ...ethnicity,
+              region: region.name
+            }));
+          onSelectEthnicity(ethnicitiesWithRegionName.length > 0 ? ethnicitiesWithRegionName : null, region);
+        } else {
+          setSelectedRegionFeature(null);
+          onSelectEthnicity(null, null);
+        }
       } else {
         // If no region found, try to find a point box that might contain this click
         // This handles cases where we click on expanded point box edges
@@ -448,7 +466,7 @@ export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
         onSelectEthnicity(null, null);
       }
     },
-    [onSelectEthnicity, regionsCollection]
+    [onSelectEthnicity, regionsCollection, filters]
   );
   const handleMouseMove = useCallback(
     (event: MapLayerMouseEvent) => {
@@ -568,7 +586,7 @@ export default function MapContainer({ onSelectEthnicity }: MapContainerProps) {
         <Source
           id="ethnicities"
           type="geojson"
-          data={ethnicData as any}
+          data={filteredEthnicData as any}
           cluster
           clusterMaxZoom={8}
           clusterRadius={40}

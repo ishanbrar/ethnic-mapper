@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import { useState, useRef, useEffect } from 'react';
 import { Ethnicity } from '@/types/ethnicity';
 import SidebarPanel from '@/components/SidebarPanel';
+import FilterPanel, { FilterState } from '@/components/FilterPanel';
 
 const MapContainer = dynamic(() => import('@/components/MapContainer'), {
   ssr: false
@@ -16,6 +17,8 @@ export default function HomePage() {
   const [selectedRegion, setSelectedRegion] = useState<any>(null);
   const [isMobilePanelOpen, setIsMobilePanelOpen] = useState(false);
   const [showScrollIndicator, setShowScrollIndicator] = useState(false);
+  const [filters, setFilters] = useState<FilterState>({ hdi: [], religion: [], tfr: [] });
+  const [isFilterPanelOpen, setIsFilterPanelOpen] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Auto-open mobile panel when selection is made
@@ -62,15 +65,27 @@ export default function HomePage() {
   }, [isMobilePanelOpen, selectedEthnicities]);
 
   return (
-    <main className="mx-auto flex min-h-[calc(100vh-64px)] max-w-6xl gap-4 px-2 py-2 md:px-4 md:py-4 lg:py-6">
-      <section className="relative flex-1 overflow-hidden rounded-xl md:rounded-2xl border border-slate-800/70 bg-slate-950/80 shadow-soft">
-        <MapContainer onSelectEthnicity={handleSelectEthnicity} />
-      </section>
-      
-      {/* Desktop Sidebar */}
-      <aside className="hidden w-full max-w-sm md:block">
-        <SidebarPanel selectedEthnicities={selectedEthnicities} selectedRegion={selectedRegion} />
-      </aside>
+    <div className="relative min-h-screen">
+      <FilterPanel 
+        filters={filters}
+        onFiltersChange={setFilters}
+        isOpen={isFilterPanelOpen}
+        onToggle={() => setIsFilterPanelOpen(!isFilterPanelOpen)}
+      />
+      <main 
+        className={`flex min-h-screen gap-4 px-2 py-2 md:px-4 md:py-4 lg:py-6 transition-all duration-300 ${
+          isFilterPanelOpen ? 'md:ml-80 ml-0' : 'ml-0'
+        }`}
+      >
+        <section className="relative flex-1 overflow-hidden rounded-xl md:rounded-2xl border border-slate-800/70 bg-slate-950/80 shadow-soft">
+          <MapContainer onSelectEthnicity={handleSelectEthnicity} filters={filters} />
+        </section>
+        
+        {/* Desktop Sidebar */}
+        <aside className="hidden w-full max-w-sm md:block">
+          <SidebarPanel selectedEthnicities={selectedEthnicities} selectedRegion={selectedRegion} />
+        </aside>
+      </main>
 
       {/* Mobile Bottom Sheet */}
       {selectedEthnicities && selectedEthnicities.length > 0 && (
@@ -175,7 +190,7 @@ export default function HomePage() {
           )}
         </>
       )}
-    </main>
+    </div>
   );
 }
 
